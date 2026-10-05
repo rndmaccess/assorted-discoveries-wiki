@@ -9,7 +9,7 @@ import greenOnionSeeds from '../item_img/green_onion_seeds.png';
 import greenOnion from '../item_img/green_onion.png';
 import grassSlab from '../block_img/grass_slab_single.webp';
 import dirtSlab from '../block_img/dirt_slab.webp';
-import dirtPathSlab from '../block_img/dirt_path_slab.webp';
+import dirtPathSlab from '../block_img/dirt_path_slab_single.webp';
 import cindersnapBerries from '../item_img/cindersnap_berries.png';
 import forestsBounty from '../item_img/forests_bounty.png';
 import spruceCone from '../item_img/spruce_cone.png';

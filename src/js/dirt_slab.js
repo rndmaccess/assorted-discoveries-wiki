@@ -5,9 +5,9 @@ import dirtSlab from "../block_img/dirt_slab.webp";
 import coarseDirtSlab from "../block_img/coarse_dirt_slab.webp";
 import rootedDirtSlab from "../block_img/rooted_dirt_slab.webp";
 
-import dirtBlock from "../block_img/dirt.webp";
-import coarseDirtBlock from "../block_img/coarse_dirt.webp";
-import rootedDirtBlock from "../block_img/rooted_dirt.webp";
+import dirtBlock from "../crafting_block_img/dirt.webp";
+import coarseDirtBlock from "../crafting_block_img/coarse_dirt.webp";
+import rootedDirtBlock from "../crafting_block_img/rooted_dirt.webp";
 
 const craftingLists = {
     "dirt_slab": [dirtSlab, coarseDirtSlab, rootedDirtSlab],
