@@ -18,22 +18,22 @@ import purpleSheepPlushie from "../block_img/sheep_plushie_purple.webp";
 import magentaSheepPlushie from "../block_img/sheep_plushie_magenta.webp";
 import pinkSheepPlushie from "../block_img/sheep_plushie_pink.webp";
 
-import whiteWool from "../block_img/white_wool.webp";
-import lightGrayWool from "../block_img/light_gray_wool.webp";
-import grayWool from "../block_img/gray_wool.webp";
-import blackWool from "../block_img/black_wool.webp";
-import brownWool from "../block_img/brown_wool.webp";
-import redWool from "../block_img/red_wool.webp";
-import orangeWool from "../block_img/orange_wool.webp";
-import yellowWool from "../block_img/yellow_wool.webp";
-import limeWool from "../block_img/lime_wool.webp";
-import greenWool from "../block_img/green_wool.webp";
-import cyanWool from "../block_img/cyan_wool.webp";
-import lightBlueWool from "../block_img/light_blue_wool.webp";
-import blueWool from "../block_img/blue_wool.webp";
-import purpleWool from "../block_img/purple_wool.webp";
-import magentaWool from "../block_img/magenta_wool.webp";
-import pinkWool from "../block_img/pink_wool.webp";
+import whiteWool from "../crafting_block_img/white_wool.webp";
+import lightGrayWool from "../crafting_block_img/light_gray_wool.webp";
+import grayWool from "../crafting_block_img/gray_wool.webp";
+import blackWool from "../crafting_block_img/black_wool.webp";
+import brownWool from "../crafting_block_img/brown_wool.webp";
+import redWool from "../crafting_block_img/red_wool.webp";
+import orangeWool from "../crafting_block_img/orange_wool.webp";
+import yellowWool from "../crafting_block_img/yellow_wool.webp";
+import limeWool from "../crafting_block_img/lime_wool.webp";
+import greenWool from "../crafting_block_img/green_wool.webp";
+import cyanWool from "../crafting_block_img/cyan_wool.webp";
+import lightBlueWool from "../crafting_block_img/light_blue_wool.webp";
+import blueWool from "../crafting_block_img/blue_wool.webp";
+import purpleWool from "../crafting_block_img/purple_wool.webp";
+import magentaWool from "../crafting_block_img/magenta_wool.webp";
+import pinkWool from "../crafting_block_img/pink_wool.webp";
 
 const craftingLists = {
     "sheep_plushie": [whiteSheepPlushie, lightGraySheepPlushie, graySheepPlushie, blackSheepPlushie, brownSheepPlushie,
