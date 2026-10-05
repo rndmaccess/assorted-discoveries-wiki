@@ -166,6 +166,29 @@ const optionList = {
     ],
 }
 
+// Helper function to pre-cache a single image
+function precacheImage(url) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = () => resolve(url);
+        img.onerror = (err) => reject(err);
+    });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const imagesToCache = [whiteCampfire, lightGrayCampfire, grayCampfire, blackCampfire, brownCampfire,
+        redCampfire, orangeCampfire, yellowCampfire, limeCampfire, greenCampfire,
+        cyanCampfire, lightBlueCampfire, blueCampfire, purpleCampfire,
+        magentaCampfire, pinkCampfire];
+
+    Promise.all(imagesToCache.map(precacheImage))
+        .then(() => {
+            console.log('All images pre-cached successfully!');
+        })
+        .catch(err => console.error('Failed to pre-cache images', err));
+})
+
 createRecipeCycle(craftingLists);
 
 const imagePanel = document.getElementById('image-changer-panel');
