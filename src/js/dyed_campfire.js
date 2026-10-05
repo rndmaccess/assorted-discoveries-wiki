@@ -176,6 +176,8 @@ function precacheImage(url) {
     });
 }
 
+// We pre-cache the campfire renders after the DOM is loaded, because they are large and
+// this guarantees that they are looked up instantly when the user selects them in the sidebar.
 window.addEventListener('DOMContentLoaded', () => {
     const imagesToCache = [whiteCampfire, lightGrayCampfire, grayCampfire, blackCampfire, brownCampfire,
         redCampfire, orangeCampfire, yellowCampfire, limeCampfire, greenCampfire,
