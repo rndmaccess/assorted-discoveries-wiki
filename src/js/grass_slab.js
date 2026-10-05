@@ -1,13 +1,13 @@
 // No module declaration needed; esbuild-loader handles imports.
 import { createRecipeCycle, createButtonPanel } from "./page_util";
 
-import grassBlock from "../crafting_block_img/grass_block.webp";
-import podzol from "../crafting_block_img/podzol.webp";
-import mycelium from "../crafting_block_img/mycelium.webp";
+import grassBlock from "../item_block_img/grass_block_item.webp";
+import podzol from "../item_block_img/podzol_item.webp";
+import mycelium from "../item_block_img/mycelium_item.webp";
 
-import grassSlabItem from "../crafting_block_img/grass_slab.webp";
-import podzolSlabItem from "../crafting_block_img/podzol_slab.webp";
-import myceliumSlabItem from "../crafting_block_img/mycelium_slab.webp";
+import grassSlabItem from "../item_block_img/grass_slab_item.webp";
+import podzolSlabItem from "../item_block_img/podzol_slab_item.webp";
+import myceliumSlabItem from "../item_block_img/mycelium_slab_item.webp";
 
 import singleGrassSlab from "../block_img/grass_slab_single.webp";
 import singlePodzolSlab from "../block_img/podzol_slab_single.webp";

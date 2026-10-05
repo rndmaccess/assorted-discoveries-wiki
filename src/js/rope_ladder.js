@@ -14,18 +14,18 @@ import bambooRopeLadder from "../item_img/bamboo_rope_ladder.png";
 import warpedRopeLadder from "../item_img/warped_rope_ladder.png";
 import crimsonRopeLadder from "../item_img/crimson_rope_ladder.png";
 
-import oakPlanks from "../crafting_block_img/oak_planks.webp";
-import sprucePlanks from "../crafting_block_img/spruce_planks.webp";
-import birchPlanks from "../crafting_block_img/birch_planks.webp";
-import junglePlanks from "../crafting_block_img/jungle_planks.webp";
-import acaciaPlanks from "../crafting_block_img/acacia_planks.webp";
-import darkOakPlanks from "../crafting_block_img/dark_oak_planks.webp";
-import mangrovePlanks from "../crafting_block_img/mangrove_planks.webp";
-import cherryPlanks from "../crafting_block_img/cherry_planks.webp";
-import paleOakPlanks from "../crafting_block_img/pale_oak_planks.webp";
-import bambooPlanks from "../crafting_block_img/bamboo_planks.webp";
-import warpedPlanks from "../crafting_block_img/warped_planks.webp";
-import crimsonPlanks from "../crafting_block_img/crimson_planks.webp";
+import oakPlanks from "../item_block_img/oak_planks_item.webp";
+import sprucePlanks from "../item_block_img/spruce_planks_item.webp";
+import birchPlanks from "../item_block_img/birch_planks_item.webp";
+import junglePlanks from "../item_block_img/jungle_planks_item.webp";
+import acaciaPlanks from "../item_block_img/acacia_planks_item.webp";
+import darkOakPlanks from "../item_block_img/dark_oak_planks_item.webp";
+import mangrovePlanks from "../item_block_img/mangrove_planks_item.webp";
+import cherryPlanks from "../item_block_img/cherry_planks_item.webp";
+import paleOakPlanks from "../item_block_img/pale_oak_planks_item.webp";
+import bambooPlanks from "../item_block_img/bamboo_planks_item.webp";
+import warpedPlanks from "../item_block_img/warped_planks_item.webp";
+import crimsonPlanks from "../item_block_img/crimson_planks_item.webp";
 
 const craftingLists = {
     "rope_ladder": [oakRopeLadder, spruceRopeLadder, birchRopeLadder, jungleRopeLadder, acaciaRopeLadder,
