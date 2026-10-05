@@ -328,13 +328,14 @@ table {
     }
 }
 
+/* Small tablets */
 @media (min-width: 768px) {
     .sidebar {
         width: 70%;
     }
 }
 
-/* Desktop properties */
+/* Desktops */
 @media (min-width: 1280px) {
     html, body {
         font-size: 1rem;
