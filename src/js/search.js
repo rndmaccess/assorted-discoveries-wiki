@@ -7,7 +7,7 @@ import whiteSheepPlushie from '../block_img/sheep_plushie_white.webp';
 import wildGreenOnions from '../block_img/wild_green_onions.webp';
 import greenOnionSeeds from '../item_img/green_onion_seeds.png';
 import greenOnion from '../item_img/green_onion.png';
-import grassSlab from '../block_img/grass_slab.webp';
+import grassSlab from '../block_img/grass_slab_single.webp';
 import dirtSlab from '../block_img/dirt_slab.webp';
 import dirtPathSlab from '../block_img/dirt_path_slab.webp';
 import cindersnapBerries from '../item_img/cindersnap_berries.png';
