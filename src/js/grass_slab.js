@@ -1,66 +1,58 @@
 // No module declaration needed; esbuild-loader handles imports.
 import { createRecipeCycle, createButtonPanel } from "./page_util";
 
-import grassSlab from "../block_img/grass_slab.webp";
-import podzolSlab from "../block_img/podzol_slab.webp";
-import myceliumSlab from "../block_img/mycelium_slab.webp";
+import grassBlock from "../crafting_block_img/grass_block.webp";
+import podzol from "../crafting_block_img/podzol.webp";
+import mycelium from "../crafting_block_img/mycelium.webp";
 
-import topGrassSlab from "../block_img/grass_slab_top.webp";
-import topPodzolSlab from "../block_img/podzol_slab_top.webp";
-import topMyceliumSlab from "../block_img/mycelium_slab_top.webp";
+import grassSlabItem from "../crafting_block_img/grass_slab.webp";
+import podzolSlabItem from "../crafting_block_img/podzol_slab.webp";
+import myceliumSlabItem from "../crafting_block_img/mycelium_slab.webp";
 
-import grassBlock from "../block_img/grass_block.webp";
-import podzolBlock from "../block_img/podzol.webp";
-import myceliumBlock from "../block_img/mycelium.webp";
+import singleGrassSlab from "../block_img/grass_slab_single.webp";
+import singlePodzolSlab from "../block_img/podzol_slab_single.webp";
+import singleMyceliumSlab from "../block_img/mycelium_slab_single.webp";
+
+import doubleGrassSlab from "../block_img/grass_slab_double.webp";
+import doublePodzolSlab from "../block_img/podzol_slab_double.webp";
+import doubleMyceliumSlab from "../block_img/mycelium_slab_double.webp";
 
 const optionList = {
     "grass": [
         {
-            "src": grassSlab,
+            "src": singleGrassSlab,
             "alt": "Grass Slab"
         },
         {
-            "src": topGrassSlab,
-            "alt": "Grass Slab"
-        },
-        {
-            "src": grassBlock,
-            "alt": "Grass Slab"
+            "src": doubleGrassSlab,
+            "alt": ""
         }
     ],
     "podzol": [
         {
-            "src": podzolSlab,
+            "src": singlePodzolSlab,
             "alt": "Podzol Slab"
         },
         {
-            "src": topPodzolSlab,
-            "alt": "Podzol Slab"
-        },
-        {
-            "src": podzolBlock,
-            "alt": "Podzol Slab"
+            "src": doublePodzolSlab,
+            "alt": ""
         }
     ],
     "mycelium": [
         {
-            "src": myceliumSlab,
+            "src": singleMyceliumSlab,
             "alt": "Mycelium Slab"
         },
         {
-            "src": topMyceliumSlab,
-            "alt": "Mycelium Slab"
-        },
-        {
-            "src": myceliumBlock,
-            "alt": "Mycelium Slab"
+            "src": doubleMyceliumSlab,
+            "alt": ""
         }
     ]
 }
 
 const craftingLists = {
-    "grass_slab": [grassSlab, podzolSlab, myceliumSlab],
-    "grass": [grassBlock, podzolBlock, myceliumBlock]
+    "grass_slab": [grassSlabItem, podzolSlabItem, myceliumSlabItem],
+    "grass": [grassBlock, podzol, mycelium]
 }
 
 createRecipeCycle(craftingLists);
