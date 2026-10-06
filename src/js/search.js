@@ -295,37 +295,41 @@ export const renderResults = (results) => {
 
     searchList.innerHTML = "";
 
-    searchList.insertAdjacentHTML('beforeend', results.map(({ title, description, link, img, srcset }) => {
+    const htmlString = results.map((result) => {
+        // Safety check: Skip if there's no valid result or title
+        if (!result || result.title === undefined) {
+            return "";
+        }
+
+        const { title, description, link, img, srcset } = result;
+
+        // Check for animated versions with a reduced-motion fallback
         if (srcset !== undefined) {
             return `<li class="result-item">
                 <div>
                     <a class="result-title" href="${link}">${title}</a>
-                    <p>
-                        ${description}
-                    </p>
+                    <p>${description}</p>
                 </div>
                 <picture>
                     <!-- If the user wants reduced motion, show the static fallback -->
                     <source class="result-img" srcset="${srcset}" media="(prefers-reduced-motion: reduce)">
                     <!-- Otherwise, serve the beautiful animated version -->
-                    <img class="result-img" src="${img}" alt="">
+                    <img class="result-img" src="${img}" alt="${title}">
                 </picture>
             </li>`;
         }
 
-        if (title === undefined) {
-            return "";
-        }
+        // Fallback for standard static results
         return `<li class="result-item">
-                <div>
-                    <a class="result-title" href="${link}">${title}</a>
-                    <p>
-                        ${description}
-                    </p>
-                </div>
-                <img class="result-img" src="${img}" alt="">
-            </li>`;
-    }).join('\n'));
+            <div>
+                <a class="result-title" href="${link}">${title}</a>
+                <p>${description}</p>
+            </div>
+            <img class="result-img" src="${img}" alt="${title}">
+        </li>`;
+    }).join('\n'); // Consolidates the array elements into a single string
+
+    searchList.insertAdjacentHTML('beforeend', htmlString);
 }
 
 export function isValidQuery(query) {
