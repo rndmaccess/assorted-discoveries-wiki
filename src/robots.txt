@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rndmaccess.github.io/assorted-discoveries-fabric/sitemap.xml
+Sitemap: https://rndmaccess.github.io/assorted-discoveries-wiki/sitemap.xml
