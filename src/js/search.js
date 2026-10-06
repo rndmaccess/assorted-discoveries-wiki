@@ -112,11 +112,11 @@ const documents = [
     },
     {
         id: 10,
-        title: 'grass slabs',
-        keywords: 'podzol mycelium',
+        title: 'organic slabs',
+        keywords: 'grass podzol mycelium slab',
         description: 'Upgrade your landscapes with grass, podzol, and mycelium slabs! Discover how to craft ' +
             'these building blocks and view all unique block behaviors.',
-        link: './grass_slabs.html',
+        link: './organic_slabs.html',
         img: grassSlab,
     },
     {
