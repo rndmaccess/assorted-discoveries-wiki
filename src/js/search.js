@@ -18,7 +18,7 @@ import cindersnapBerryJuice from '../item_img/cindersnap_berry_juice.png';
 import oakWall from '../block_img/oak_wall.webp';
 import witchsCradleSoup from '../item_img/witchs_cradle_soup.png';
 import witchsCradleBranch from '../item_img/witchs_cradle_branch.png';
-import whiteCampfire from '../anim_block_img/white_campfire.webp';
+import whiteCampfire from '../block_img/white_campfire_anim.webp';
 import whiteTorch from '../block_img/white_torch_anim.webp';
 import fourPlushies from '../block_img/4_plushies.webp';
 import snapdragon from '../anim_block_img/snapdragon.webp';

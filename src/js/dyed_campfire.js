@@ -1,23 +1,40 @@
 // No module declaration needed; esbuild-loader handles imports.
 import { createRecipeCycle, createButtonPanel } from "./page_util";
 
-import whiteCampfire from "../anim_block_img/white_campfire.webp";
-import lightGrayCampfire from "../anim_block_img/light_gray_campfire.webp";
-import grayCampfire from "../anim_block_img/gray_campfire.webp";
-import blackCampfire from "../anim_block_img/black_campfire.webp";
-import brownCampfire from "../anim_block_img/brown_campfire.webp";
-import redCampfire from "../anim_block_img/red_campfire.webp";
-import orangeCampfire from "../anim_block_img/orange_campfire.webp";
-import yellowCampfire from "../anim_block_img/yellow_campfire.webp";
-import limeCampfire from "../anim_block_img/lime_campfire.webp";
-import greenCampfire from "../anim_block_img/green_campfire.webp";
-import cyanCampfire from "../anim_block_img/cyan_campfire.webp";
-import lightBlueCampfire from "../anim_block_img/light_blue_campfire.webp";
-import blueCampfire from "../anim_block_img/blue_campfire.webp";
-import purpleCampfire from "../anim_block_img/purple_campfire.webp";
-import magentaCampfire from "../anim_block_img/magenta_campfire.webp";
-import pinkCampfire from "../anim_block_img/pink_campfire.webp";
+import whiteCampfireStatic from "../block_img/white_campfire_static.webp";
+import lightGrayCampfireStatic from "../block_img/light_gray_campfire_static.webp";
+import grayCampfireStatic from "../block_img/gray_campfire_static.webp";
+import blackCampfireStatic from "../block_img/black_campfire_static.webp";
+import brownCampfireStatic from "../block_img/brown_campfire_static.webp";
+import redCampfireStatic from "../block_img/red_campfire_static.webp";
+import orangeCampfireStatic from "../block_img/orange_campfire_static.webp";
+import yellowCampfireStatic from "../block_img/yellow_campfire_static.webp";
+import limeCampfireStatic from "../block_img/lime_campfire_static.webp";
+import greenCampfireStatic from "../block_img/green_campfire_static.webp";
+import cyanCampfireStatic from "../block_img/cyan_campfire_static.webp";
+import lightBlueCampfireStatic from "../block_img/light_blue_campfire_static.webp";
+import blueCampfireStatic from "../block_img/blue_campfire_static.webp";
+import purpleCampfireStatic from "../block_img/purple_campfire_static.webp";
+import magentaCampfireStatic from "../block_img/magenta_campfire_static.webp";
+import pinkCampfireStatic from "../block_img/pink_campfire_static.webp";
 import unlitCampfire from "../block_img/unlit_campfire.webp";
+
+import whiteCampfireAnim from "../block_img/white_campfire_anim.webp";
+import lightGrayCampfireAnim from "../block_img/light_gray_campfire_anim.webp";
+import grayCampfireAnim from "../block_img/gray_campfire_anim.webp";
+import blackCampfireAnim from "../block_img/black_campfire_anim.webp";
+import brownCampfireAnim from "../block_img/brown_campfire_anim.webp";
+import redCampfireAnim from "../block_img/red_campfire_anim.webp";
+import orangeCampfireAnim from "../block_img/orange_campfire_anim.webp";
+import yellowCampfireAnim from "../block_img/yellow_campfire_anim.webp";
+import limeCampfireAnim from "../block_img/lime_campfire_anim.webp";
+import greenCampfireAnim from "../block_img/green_campfire_anim.webp";
+import cyanCampfireAnim from "../block_img/cyan_campfire_anim.webp";
+import lightBlueCampfireAnim from "../block_img/light_blue_campfire_anim.webp";
+import blueCampfireAnim from "../block_img/blue_campfire_anim.webp";
+import purpleCampfireAnim from "../block_img/purple_campfire_anim.webp";
+import magentaCampfireAnim from "../block_img/magenta_campfire_anim.webp";
+import pinkCampfireAnim from "../block_img/pink_campfire_anim.webp";
 
 import whiteCampfireItem from "../item_img/white_campfire.png";
 import lightGrayCampfireItem from "../item_img/light_gray_campfire.png";
@@ -64,101 +81,152 @@ const craftingLists = {
 const optionList = {
     "white": [
         {
-            "src": whiteCampfire,
+            "srcset": whiteCampfireStatic
+        },
+        {
+            "src": whiteCampfireAnim,
             "alt": "White Campfire",
         }
     ],
     "light_gray": [
         {
-            "src": lightGrayCampfire,
+            "srcset": lightGrayCampfireStatic
+        },
+        {
+            "src": lightGrayCampfireAnim,
             "alt": "Light Gray Campfire",
         }
     ],
     "gray": [
         {
-            "src": grayCampfire,
+            "srcset": grayCampfireStatic
+        },
+        {
+            "src": grayCampfireAnim,
             "alt": "Gray Campfire",
         }
     ],
     "black": [
         {
-            "src": blackCampfire,
+            "srcset": blackCampfireStatic
+        },
+        {
+            "src": blackCampfireAnim,
             "alt": "Black Campfire",
         }
     ],
     "brown": [
         {
-            "src": brownCampfire,
+            "srcset": brownCampfireStatic
+        },
+        {
+            "src": brownCampfireAnim,
             "alt": "Brown Campfire",
         }
     ],
     "red": [
         {
-            "src": redCampfire,
+            "srcset": redCampfireStatic
+        },
+        {
+            "src": redCampfireAnim,
             "alt": "Red Campfire",
         }
     ],
     "orange": [
         {
-            "src": orangeCampfire,
+            "srcset": orangeCampfireStatic
+        },
+        {
+            "src": orangeCampfireAnim,
             "alt": "Orange Campfire",
         }
     ],
     "yellow": [
         {
-            "src": yellowCampfire,
+            "srcset": yellowCampfireStatic
+        },
+        {
+            "src": yellowCampfireAnim,
             "alt": "Yellow Campfire",
         }
     ],
     "lime": [
         {
-            "src": limeCampfire,
+            "srcset": limeCampfireStatic
+        },
+        {
+            "src": limeCampfireAnim,
             "alt": "Lime Campfire",
         }
     ],
     "green": [
         {
-            "src": greenCampfire,
+            "srcset": greenCampfireStatic
+        },
+        {
+            "src": greenCampfireAnim,
             "alt": "Green Campfire",
         }
     ],
     "cyan": [
         {
-            "src": cyanCampfire,
+            "srcset": cyanCampfireStatic
+        },
+        {
+            "src": cyanCampfireAnim,
             "alt": "Cyan Campfire",
         }
     ],
     "light_blue": [
         {
-            "src": lightBlueCampfire,
+            "srcset": lightBlueCampfireStatic
+        },
+        {
+            "src": lightBlueCampfireAnim,
             "alt": "Light Blue Campfire",
         }
     ],
     "blue": [
         {
-            "src": blueCampfire,
+            "srcset": blueCampfireStatic
+        },
+        {
+            "src": blueCampfireAnim,
             "alt": "Blue Campfire",
         }
     ],
     "purple": [
         {
-            "src": purpleCampfire,
+            "srcset": purpleCampfireStatic
+        },
+        {
+            "src": purpleCampfireAnim,
             "alt": "Purple Campfire",
         }
     ],
     "magenta": [
         {
-            "src": magentaCampfire,
+            "srcset": magentaCampfireStatic
+        },
+        {
+            "src": magentaCampfireAnim,
             "alt": "Magenta Campfire",
         }
     ],
     "pink": [
         {
-            "src": pinkCampfire,
+            "srcset": pinkCampfireStatic
+        },
+        {
+            "src": pinkCampfireAnim,
             "alt": "Pink Campfire",
         }
     ],
     "unlit": [
+        {
+            "srcset": unlitCampfire
+        },
         {
             "src": unlitCampfire,
             "alt": "Unlit Dyed Campfire",
@@ -179,10 +247,17 @@ function precacheImage(url) {
 // We pre-cache the campfire renders after the DOM is loaded, because they are large and
 // this guarantees that they are looked up instantly when the user selects them in the sidebar.
 window.addEventListener('DOMContentLoaded', () => {
-    const imagesToCache = [whiteCampfire, lightGrayCampfire, grayCampfire, blackCampfire, brownCampfire,
-        redCampfire, orangeCampfire, yellowCampfire, limeCampfire, greenCampfire,
-        cyanCampfire, lightBlueCampfire, blueCampfire, purpleCampfire,
-        magentaCampfire, pinkCampfire];
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+        console.log('Reduced motion is enabled. Skipping animated asset pre-caching.');
+        return;
+    }
+
+    const imagesToCache = [whiteCampfireAnim, lightGrayCampfireAnim, grayCampfireAnim, blackCampfireAnim,
+        brownCampfireAnim, redCampfireAnim, orangeCampfireAnim, yellowCampfireAnim, limeCampfireAnim, greenCampfireAnim,
+        cyanCampfireAnim, lightBlueCampfireAnim, blueCampfireAnim, purpleCampfireAnim,
+        magentaCampfireAnim, pinkCampfireAnim];
 
     Promise.all(imagesToCache.map(precacheImage))
         .then(() => {
