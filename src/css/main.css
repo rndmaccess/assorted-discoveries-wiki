@@ -215,6 +215,7 @@ a:hover {
     border-radius: 1rem;
     border: 2px solid #202020;
     background-color: #303030;
+    margin: 1rem;
 }
 
 .video-container {
@@ -283,13 +284,13 @@ table {
 }
 
 .inline-display {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(166px, 1fr));
     gap: 1.25rem;
+}
 
-    justify-content: flex-start;
-    align-items: flex-start;
+.pixelated-render {
+    image-rendering: pixelated;
 }
 
 .inline-display .inline-render {
@@ -300,18 +301,24 @@ table {
 }
 
 .inline-display .boxed-render {
+    display: flex;
+
     outline: 1px solid #3c2a68;
-    width: 30%;
-    flex-grow: 0;
+    flex: 1 0 150px;
+
     background-color: #202020;
     padding: 0.5rem;
     font-size: 1.5rem;
     box-sizing: border-box;
+
     aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
 }
 
 .inline-render img {
     display: block;
+    margin: 0 auto 0 auto;
     width: 150px;
 
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
