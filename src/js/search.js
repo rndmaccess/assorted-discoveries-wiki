@@ -296,9 +296,7 @@ export const renderResults = (results) => {
     searchList.innerHTML = "";
 
     searchList.insertAdjacentHTML('beforeend', results.map(({ title, description, link, img, srcset }) => {
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-        if (srcset !== undefined && prefersReducedMotion) {
+        if (srcset !== undefined) {
             return `<li class="result-item">
                 <div>
                     <a class="result-title" href="${link}">${title}</a>
