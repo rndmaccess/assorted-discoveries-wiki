@@ -91,8 +91,14 @@ export function createButtonPanel(event, optionList) {
             continue;
         }
 
-        headerImage.src = variants[i].src;
-        headerImage.alt = variants[i].alt;
+        if (headerImage.tagName === 'SOURCE') {
+            headerImage.srcset = variants[i].srcset;
+        } else if (headerImage.tagName === 'IMG') {
+            headerImage.src = variants[i].src;
+            headerImage.alt = variants[i].alt;
+        } else {
+            console.log("Unsupported image type for index: ", i);
+        }
     }
 
     if (selectedElement) {

@@ -1,22 +1,39 @@
 // No module declaration needed; esbuild-loader handles imports.
 import { createRecipeCycle, createButtonPanel } from "./page_util";
 
-import whiteTorch from "../anim_block_img/white_torch.webp";
-import lightGrayTorch from "../anim_block_img/light_gray_torch.webp";
-import grayTorch from "../anim_block_img/gray_torch.webp";
-import blackTorch from "../anim_block_img/black_torch.webp";
-import brownTorch from "../anim_block_img/brown_torch.webp";
-import redTorch from "../anim_block_img/red_torch.webp";
-import orangeTorch from "../anim_block_img/orange_torch.webp";
-import yellowTorch from "../anim_block_img/yellow_torch.webp";
-import limeTorch from "../anim_block_img/lime_torch.webp";
-import greenTorch from "../anim_block_img/green_torch.webp";
-import cyanTorch from "../anim_block_img/cyan_torch.webp";
-import lightBlueTorch from "../anim_block_img/light_blue_torch.webp";
-import blueTorch from "../anim_block_img/blue_torch.webp";
-import purpleTorch from "../anim_block_img/purple_torch.webp";
-import magentaTorch from "../anim_block_img/magenta_torch.webp";
-import pinkTorch from "../anim_block_img/pink_torch.webp";
+import whiteTorchStatic from "../block_img/white_torch_static.webp";
+import lightGrayTorchStatic from "../block_img/light_gray_torch_static.webp";
+import grayTorchStatic from "../block_img/gray_torch_static.webp";
+import blackTorchStatic from "../block_img/black_torch_static.webp";
+import brownTorchStatic from "../block_img/brown_torch_static.webp";
+import redTorchStatic from "../block_img/red_torch_static.webp";
+import orangeTorchStatic from "../block_img/orange_torch_static.webp";
+import yellowTorchStatic from "../block_img/yellow_torch_static.webp";
+import limeTorchStatic from "../block_img/lime_torch_static.webp";
+import greenTorchStatic from "../block_img/green_torch_static.webp";
+import cyanTorchStatic from "../block_img/cyan_torch_static.webp";
+import lightBlueTorchStatic from "../block_img/light_blue_torch_static.webp";
+import blueTorchStatic from "../block_img/blue_torch_static.webp";
+import purpleTorchStatic from "../block_img/purple_torch_static.webp";
+import magentaTorchStatic from "../block_img/magenta_torch_static.webp";
+import pinkTorchStatic from "../block_img/pink_torch_static.webp";
+
+import whiteTorchAnim from "../block_img/white_torch_anim.webp";
+import lightGrayTorchAnim from "../block_img/light_gray_torch_anim.webp";
+import grayTorchAnim from "../block_img/gray_torch_anim.webp";
+import blackTorchAnim from "../block_img/black_torch_anim.webp";
+import brownTorchAnim from "../block_img/brown_torch_anim.webp";
+import redTorchAnim from "../block_img/red_torch_anim.webp";
+import orangeTorchAnim from "../block_img/orange_torch_anim.webp";
+import yellowTorchAnim from "../block_img/yellow_torch_anim.webp";
+import limeTorchAnim from "../block_img/lime_torch_anim.webp";
+import greenTorchAnim from "../block_img/green_torch_anim.webp";
+import cyanTorchAnim from "../block_img/cyan_torch_anim.webp";
+import lightBlueTorchAnim from "../block_img/light_blue_torch_anim.webp";
+import blueTorchAnim from "../block_img/blue_torch_anim.webp";
+import purpleTorchAnim from "../block_img/purple_torch_anim.webp";
+import magentaTorchAnim from "../block_img/magenta_torch_anim.webp";
+import pinkTorchAnim from "../block_img/pink_torch_anim.webp";
 
 import whiteTorchItem from "../item_img/white_torch.png";
 import lightGrayTorchItem from "../item_img/light_gray_torch.png";
@@ -63,97 +80,145 @@ const craftingLists = {
 const optionList = {
     "white": [
         {
-            "src": whiteTorch,
+            "srcset": whiteTorchStatic
+        },
+        {
+            "src": whiteTorchAnim,
             "alt": "White Torch",
         }
     ],
     "light_gray": [
         {
-            "src": lightGrayTorch,
+            "srcset": lightGrayTorchStatic
+        },
+        {
+            "src": lightGrayTorchAnim,
             "alt": "Light Gray Torch",
         }
     ],
     "gray": [
         {
-            "src": grayTorch,
+            "srcset": grayTorchStatic
+        },
+        {
+            "src": grayTorchAnim,
             "alt": "Gray Torch",
         }
     ],
     "black": [
         {
-            "src": blackTorch,
+            "srcset": blackTorchStatic
+        },
+        {
+            "src": blackTorchAnim,
             "alt": "Black Torch",
         }
     ],
     "brown": [
         {
-            "src": brownTorch,
+            "srcset": brownTorchStatic
+        },
+        {
+            "src": brownTorchAnim,
             "alt": "Brown Torch",
         }
     ],
     "red": [
         {
-            "src": redTorch,
+            "srcset": redTorchStatic
+        },
+        {
+            "src": redTorchAnim,
             "alt": "Red Torch",
         }
     ],
     "orange": [
         {
-            "src": orangeTorch,
+            "srcset": orangeTorchStatic
+        },
+        {
+            "src": orangeTorchAnim,
             "alt": "Orange Torch",
         }
     ],
     "yellow": [
         {
-            "src": yellowTorch,
+            "srcset": yellowTorchStatic
+        },
+        {
+            "src": yellowTorchAnim,
             "alt": "Yellow Torch",
         }
     ],
     "lime": [
         {
-            "src": limeTorch,
+            "srcset": limeTorchStatic
+        },
+        {
+            "src": limeTorchAnim,
             "alt": "Lime Torch",
         }
     ],
     "green": [
         {
-            "src": greenTorch,
+            "srcset": greenTorchStatic
+        },
+        {
+            "src": greenTorchAnim,
             "alt": "Green Torch",
         }
     ],
     "cyan": [
         {
-            "src": cyanTorch,
+            "srcset": cyanTorchStatic
+        },
+        {
+            "src": cyanTorchAnim,
             "alt": "Cyan Torch",
         }
     ],
     "light_blue": [
         {
-            "src": lightBlueTorch,
+            "srcset": lightBlueTorchStatic
+        },
+        {
+            "src": lightBlueTorchAnim,
             "alt": "Light Blue Torch",
         }
     ],
     "blue": [
         {
-            "src": blueTorch,
+            "srcset": blueTorchStatic
+        },
+        {
+            "src": blueTorchAnim,
             "alt": "Blue Torch",
         }
     ],
     "purple": [
         {
-            "src": purpleTorch,
+            "srcset": purpleTorchStatic
+        },
+        {
+            "src": purpleTorchAnim,
             "alt": "Purple Torch",
         }
     ],
     "magenta": [
         {
-            "src": magentaTorch,
+            "srcset": magentaTorchStatic
+        },
+        {
+            "src": magentaTorchAnim,
             "alt": "Magenta Torch",
         }
     ],
     "pink": [
         {
-            "src": pinkTorch,
+            "srcset": pinkTorchStatic
+        },
+        {
+            "src": pinkTorchAnim,
             "alt": "Pink Torch",
         }
     ],
