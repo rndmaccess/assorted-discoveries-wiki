@@ -28,7 +28,7 @@ import bauxite from '../block_img/bauxite.webp';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
-    storeFields: ['title', 'keywords', 'description', 'link', 'img'],
+    storeFields: ['title', 'keywords', 'description', 'link', 'img', 'srcset'],
 });
 
 const documents = [
