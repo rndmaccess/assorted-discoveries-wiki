@@ -51,14 +51,14 @@ export function createRecipeCycle(items) {
  * Manages button selection and dynamic attribute updates.
  *
  * HTML Requirements:
- * .menu-btn: Required class for all selectable buttons.
- * .swappable-img: Required class for all swappable images.
- * #selected: Must be present on exactly one button initially; moves on click.
- * data-type: Use this to specify what type the images are that should be swapped in. This is
+ * - .menu-btn: Required class for all selectable buttons.
+ * - .swappable-img: Required class for all swappable images.
+ * - #selected: Must be present on exactly one button initially; moves on click.
+ * - data-type: Use this to specify what type the images are that should be swapped in.
+ * This should be defined on the buttons in the button panel and referenced in the option list with a matching name.
  *
  * @param event {PointerEvent} The click event from the button container.
- * @param optionList A JSON-like object that maps the data-types to a
- * list of src and alt attributes that are then later looked up.
+ * @param optionList Object mapping data-types to attributes: 'srcset' (for source tags) or 'src'/'alt' (for img tags).
  */
 export function createButtonPanel(event, optionList) {
     const button = event.target.closest('.menu-btn');
