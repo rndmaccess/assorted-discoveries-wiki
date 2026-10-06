@@ -18,8 +18,10 @@ import cindersnapBerryJuice from '../item_img/cindersnap_berry_juice.png';
 import oakWall from '../block_img/oak_wall.webp';
 import witchsCradleSoup from '../item_img/witchs_cradle_soup.png';
 import witchsCradleBranch from '../item_img/witchs_cradle_branch.png';
-import whiteCampfire from '../block_img/white_campfire_anim.webp';
-import whiteTorch from '../block_img/white_torch_anim.webp';
+import whiteCampfireAnim from '../block_img/white_campfire_anim.webp';
+import whiteCampfireStatic from '../block_img/white_campfire_static.webp';
+import whiteTorchAnim from '../block_img/white_torch_anim.webp';
+import whiteTorchStatic from '../block_img/white_torch_static.webp';
 import fourPlushies from '../block_img/4_plushies.webp';
 import snapdragon from '../anim_block_img/snapdragon.webp';
 import bauxite from '../block_img/bauxite.webp';
@@ -216,7 +218,8 @@ const documents = [
         description: 'Illuminate your camps and color your world! Learn how to craft dyed campfires in all ' +
             'sixteen colors. View full block variations and smoke signal guides.',
         link: './dyed_campfires.html',
-        img: whiteCampfire,
+        img: whiteCampfireAnim,
+        srcset: whiteCampfireStatic
     },
     {
         id: 22,
@@ -234,7 +237,8 @@ const documents = [
         description: 'Illuminate your builds and color your world! Learn how to craft dyed torches in all ' +
             'sixteen colors. View full block properties and light level stats.',
         link: './dyed_torches.html',
-        img: whiteTorch,
+        img: whiteTorchAnim,
+        srcset: whiteTorchStatic
     },
     {
         id: 24,
@@ -290,7 +294,27 @@ export const renderResults = (results) => {
     }
 
     searchList.innerHTML = "";
-    searchList.insertAdjacentHTML('beforeend', results.map(({ title, description, link, img }) => {
+
+    searchList.insertAdjacentHTML('beforeend', results.map(({ title, description, link, img, srcset }) => {
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (srcset !== undefined && prefersReducedMotion) {
+            return `<li class="result-item">
+                <div>
+                    <a class="result-title" href="${link}">${title}</a>
+                    <p>
+                        ${description}
+                    </p>
+                </div>
+                <picture>
+                    <!-- If the user wants reduced motion, show the static fallback -->
+                    <source class="result-img" srcset="${srcset}" media="(prefers-reduced-motion: reduce)">
+                    <!-- Otherwise, serve the beautiful animated version -->
+                    <img class="result-img" src="${img}" alt="">
+                </picture>
+            </li>`;
+        }
+
         if (title === undefined) {
             return "";
         }
