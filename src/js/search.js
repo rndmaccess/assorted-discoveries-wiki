@@ -26,6 +26,7 @@ import fourPlushies from '../block_img/4_plushies.webp';
 import snapdragon from '../anim_block_img/snapdragon.webp';
 import bauxite from '../block_img/bauxite.webp';
 import bauxiteBricks from '../block_img/bauxite_bricks.webp';
+import whiteLantern from '../block_img/white_lantern_anim.webp';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
@@ -267,6 +268,15 @@ const documents = [
             'Learn how to craft bauxite brick blocks, stairs, slabs, and walls.',
         link: './bauxite_bricks.html',
         img: bauxiteBricks,
+    },
+    {
+        id: 27,
+        title: 'dyed lanterns',
+        keywords: 'white light gray black brown red orange yellow lime green cyan blue purple magenta pink',
+        description: 'Illuminate your builds and color your world! Learn how to craft dyed lanterns in all ' +
+            'sixteen colors. View full block properties and light level stats.',
+        link: './dyed_lanterns.html',
+        img: whiteLantern,
     },
 ];
 

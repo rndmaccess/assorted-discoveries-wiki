@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/dyed_torch.js" defer></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/crafting.css">
+    <meta charset="UTF-8">
+    <title>Dyed Torches - Assorted Discoveries Wiki</title>
+    <meta name="description" content="Illuminate your builds and color your world! Learn how to craft dyed torches in all
+    sixteen colors. View full block properties and light level stats.">
+    <link rel="icon" href="../favicon.png" type="image/png">
+</head>
+<body>
+    <main class="main-container container">
+        <div class="top-content-wrapper">
+            <div class="content-left">
+                <h2>
+                    About
+                </h2>
+                <p>
+                    The <b>dyed lantern</b> is a variant of the lantern that comes in all 16
+                    <a href="https://minecraft.wiki/w/Dye">dye<span aria-hidden="true">↗</span></a> colors.
+                </p>
+                <h2>
+                    Breaking
+                </h2>
+                <p>
+                    Dyed lanterns can be broken with any tool, and always drop as an item, but using a pickaxe is the fastest.
+                </p>
+                <h2>
+                    Placing
+                </h2>
+                <p>
+                    Dyed lanterns act exactly like a normal <a href="https://minecraft.wiki/w/Lantern">lanterns<span aria-hidden="true">↗</span></a> when placed.
+                </p>
+                <h2>
+                    Crafting Recipe
+                </h2>
+                <div class="crafting-container crafting-box">
+                    <div class="crafting-area" id="crafting-anim" aria-hidden="true">
+                        <img class="back" src="../gui_img/crafting_table_display.webp" alt="">
+                        <div class="front">
+                            <div class="slot"><img class="crafting-item cycle-item" src="../item_img/lantern.png" alt=""></div>
+                            <div class="slot"><img class="crafting-item cycle-item" data-type="dye" src="../item_img/white_dye.png" alt=""></div>
+                            <div class="slot"><div class="crafting-item"></div></div>
+
+                            <div class="slot"><div class="crafting-item"></div></div>
+                            <div class="slot"><div class="crafting-item"></div></div>
+                            <div class="slot"><div class="crafting-item"></div></div>
+
+                            <div class="slot"></div>
+                            <div class="slot"></div>
+                            <div class="slot"></div>
+                        </div>
+                        <div class="front-result">
+                            <div><img class="result-item cycle-item" data-type="dyed_torch" src="../item_img/white_lantern.png" alt=""></div>
+                        </div>
+                    </div>
+                    <p>
+                        Craft a dyed lantern in a crafting table by placing a lantern and any color of dye in any arrangement.
+                    </p>
+                </div>
+
+                <h2>Technical</h2>
+                <details class="collapsed-container">
+                    <summary class="collapsed">Configuration</summary>
+                    <ul>
+                        <li>In-Game Screen Name: Enable Dyed Lanterns</li>
+                        <li>Config File Key: <code>enable_dyed_lanterns</code></li>
+                        <li>Default: <code>true</code> / <code>Yes</code></li>
+                    </ul>
+                    <p>
+                        Determines whether dyed lanterns can be obtained.
+                    </p>
+                    <ul>
+                        <li><code>true</code> / <code>Yes</code>: Dyed lanterns are enabled.</li>
+                        <li><code>false</code> / <code>No</code>: Dyed lanterns are disabled and hidden.</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="sidebar">
+                <h1 class="main-title">
+                    Dyed Torches
+                </h1>
+
+                <div id="image-changer-panel">
+                    <div class="button-container">
+                        <button class="menu-btn selected" data-type="white">White</button>
+                        <button class="menu-btn" data-type="light_gray">Light Gray</button>
+                        <button class="menu-btn" data-type="gray">Gray</button>
+                        <button class="menu-btn" data-type="black">Black</button>
+                        <button class="menu-btn" data-type="brown">Brown</button>
+                        <button class="menu-btn" data-type="red">Red</button>
+                        <button class="menu-btn" data-type="orange">Orange</button>
+                        <button class="menu-btn" data-type="yellow">Yellow</button>
+                        <button class="menu-btn" data-type="lime">Lime</button>
+                        <button class="menu-btn" data-type="green">Green</button>
+                        <button class="menu-btn" data-type="cyan">Cyan</button>
+                        <button class="menu-btn" data-type="light_blue">Light Blue</button>
+                        <button class="menu-btn" data-type="blue">Blue</button>
+                        <button class="menu-btn" data-type="purple">Purple</button>
+                        <button class="menu-btn" data-type="gray">Gray</button>
+                        <button class="menu-btn" data-type="magenta">Magenta</button>
+                        <button class="menu-btn" data-type="pink">Pink</button>
+                    </div>
+
+                    <img class="main-img swappable-img" src="../block_img/white_lantern_anim.webp" alt="White Lantern">
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="img-desc">Renewable</td>
+                            <td class="img-desc">Yes (Crafting)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Stackable</td>
+                            <td class="img-desc">Yes (64)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Waterloggable</td>
+                            <td class="img-desc">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Tool</td>
+                            <td class="img-desc">Any tool, but the pickaxe is the quickest!</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Blast Resistance</td>
+                            <td class="img-desc">3.5</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Hardness</td>
+                            <td class="img-desc">3.5</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Luminous</td>
+                            <td class="img-desc">Yes (15)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Transparent</td>
+                            <td class="img-desc">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Flammable</td>
+                            <td class="img-desc">No</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Catches fire from lava</td>
+                            <td class="img-desc">No</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Note block instrument</td>
+                            <td class="img-desc">Default (Harp)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="credits-container container">
+            <div>
+                Disclaimer: NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
+                Minecraft and official game assets are trademarks and property of Mojang Studios / Microsoft Corporation.
+                All custom mod assets, code, and content are the intellectual property of rndm_access.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
