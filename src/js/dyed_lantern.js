@@ -1,6 +1,23 @@
 // No module declaration needed; esbuild-loader handles imports.
 import { createRecipeCycle, createButtonPanel } from "./page_util";
 
+import whiteLanternStatic from "../block_img/white_lantern_static.webp";
+import lightGrayLanternStatic from "../block_img/light_gray_lantern_static.webp";
+import grayLanternStatic from "../block_img/gray_lantern_static.webp";
+import blackLanternStatic from "../block_img/black_lantern_static.webp";
+import brownLanternStatic from "../block_img/brown_lantern_static.webp";
+import redLanternStatic from "../block_img/red_lantern_static.webp";
+import orangeLanternStatic from "../block_img/orange_lantern_static.webp";
+import yellowLanternStatic from "../block_img/yellow_lantern_static.webp";
+import limeLanternStatic from "../block_img/lime_lantern_static.webp";
+import greenLanternStatic from "../block_img/green_lantern_static.webp";
+import cyanLanternStatic from "../block_img/cyan_lantern_static.webp";
+import lightBlueLanternStatic from "../block_img/light_blue_lantern_static.webp";
+import blueLanternStatic from "../block_img/blue_lantern_static.webp";
+import purpleLanternStatic from "../block_img/purple_lantern_static.webp";
+import magentaLanternStatic from "../block_img/magenta_lantern_static.webp";
+import pinkLanternStatic from "../block_img/pink_lantern_static.webp";
+
 import whiteLanternAnim from "../block_img/white_lantern_anim.webp";
 import lightGrayLanternAnim from "../block_img/light_gray_lantern_anim.webp";
 import grayLanternAnim from "../block_img/gray_lantern_anim.webp";
@@ -63,11 +80,17 @@ const craftingLists = {
 const optionList = {
     "white": [
         {
+            "srcset": whiteLanternStatic
+        },
+        {
             "src": whiteLanternAnim,
             "alt": "White Lantern",
         }
     ],
     "light_gray": [
+        {
+            "srcset": lightGrayLanternStatic
+        },
         {
             "src": lightGrayLanternAnim,
             "alt": "Light Gray Lantern",
@@ -75,11 +98,17 @@ const optionList = {
     ],
     "gray": [
         {
+            "srcset": grayLanternStatic
+        },
+        {
             "src": grayLanternAnim,
             "alt": "Gray Lantern",
         }
     ],
     "black": [
+        {
+            "srcset": blackLanternStatic
+        },
         {
             "src": blackLanternAnim,
             "alt": "Black Lantern",
@@ -87,11 +116,17 @@ const optionList = {
     ],
     "brown": [
         {
+            "srcset": brownLanternStatic
+        },
+        {
             "src": brownLanternAnim,
             "alt": "Brown Lantern",
         }
     ],
     "red": [
+        {
+            "srcset": redLanternStatic
+        },
         {
             "src": redLanternAnim,
             "alt": "Red Lantern",
@@ -99,11 +134,17 @@ const optionList = {
     ],
     "orange": [
         {
+            "srcset": orangeLanternStatic
+        },
+        {
             "src": orangeLanternAnim,
             "alt": "Orange Lantern",
         }
     ],
     "yellow": [
+        {
+            "srcset": yellowLanternStatic
+        },
         {
             "src": yellowLanternAnim,
             "alt": "Yellow Lantern",
@@ -111,11 +152,17 @@ const optionList = {
     ],
     "lime": [
         {
+            "srcset": limeLanternStatic
+        },
+        {
             "src": limeLanternAnim,
             "alt": "Lime Lantern",
         }
     ],
     "green": [
+        {
+            "srcset": greenLanternStatic
+        },
         {
             "src": greenLanternAnim,
             "alt": "Green Lantern",
@@ -123,11 +170,17 @@ const optionList = {
     ],
     "cyan": [
         {
+            "srcset": cyanLanternStatic
+        },
+        {
             "src": cyanLanternAnim,
             "alt": "Cyan Lantern",
         }
     ],
     "light_blue": [
+        {
+            "srcset": lightBlueLanternStatic
+        },
         {
             "src": lightBlueLanternAnim,
             "alt": "Light Blue Lantern",
@@ -135,11 +188,17 @@ const optionList = {
     ],
     "blue": [
         {
+            "srcset": blueLanternStatic
+        },
+        {
             "src": blueLanternAnim,
             "alt": "Blue Lantern",
         }
     ],
     "purple": [
+        {
+            "srcset": purpleLanternStatic
+        },
         {
             "src": purpleLanternAnim,
             "alt": "Purple Lantern",
@@ -147,11 +206,17 @@ const optionList = {
     ],
     "magenta": [
         {
+            "srcset": magentaLanternStatic
+        },
+        {
             "src": magentaLanternAnim,
             "alt": "Magenta Lantern",
         }
     ],
     "pink": [
+        {
+            "srcset": pinkLanternStatic
+        },
         {
             "src": pinkLanternAnim,
             "alt": "Pink Lantern",
