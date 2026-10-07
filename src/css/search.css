@@ -40,12 +40,20 @@
     font-size: 1.5rem;
 }
 
+/* Hide it by default for non-JS environments */
 .search-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    display: none;
+}
+
+/* Show it natively only if scripting (JS) is active */
+@media (scripting: enabled) {
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
 }
 
 #search {
