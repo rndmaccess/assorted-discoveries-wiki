@@ -25,6 +25,7 @@ import whiteTorchStatic from '../block_img/white_torch_static.webp';
 import fourPlushies from '../block_img/4_plushies.webp';
 import snapdragon from '../anim_block_img/snapdragon.webp';
 import bauxite from '../block_img/bauxite.webp';
+import bauxiteBricks from '../block_img/bauxite_bricks.webp';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
@@ -257,6 +258,15 @@ const documents = [
             'Learn how to craft bauxite blocks, stairs, slabs, and walls.',
         link: './bauxite.html',
         img: bauxite,
+    },
+    {
+        id: 26,
+        title: 'bauxite bricks',
+        keywords: '',
+        description: 'Discover bauxite bricks, a sedimentary block crafted from bauxite bricks. ' +
+            'Learn how to craft bauxite brick blocks, stairs, slabs, and walls.',
+        link: './bauxite_bricks.html',
+        img: bauxiteBricks,
     },
 ];
 
