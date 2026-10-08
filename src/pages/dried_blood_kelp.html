@@ -4,118 +4,184 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/crafting.css">
     <meta charset="UTF-8">
-    <title>Bauxite - Assorted Discoveries Wiki</title>
-    <meta name="description" content="Discover bauxite, a sedimentary block generating in badlands biomes.
-    Learn how to craft bauxite stairs, slabs, and walls.">
+    <title>Dried Blood Kelp - Assorted Discoveries Wiki</title>
+    <meta name="description" content="Discover dried blood kelp and its food properties. As well as
+    dried blood kelp blocks for decoration and storage!">
     <link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
     <main class="main-container container">
         <div class="top-content-wrapper">
             <div class="content-left">
-                <h2>
-                    About
-                </h2>
+                <h2>About</h2>
                 <p>
-                    <b>Bauxite</b> is a block of sedimentary rock, found in large pockets underground in the badlands biome.
+                    <b>Dried blood kelp</b> is a food item that is obtained from drying <a href="./blood_kelp.html">blood kelp</a>.
                 </p>
                 <p>
-                    The <b>bauxite slab</b> is a <a href="https://minecraft.wiki/w/Slab">slab<span aria-hidden="true">↗</span></a>
-                    variant of bauxite.
+                    The <b>dried blood kelp block</b> is a decorative block
+                    that can be used to store dried blood kelp.
                 </p>
-                <p>
-                    The <b>bauxite stairs</b> block is a <a href="https://minecraft.wiki/w/Stairs">stairs<span aria-hidden="true">↗</span></a>
-                    variant of bauxite.
-                </p>
-                <h2>Natural generation</h2>
-                <p>
-                    Bauxite generates in badlands biomes. These include the
-                    <a href="https://minecraft.wiki/w/Badlands">badlands<span aria-hidden="true">↗</span></a>,
-                    <a href="https://minecraft.wiki/w/Eroded_Badlands">eroded badlands<span aria-hidden="true">↗</span></a>,
-                    and <a href="https://minecraft.wiki/w/Wooded_Badlands">wooded badlands<span aria-hidden="true">↗</span></a> biomes.
-                </p>
-                <p>
-                    Any biomes added to the <code>c:is_badlands</code> tag are also supported.
-                </p>
+                <h2>Crafting Recipe</h2>
+                <div class="recipe-container recipe-box">
+                    <div class="recipe-area" aria-hidden="true">
+                        <img class="recipe-back" src="../gui_img/furnace.webp" alt="">
+                        <div class="furnace-slot-container">
+                            <div class="input-slot"><img class="crafting-item" src="../item_img/blood_kelp.png" alt=""></div>
+                            <div class="fuel-slot"><img class="crafting-item" src="../item_img/lava_bucket.png" alt=""></div>
+                        </div>
+                        <div class="recipe-result-container">
+                            <div><img class="furnace-result" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                        </div>
+                    </div>
+                    <p>
+                        Cook a blood kelp item in a furnace or smoker to make dried blood kelp.
+                    </p>
+                    <div class="recipe-area" aria-hidden="true">
+                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                        <div class="recipe-front">
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                        </div>
+                        <div class="recipe-result-container">
+                            <div><img class="crafting-result" src="../item_block_img/dried_blood_kelp_block_item.webp" alt=""></div>
+                        </div>
+                    </div>
+                    <p>
+                        Craft a green onion crate by filling the crafting table with nine green onions.
+                    </p>
+
+                    <div class="recipe-area" aria-hidden="true">
+                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                        <div class="recipe-front">
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/dried_blood_kelp_block_item.webp" alt=""></div>
+                            <div class="crafting-slot"></div>
+
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                        </div>
+                        <div class="recipe-result-container">
+                            <div><img class="crafting-result" src="../item_img/dried_blood_kelp.png" alt=""></div>
+                            <div class="crafting-result-count">9</div>
+                        </div>
+                    </div>
+                    <p>
+                        Craft nine green onions from a green onion crate by placing it in a crafting table in any arrangement.
+                    </p>
+                </div>
 
                 <h2>Technical</h2>
                 <details class="collapsed-container">
                     <summary class="collapsed">Configuration</summary>
 
-                    <ul>
-                        <li>In-Game Screen Name: Enable Bauxite</li>
-                        <li>Config File Key: <code>enable_bauxite</code></li>
-                        <li>Default: <code>true</code> / <code>Yes</code></li>
-                    </ul>
                     <p>
-                        Determines whether Bauxite, bauxite stairs, bauxite slabs, and bauxite walls can be obtained.
+                        Dried blood kelp and dried blood kelp blocks are enabled/disabled indirectly with the blood kelp config setting.
                     </p>
                     <ul>
-                        <li><code>true</code> / <code>Yes</code>: They are enabled.</li>
-                        <li><code>false</code> / <code>No</code>: They are disabled and hidden.</li>
+                        <li>In-Game Screen Name: Enable Blood Kelp</li>
+                        <li>Config File Key: enable_blood_kelp</li>
                     </ul>
+                    <p>
+                        Visit the <a href="./blood_kelp.html">blood kelp</a> page for more information.
+                    </p>
                 </details>
             </div>
 
             <div class="sidebar">
+                <h1 class="main-title">Dried Blood Kelp</h1>
                 <img class="main-img" src="../item_img/dried_blood_kelp.png" alt="">
-                <div class="sub-title">Dried Blood Kelp</div>
-
+                <div class="sub-title">Food</div>
                 <table>
                     <tbody>
                         <tr>
                             <td class="img-desc">Renewable</td>
-                            <td class="img-desc">Yes (Crafting)</td>
-                        </tr>
-                        <tr>
-                            <td class="img-desc">Biome</td>
-                            <td class="img-desc">Badlands (Mesas)</td>
+                            <td class="img-desc">Yes (Blood Kelp Plants)</td>
                         </tr>
                         <tr>
                             <td class="img-desc">Stackable</td>
                             <td class="img-desc">Yes (64)</td>
                         </tr>
                         <tr>
-                            <td class="img-desc">Waterloggable</td>
-                            <td class="img-desc">
-                                <ul class="table-list">
-                                    <li>Stairs, Single Slab, Wall: Yes</li>
-                                    <li>Double Slab, Block: No</li>
-                                </ul>
-                            </td>
+                            <td class="img-desc">Consumption Time</td>
+                            <td class="img-desc">16 game ticks (0.8 seconds)</td>
                         </tr>
                         <tr>
-                            <td class="img-desc">Tool</td>
-                            <td class="img-desc">Pickaxe</td>
+                            <td class="img-desc">Hunger</td>
+                            <td class="img-desc">&frac12; drumstick</td>
                         </tr>
                         <tr>
-                            <td class="img-desc">Blast Resistance</td>
-                            <td class="img-desc">0.3</td>
+                            <td class="img-desc">Saturation</td>
+                            <td class="img-desc">0.6</td>
                         </tr>
                         <tr>
-                            <td class="img-desc">Hardness</td>
-                            <td class="img-desc">0.3</td>
-                        </tr>
-                        <tr>
-                            <td class="img-desc">Luminous</td>
+                            <td class="img-desc">Always consumable</td>
                             <td class="img-desc">No</td>
                         </tr>
-                        <tr>
-                            <td class="img-desc">Transparent</td>
-                            <td class="img-desc">No</td>
-                        </tr>
-                        <tr>
-                            <td class="img-desc">Catches fire from lava</td>
-                            <td class="img-desc">No</td>
-                        </tr>
-                        <tr>
-                            <td class="img-desc">Note block instrument</td>
-                            <td class="img-desc">Bass Drum</td>
-                        </tr>
-                        <tr>
-                            <td class="img-desc">Sulfur cube archetype</td>
-                            <td class="img-desc">Slow Bouncy</td>
-                        </tr>
+                    </tbody>
+                </table>
+
+                <img class="main-img" src="../block_img/dried_blood_kelp_block.webp" alt="">
+                <div class="sub-title">Block</div>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td class="img-desc">Renewable</td>
+                        <td class="img-desc">Yes (Crafting)</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Stackable</td>
+                        <td class="img-desc">Yes (64)</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Waterloggable</td>
+                        <td class="img-desc">No</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Tool</td>
+                        <td class="img-desc">Any tool, but the hoe is the quickest!</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Blast Resistance</td>
+                        <td class="img-desc">2.5</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Hardness</td>
+                        <td class="img-desc">0.5</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Luminous</td>
+                        <td class="img-desc">No</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Transparent</td>
+                        <td class="img-desc">No</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Catches fire from lava</td>
+                        <td class="img-desc">No</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Note block instrument</td>
+                        <td class="img-desc">Default (Harp)</td>
+                    </tr>
+                    <tr>
+                        <td class="img-desc">Sulfur cube archetype</td>
+                        <td class="img-desc">Fast Flat</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>

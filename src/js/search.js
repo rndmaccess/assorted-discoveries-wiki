@@ -28,6 +28,7 @@ import bauxite from '../block_img/bauxite.webp';
 import bauxiteBricks from '../block_img/bauxite_bricks.webp';
 import whiteLantern from '../block_img/white_lantern_anim.webp';
 import bloodKelp from '../item_img/blood_kelp.png';
+import driedBloodKelp from '../item_img/dried_blood_kelp.png';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
@@ -283,10 +284,19 @@ const documents = [
         id: 28,
         title: 'blood kelp',
         keywords: 'seed cluster',
-        description: 'Illuminate your builds with the blood kelp stalk! Learn how to craft blood kelp lanterns, crates, ' +
+        description: 'Illuminate your builds with the blood kelp plant! Learn how to craft blood kelp lanterns, crates, ' +
             'and seed cluster bags. View full block properties and light level stats.',
         link: './blood_kelp.html',
         img: bloodKelp,
+    },
+    {
+        id: 29,
+        title: 'dried blood kelp',
+        keywords: 'block',
+        description: 'Discover dried blood kelp and its food properties. As well as ' +
+            'dried blood kelp blocks for decoration and storage!',
+        link: './dried_blood_kelp.html',
+        img: driedBloodKelp,
     },
 ];
 
