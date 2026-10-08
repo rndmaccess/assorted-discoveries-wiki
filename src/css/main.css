@@ -297,7 +297,7 @@ table {
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     gap: 1rem;
-    justify-content: start;
+    justify-content: center;
 }
 
 .pixelated-render {
