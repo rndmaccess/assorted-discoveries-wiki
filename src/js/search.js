@@ -335,7 +335,7 @@ export const renderResults = (results) => {
 
         // Check for animated versions with a reduced-motion fallback
         if (srcset !== undefined) {
-            return `<li class="result-item">
+            return `<li class="crafting-result">
                 <div>
                     <a class="result-title" href="${link}">${title}</a>
                     <p>${description}</p>
@@ -350,7 +350,7 @@ export const renderResults = (results) => {
         }
 
         // Fallback for standard static results
-        return `<li class="result-item">
+        return `<li class="crafting-result">
             <div>
                 <a class="result-title" href="${link}">${title}</a>
                 <p>${description}</p>
