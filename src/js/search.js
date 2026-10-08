@@ -266,8 +266,8 @@ const documents = [
         id: 26,
         title: 'bauxite bricks',
         keywords: '',
-        description: 'Discover bauxite bricks, a sedimentary block crafted from bauxite bricks. ' +
-            'Learn how to craft bauxite brick blocks, stairs, slabs, and walls.',
+        description: 'Discover bauxite bricks, a sedimentary block crafted from bauxite. ' +
+            'Learn how to craft bauxite brick stairs, slabs, walls, and cracked bauxite bricks.',
         link: './bauxite_bricks.html',
         img: bauxiteBricks,
     },
