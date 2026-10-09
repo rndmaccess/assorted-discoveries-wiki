@@ -347,17 +347,10 @@ table {
     text-align: center;
 }
 
-/* Normal / large phones */
-@media (min-width: 360px) {
-    .sidebar {
-        width: 90%;
-    }
-}
-
 /* Small tablets */
 @media (min-width: 768px) {
     .sidebar {
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -395,7 +388,6 @@ table {
 
     .sidebar {
         width: 35%;
-        min-width: 35%;
     }
 
     .inline-render img {
