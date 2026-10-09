@@ -103,11 +103,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rndmaccess.github.io/assorted-discoveries-wiki/pages/plushies.html</loc>
-        <lastmod>2026-08-31</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://rndmaccess.github.io/assorted-discoveries-wiki/pages/dyed_torches.html</loc>
         <lastmod>2026-08-31</lastmod>
         <priority>0.8</priority>
@@ -140,6 +135,21 @@
     <url>
         <loc>https://rndmaccess.github.io/assorted-discoveries-wiki/pages/blood_kelp.html</loc>
         <lastmod>2026-10-08</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rndmaccess.github.io/assorted-discoveries-wiki/pages/hostile_plushies.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rndmaccess.github.io/assorted-discoveries-wiki/pages/neutral_plushies.html</loc>
+        <lastmod>2026-10-09</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rndmaccess.github.io/assorted-discoveries-wiki/pages/passive_plushies.html</loc>
+        <lastmod>2026-10-09</lastmod>
         <priority>0.8</priority>
     </url>
 </urlset>

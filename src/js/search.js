@@ -231,7 +231,7 @@ const documents = [
         keywords: '',
         description: 'Decorate your world and collect them all! Learn how to find and craft over ninety ' +
             'unique plushies. View full block properties and common mechanics.',
-        link: './plushies.html',
+        link: './passive_plushies.html',
         img: fourPlushies,
     },
     {
