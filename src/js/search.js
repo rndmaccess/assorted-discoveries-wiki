@@ -3,7 +3,6 @@ import paleWolfPlushieStanding from '../block_img/pale_wolf_plushie_standing.web
 import oakRopeLadder from '../item_img/oak_rope_ladder.png';
 import bogBlossom from '../block_img/bog_blossom.webp';
 import ocelotPlushieStanding from '../block_img/ocelot_plushie_standing.webp';
-import whiteSheepPlushie from '../block_img/sheep_plushie_white.webp';
 import wildGreenOnions from '../block_img/wild_green_onions.webp';
 import greenOnionSeeds from '../item_img/green_onion_seeds.png';
 import greenOnion from '../item_img/green_onion.png';
@@ -23,7 +22,7 @@ import whiteCampfireStatic from '../block_img/white_campfire_static.webp';
 import whiteTorchAnim from '../block_img/white_torch_anim.webp';
 import whiteTorchStatic from '../block_img/white_torch_static.webp';
 import fourPlushies from '../block_img/4_plushies.webp';
-import snapdragon from '../anim_block_img/snapdragon.webp';
+import snapdragon from '../block_img/snapdragon.webp';
 import bauxite from '../block_img/bauxite.webp';
 import bauxiteBricks from '../block_img/bauxite_bricks.webp';
 import whiteLantern from '../block_img/white_lantern_anim.webp';
@@ -82,15 +81,6 @@ const documents = [
     },
     {
         id: 6,
-        title: 'sheep plushies',
-        keywords: 'white light gray black brown red orange yellow lime green cyan blue purple magenta pink',
-        description: 'Create your perfect flock! Discover how to craft and collect cute sheep plushies in your world. ' +
-            'Check out all 16 vibrant color variants.',
-        link: './sheep_plushies.html',
-        img: whiteSheepPlushie,
-    },
-    {
-        id: 7,
         title: 'wild green onions',
         keywords: 'plant seeds',
         description: 'Forage the wilderness for wild green onions! Discover where to find this useful plant, ' +
@@ -99,7 +89,7 @@ const documents = [
         img: wildGreenOnions,
     },
     {
-        id: 8,
+        id: 7,
         title: 'green onion seeds',
         keywords: 'plant',
         description: 'Grow your own custom crops! Discover how to plant green onion seeds, accelerate growth, ' +
@@ -108,7 +98,7 @@ const documents = [
         img: greenOnionSeeds,
     },
     {
-        id: 9,
+        id: 8,
         title: 'green onion',
         keywords: 'plant seeds food',
         description: 'Cook up something delicious with green onions! Discover hunger values, ' +
@@ -117,7 +107,7 @@ const documents = [
         img: greenOnion,
     },
     {
-        id: 10,
+        id: 9,
         title: 'organic slabs',
         keywords: 'grass podzol mycelium slab',
         description: 'Upgrade your landscapes with grass, podzol, and mycelium slabs! Discover how to craft ' +
@@ -126,7 +116,7 @@ const documents = [
         img: grassSlab,
     },
     {
-        id: 11,
+        id: 10,
         title: 'dirt slabs',
         keywords: 'coarse rooted',
         description: 'Perfect your natural builds with dirt, coarse dirt, and rooted dirt slabs! ' +
@@ -135,7 +125,7 @@ const documents = [
         img: dirtSlab,
     },
     {
-        id: 12,
+        id: 11,
         title: 'dirt path slab',
         keywords: 'grass mycelium coarse rooted podzol',
         description: 'Carve out beautiful trails! Right-click grass and dirt slabs with any shovel to transform them ' +
@@ -144,7 +134,7 @@ const documents = [
         img: dirtPathSlab,
     },
     {
-        id: 13,
+        id: 12,
         title: 'nether berries',
         keywords: 'cindersnap frostbite berry',
         description: 'Forage the Nether for frostbite and cindersnap berries! ' +
@@ -153,7 +143,7 @@ const documents = [
         img: cindersnapBerries,
     },
     {
-        id: 14,
+        id: 13,
         title: 'spruce cone',
         keywords: 'cones forest\'s bounty forest',
         description: 'Forage for spruce cones and create the forest\'s bounty! ' +
@@ -162,7 +152,7 @@ const documents = [
         img: spruceCone,
     },
     {
-        id: 15,
+        id: 14,
         title: 'forest\'s bounty',
         keywords: 'spruce cone cones forest',
         description: 'Feast on forest\'s bounty! Learn how to combine spruce cones and other raw ' +
@@ -171,7 +161,7 @@ const documents = [
         img: forestsBounty,
     },
     {
-        id: 16,
+        id: 15,
         title: 'nether forage mixes',
         keywords: 'crimson warped berry cindersnap berries frostbite',
         description: 'Master Nether cooking! Discover how to craft crimson and warped forage mixes using ' +
@@ -180,7 +170,7 @@ const documents = [
         img: crimsonForageMix,
     },
     {
-        id: 17,
+        id: 16,
         title: 'nether berry juices',
         keywords: 'crimson warped cindersnap frostbite berries',
         description: 'Quench your thirst and gain Fire Resistance! Learn how to craft frostbite and cindersnap ' +
@@ -189,7 +179,7 @@ const documents = [
         img: cindersnapBerryJuice,
     },
     {
-        id: 18,
+        id: 17,
         title: 'wooden walls',
         keywords: 'oak spruce birch jungle acacia dark mangrove cherry pale bamboo crimson warped',
         description: 'Transform your world and add depth to your structures! Learn how to craft and strip ' +
@@ -198,7 +188,7 @@ const documents = [
         img: oakWall,
     },
     {
-        id: 19,
+        id: 18,
         title: 'witch\'s cradle branch',
         keywords: '',
         description: 'Conquer the dark and master the swamp! Learn how to harvest the witch\'s cradle bush ' +
@@ -207,7 +197,7 @@ const documents = [
         img: witchsCradleBranch,
     },
     {
-        id: 20,
+        id: 19,
         title: 'witch\'s cradle soup',
         keywords: 'branch',
         description: 'Conquer the dark and master the swamp! Learn how to craft witch\'s cradle soup and gain ' +
@@ -216,7 +206,7 @@ const documents = [
         img: witchsCradleSoup,
     },
     {
-        id: 21,
+        id: 20,
         title: 'dyed campfires',
         keywords: 'white light gray black brown red orange yellow lime green cyan blue purple magenta pink',
         description: 'Illuminate your camps and color your world! Learn how to craft dyed campfires in all ' +
@@ -226,16 +216,7 @@ const documents = [
         srcset: whiteCampfireStatic
     },
     {
-        id: 22,
-        title: 'plushies',
-        keywords: '',
-        description: 'Decorate your world and collect them all! Learn how to find and craft over ninety ' +
-            'unique plushies. View full block properties and common mechanics.',
-        link: './passive_plushies.html',
-        img: fourPlushies,
-    },
-    {
-        id: 23,
+        id: 21,
         title: 'dyed torches',
         keywords: 'white light gray black brown red orange yellow lime green cyan blue purple magenta pink',
         description: 'Illuminate your builds and color your world! Learn how to craft dyed torches in all ' +
@@ -245,7 +226,7 @@ const documents = [
         srcset: whiteTorchStatic
     },
     {
-        id: 24,
+        id: 22,
         title: 'ender plants',
         keywords: 'snapdragon short ender grass',
         description: 'Discover new flora in the End! Learn how to find short ender grass and snapdragons on ' +
@@ -254,7 +235,7 @@ const documents = [
         img: snapdragon,
     },
     {
-        id: 25,
+        id: 23,
         title: 'bauxite',
         keywords: '',
         description: 'Discover bauxite, a sedimentary block generating in badlands biomes. ' +
@@ -263,16 +244,16 @@ const documents = [
         img: bauxite,
     },
     {
-        id: 26,
+        id: 24,
         title: 'bauxite bricks',
-        keywords: '',
-        description: 'Discover bauxite bricks, a sedimentary block crafted from bauxite. ' +
+        keywords: 'mossy cracked',
+        description: 'Discover bauxite bricks and all its variants, a sedimentary block crafted from bauxite. ' +
             'Learn how to craft bauxite brick stairs, slabs, walls, and cracked bauxite bricks.',
         link: './bauxite_bricks.html',
         img: bauxiteBricks,
     },
     {
-        id: 27,
+        id: 25,
         title: 'dyed lanterns',
         keywords: 'white light gray black brown red orange yellow lime green cyan blue purple magenta pink',
         description: 'Illuminate your builds and color your world! Learn how to craft dyed lanterns in all ' +
@@ -281,7 +262,7 @@ const documents = [
         img: whiteLantern,
     },
     {
-        id: 28,
+        id: 26,
         title: 'blood kelp',
         keywords: 'seed cluster',
         description: 'Illuminate your builds with the blood kelp plant! Learn how to craft blood kelp lanterns, crates, ' +
@@ -290,7 +271,7 @@ const documents = [
         img: bloodKelp,
     },
     {
-        id: 29,
+        id: 27,
         title: 'dried blood kelp',
         keywords: 'block',
         description: 'Discover dried blood kelp and its food properties. As well as ' +
@@ -298,6 +279,33 @@ const documents = [
         link: './dried_blood_kelp.html',
         img: driedBloodKelp,
     },
+    {
+        id: 28,
+        title: 'hostile plushies',
+        keywords: '',
+        description: 'Decorate your world and collect them all! Learn how to find and craft over ninety ' +
+            'unique plushies. View full block properties and common mechanics.',
+        link: './hostile_plushies.html',
+        img: fourPlushies,
+    },
+    {
+        id: 29,
+        title: 'neutral plushies',
+        keywords: '',
+        description: 'Decorate your world and collect them all! Learn how to find and craft over ninety ' +
+            'unique plushies. View full block properties and common mechanics.',
+        link: './neutral_plushies.html',
+        img: fourPlushies,
+    },
+    {
+        id: 30,
+        title: 'passive plushies',
+        keywords: '',
+        description: 'Decorate your world and collect them all! Learn how to find and craft over ninety ' +
+            'unique plushies. View full block properties and common mechanics.',
+        link: './passive_plushies.html',
+        img: fourPlushies,
+    }
 ];
 
 miniSearch.addAll(documents);
