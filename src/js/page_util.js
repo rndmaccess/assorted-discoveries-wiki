@@ -39,6 +39,12 @@ export function createRecipeCycle(items) {
     const timeout = 2000;
 
     setInterval(() => {
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (prefersReducedMotion) {
+            return; // Don't cycle recipe animations if the user prefers reduced motion
+        }
+
         try {
             cycle_recipe(items, cycleItems, state);
         } catch (error) {
