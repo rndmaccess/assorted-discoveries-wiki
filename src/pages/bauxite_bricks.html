@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../js/bauxite_bricks.js" defer></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/crafting.css">
     <meta charset="UTF-8">
@@ -17,16 +18,25 @@
                     About
                 </h2>
                 <p>
-                    <b>Bauxite bricks</b> are a sedimentary rock block, crafted from <a href="./bauxite.html">bauxite</a>.
+                    <b>Bauxite bricks</b>, <b>mossy bauxite bricks</b>, and <b>cracked bauxite bricks</b> are sedimentary rock blocks,
+                    crafted from <a href="./bauxite.html">bauxite</a>.
                 </p>
                 <p>
-                    The <b>bauxite brick slab</b> block is the <a href="https://minecraft.wiki/w/Slab">slab<span aria-hidden="true">↗</span></a>
-                    variant of bauxite bricks.
+                    <b>Bauxite brick slabs</b>, <b>mossy bauxite brick slabs</b>, and <b>cracked bauxite brick slabs</b>
+                    are <a href="https://minecraft.wiki/w/Slab">slab<span aria-hidden="true">↗</span></a> variants of their respective brick blocks.
                 </p>
                 <p>
-                    The <b>bauxite brick stairs</b> block is the <a href="https://minecraft.wiki/w/Stairs">stairs<span aria-hidden="true">↗</span></a>
-                    variant of bauxite bricks.
+                    <b>Bauxite brick stairs</b>, <b>mossy bauxite brick stairs</b>, and <b>cracked bauxite brick stairs</b>
+                    are <a href="https://minecraft.wiki/w/Stairs">stair<span aria-hidden="true">↗</span></a> variants of their respective brick blocks.
                 </p>
+                <p>
+                    <b>Bauxite brick walls</b>, <b>mossy bauxite brick walls</b>, and <b>cracked bauxite brick walls</b>
+                    are <a href="https://minecraft.wiki/w/Wall">wall<span aria-hidden="true">↗</span></a> variants of their respective brick blocks.
+                </p>
+                <p>
+                    <a href="#bauxite_brick_variants">Click here</a> to view all bauxite brick variants.
+                </p>
+
                 <h2>Crafting Recipe</h2>
                 <div class="recipe-container recipe-box">
                     <div class="recipe-area" aria-hidden="true">
@@ -52,6 +62,43 @@
                     <p>
                         Craft four bauxite bricks by placing bauxite in a two-by-two square in a crafting table.
                     </p>
+
+                    <div class="recipe-area" aria-hidden="true">
+                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                        <div class="recipe-front">
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item" src="../item_img/vine.png" alt=""></div>
+                            <div class="crafting-slot"></div>
+
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                        </div>
+                        <div class="recipe-result-container">
+                            <div><img class="crafting-result" src="../item_block_img/mossy_bauxite_bricks_item.webp" alt=""></div>
+                        </div>
+                    </div>
+                    <p>
+                        Craft four bauxite bricks by placing bauxite in a two-by-two square in a crafting table.
+                    </p>
+
+                    <div class="recipe-area" aria-hidden="true">
+                        <img class="recipe-back" src="../gui_img/furnace.webp" alt="">
+                        <div class="furnace-slot-container">
+                            <div class="input-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="fuel-slot"><img class="crafting-item" src="../item_img/lava_bucket.png" alt=""></div>
+                        </div>
+                        <div class="recipe-result-container">
+                            <div><img class="furnace-result" src="../item_block_img/cracked_bauxite_bricks_item.webp" alt=""></div>
+                        </div>
+                    </div>
+                    <p>
+                        Smelt bauxite bricks in a furnace to make cracked bauxite bricks.
+                    </p>
                 </div>
 
                 <h2>Usage</h2>
@@ -70,17 +117,18 @@
                             <div class="crafting-slot"></div>
                             <div class="crafting-slot"></div>
 
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
                         </div>
                         <div class="recipe-result-container">
-                            <div><img class="crafting-result" src="../item_block_img/bauxite_brick_slab_item.webp" alt=""></div>
+                            <div><img class="crafting-result cycle-item" data-type="bauxite_brick_slab" src="../item_block_img/bauxite_brick_slab_item.webp" alt=""></div>
                             <div class="crafting-result-count">6</div>
                         </div>
                     </div>
                     <p>
-                        Craft six bauxite brick slabs in a crafting table by placing three bauxite bricks in a single row.
+                        Craft six bauxite brick, mossy bauxite brick, or cracked bauxite brick slabs in a crafting table
+                        by placing three matching bauxite brick blocks in a single row.
                     </p>
 
                     <div class="recipe-area" aria-hidden="true">
@@ -88,23 +136,49 @@
                         <div class="recipe-front">
                             <div class="crafting-slot"></div>
                             <div class="crafting-slot"></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"></div>
 
                             <div class="crafting-slot"></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
 
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
                         </div>
                         <div class="recipe-result-container">
-                            <div><img class="crafting-result" src="../item_block_img/bauxite_brick_stairs_item.webp" alt=""></div>
+                            <div><img class="crafting-result cycle-item" data-type="bauxite_brick_slab" src="../item_block_img/bauxite_brick_slab_item.webp" alt=""></div>
+                            <div class="crafting-result-count">6</div>
+                        </div>
+                    </div>
+                    <p>
+                        Craft six bauxite brick, mossy bauxite brick, or cracked bauxite brick slabs in a crafting table
+                        by placing three matching bauxite brick blocks in a single row.
+                    </p>
+
+                    <div class="recipe-area" aria-hidden="true">
+                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                        <div class="recipe-front">
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+
+                            <div class="crafting-slot"></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                        </div>
+                        <div class="recipe-result-container">
+                            <div><img class="crafting-result cycle-item" data-type="bauxite_brick_stairs" src="../item_block_img/bauxite_brick_stairs_item.webp" alt=""></div>
                             <div class="crafting-result-count">4</div>
                         </div>
                     </div>
                     <p>
-                        Craft four bauxite brick stairs in a crafting table by arranging bauxite bricks in a staircase pattern.
+                        Craft four bauxite brick, mossy bauxite brick, or cracked bauxite brick stairs in a
+                        crafting table by placing three matching bauxite brick blocks in a staircase pattern.
                     </p>
 
                     <div class="recipe-area" aria-hidden="true">
@@ -114,35 +188,22 @@
                             <div class="crafting-slot"></div>
                             <div class="crafting-slot"></div>
 
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
 
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="crafting-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
+                            <div class="crafting-slot"><img class="crafting-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
                         </div>
                         <div class="recipe-result-container">
-                            <div><img class="crafting-result" src="../item_block_img/bauxite_brick_wall_item.webp" alt=""></div>
+                            <div><img class="crafting-result cycle-item" data-type="bauxite_brick_wall" src="../item_block_img/bauxite_brick_wall_item.webp" alt=""></div>
                             <div class="crafting-result-count">6</div>
                         </div>
                     </div>
                     <p>
-                        Craft six bauxite brick walls in a crafting table by filling the middle and bottom rows with bauxite bricks.
-                    </p>
-
-                    <div class="recipe-area" aria-hidden="true">
-                        <img class="recipe-back" src="../gui_img/furnace.webp" alt="">
-                        <div class="furnace-slot-container">
-                            <div class="input-slot"><img class="crafting-item" src="../item_block_img/bauxite_bricks_item.webp" alt=""></div>
-                            <div class="fuel-slot"><img class="crafting-item" src="../item_img/lava_bucket.png" alt=""></div>
-                        </div>
-                        <div class="recipe-result-container">
-                            <div><img class="furnace-result" src="../item_block_img/cracked_bauxite_bricks_item.webp" alt=""></div>
-                        </div>
-                    </div>
-                    <p>
-                        Smelt bauxite bricks in a furnace to make cracked bauxite bricks.
+                        Craft six bauxite brick, mossy bauxite brick, or cracked bauxite brick walls in a
+                        crafting table by filling the middle and bottom rows with matching bauxite brick blocks.
                     </p>
                 </div>
 
@@ -167,19 +228,65 @@
                         Visit the <a href="./bauxite.html">bauxite</a> page to read more about it.
                     </p>
                 </details>
+
+                <h2 id="bauxite_brick_variants">Bauxite Brick Variants</h2>
+                <div class="inline-display">
+                    <div class="inline-render">
+                        <img src="../block_img/bauxite_brick_stairs.webp" alt="">
+                        <p>Stairs</p>
+                    </div>
+                    <div class="inline-render">
+                        <img src="../block_img/bauxite_brick_slab.webp" alt="">
+                        <p>Slab</p>
+                    </div>
+                    <div class="inline-render">
+                        <img src="../block_img/bauxite_brick_wall.webp" alt="">
+                        <p>Wall</p>
+                    </div>
+                </div>
+
+                <h2>Cracked Bauxite Brick Variants</h2>
+                <div class="inline-display">
+                    <div class="inline-render">
+                        <img src="../block_img/cracked_bauxite_brick_slab.webp" alt="">
+                        <p>Stairs</p>
+                    </div>
+                    <div class="inline-render">
+                        <img src="../block_img/cracked_bauxite_brick_stairs.webp" alt="">
+                        <p>Slab</p>
+                    </div>
+                    <div class="inline-render">
+                        <img src="../block_img/cracked_bauxite_brick_wall.webp" alt="">
+                        <p>Wall</p>
+                    </div>
+                </div>
+
+                <h2>Mossy Bauxite Brick Variants</h2>
+                <div class="inline-display">
+                    <div class="inline-render">
+                        <img src="../block_img/mossy_bauxite_brick_slab.webp" alt="">
+                        <p>Stairs</p>
+                    </div>
+                    <div class="inline-render">
+                        <img src="../block_img/mossy_bauxite_brick_stairs.webp" alt="">
+                        <p>Slab</p>
+                    </div>
+                    <div class="inline-render">
+                        <img src="../block_img/mossy_bauxite_brick_wall.webp" alt="">
+                        <p>Wall</p>
+                    </div>
+                </div>
             </div>
 
             <div class="sidebar">
-                <h1 class="main-title">Bauxite</h1>
+                <h1 class="main-title">Bauxite Bricks</h1>
 
                 <img class="main-img" src="../block_img/bauxite_bricks.webp" alt="">
-                <div class="sub-title">Bauxite Bricks</div>
-                <img class="main-img" src="../block_img/bauxite_brick_slab.webp" alt="">
-                <div class="sub-title">Bauxite Brick Slab</div>
-                <img class="main-img" src="../block_img/bauxite_brick_stairs.webp" alt="">
-                <div class="sub-title">Bauxite Brick Stairs</div>
-                <img class="main-img" src="../block_img/bauxite_brick_wall.webp" alt="">
-                <div class="sub-title">Bauxite Brick Wall</div>
+                <div class="sub-title">Normal</div>
+                <img class="main-img" src="../block_img/cracked_bauxite_bricks.webp" alt="">
+                <div class="sub-title">Cracked</div>
+                <img class="main-img" src="../block_img/mossy_bauxite_bricks.webp" alt="">
+                <div class="sub-title">Mossy</div>
 
                 <table>
                     <tbody>
