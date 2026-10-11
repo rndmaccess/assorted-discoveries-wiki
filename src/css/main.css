@@ -346,13 +346,13 @@ table {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    html, body {
+    html {
         scroll-behavior: smooth;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html, body {
+    html {
         scroll-behavior: auto;
     }
 }
