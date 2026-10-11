@@ -5,8 +5,6 @@ html, body {
     color: #F5F5F5;
     min-height: 100vh;
     font-size: 1.125rem;
-
-    scroll-behavior: smooth;
 }
 
 /* Styled links */
@@ -345,6 +343,18 @@ table {
 
 .inline-render p, .inline-render a {
     text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 /* Small tablets */
