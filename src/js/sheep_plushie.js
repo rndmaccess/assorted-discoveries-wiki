@@ -1,6 +1,23 @@
 // No module declaration needed; esbuild-loader handles imports.
 import { createRecipeCycle, createButtonPanel } from "./page_util";
 
+import whiteSheepPlushieItem from "../item_block_img/white_sheep_plushie_item.webp";
+import lightGraySheepPlushieItem from "../item_block_img/light_gray_sheep_plushie_item.webp";
+import graySheepPlushieItem from "../item_block_img/gray_sheep_plushie_item.webp";
+import blackSheepPlushieItem from "../item_block_img/black_sheep_plushie_item.webp";
+import brownSheepPlushieItem from "../item_block_img/brown_sheep_plushie_item.webp";
+import redSheepPlushieItem from "../item_block_img/red_sheep_plushie_item.webp";
+import orangeSheepPlushieItem from "../item_block_img/orange_sheep_plushie_item.webp";
+import yellowSheepPlushieItem from "../item_block_img/yellow_sheep_plushie_item.webp";
+import limeSheepPlushieItem from "../item_block_img/lime_sheep_plushie_item.webp";
+import greenSheepPlushieItem from "../item_block_img/green_sheep_plushie_item.webp";
+import cyanSheepPlushieItem from "../item_block_img/cyan_sheep_plushie_item.webp";
+import lightBlueSheepPlushieItem from "../item_block_img/light_blue_sheep_plushie_item.webp";
+import blueSheepPlushieItem from "../item_block_img/blue_sheep_plushie_item.webp";
+import purpleSheepPlushieItem from "../item_block_img/purple_sheep_plushie_item.webp";
+import magentaSheepPlushieItem from "../item_block_img/magenta_sheep_plushie_item.webp";
+import pinkSheepPlushieItem from "../item_block_img/pink_sheep_plushie_item.webp";
+
 import whiteSheepPlushie from "../block_img/sheep_plushie_white.webp";
 import lightGraySheepPlushie from "../block_img/sheep_plushie_light_gray.webp";
 import graySheepPlushie from "../block_img/sheep_plushie_gray.webp";
@@ -36,9 +53,10 @@ import magentaWool from "../item_block_img/magenta_wool_item.webp";
 import pinkWool from "../item_block_img/pink_wool_item.webp";
 
 const craftingLists = {
-    "sheep_plushie": [whiteSheepPlushie, lightGraySheepPlushie, graySheepPlushie, blackSheepPlushie, brownSheepPlushie,
-        redSheepPlushie, orangeSheepPlushie, yellowSheepPlushie, limeSheepPlushie, greenSheepPlushie, cyanSheepPlushie,
-        lightBlueSheepPlushie, blueSheepPlushie, purpleSheepPlushie, magentaSheepPlushie, pinkSheepPlushie
+    "sheep_plushie": [whiteSheepPlushieItem, lightGraySheepPlushieItem, graySheepPlushieItem, blackSheepPlushieItem,
+        brownSheepPlushieItem, redSheepPlushieItem, orangeSheepPlushieItem, yellowSheepPlushieItem,
+        limeSheepPlushieItem, greenSheepPlushieItem, cyanSheepPlushieItem, lightBlueSheepPlushieItem,
+        blueSheepPlushieItem, purpleSheepPlushieItem, magentaSheepPlushieItem, pinkSheepPlushieItem
     ],
     "wool": [whiteWool, lightGrayWool, grayWool, blackWool, brownWool, redWool, orangeWool, yellowWool, limeWool,
         greenWool, cyanWool, lightBlueWool, blueWool, purpleWool, magentaWool, pinkWool
