@@ -28,6 +28,7 @@ import bauxiteBricks from '../block_img/bauxite_bricks.webp';
 import whiteLantern from '../block_img/white_lantern_anim.webp';
 import bloodKelp from '../item_img/blood_kelp.png';
 import driedBloodKelp from '../item_img/dried_blood_kelp.png';
+import cattailItem from '../item_img/cattail_item.png';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
@@ -305,6 +306,14 @@ const documents = [
             'unique plushies. View full block properties and common mechanics.',
         link: './passive_plushies.html',
         img: fourPlushies,
+    },
+    {
+        id: 31,
+        title: 'cattail',
+        keywords: '',
+        description: 'Discover cattails and their properties. Learn how to pot them as well!',
+        link: './cattail.html',
+        img: cattailItem,
     }
 ];
 
