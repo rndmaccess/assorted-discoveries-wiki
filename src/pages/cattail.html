@@ -32,7 +32,9 @@
                     Cattails generate naturally in swamps and on the shores of warm rivers,
                     appearing on blocks bordering water or in shallow water.
                 </p>
-
+                <p>
+                    For a list of tags used in cattail generation, see the <a href="#tags">tags section</a>.
+                </p>
                 <h2>Usage</h2>
                 <h3>Potting</h3>
                 <p>
@@ -47,6 +49,16 @@
                     Using bone meal on either the top or bottom half causes it to drops an additional cattail item.
                 </p>
                 <h2>Technical</h2>
+                <details class="collapsed-container">
+                    <summary class="collapsed">Tags</summary>
+                    <p id="tags">
+                        Cattails generate in biomes included in the following tags:
+                    </p>
+                    <ul>
+                        <li>c:is_river - Only if the biome's temperature is greater than or equal to 0.15 (warm enough to rain).</li>
+                        <li>c:is_swamp - Generates in any included swamp biome.</li>
+                    </ul>
+                </details>
                 <details class="collapsed-container">
                     <summary class="collapsed">Configuration</summary>
 
