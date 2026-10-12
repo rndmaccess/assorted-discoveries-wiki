@@ -148,3 +148,41 @@
     transform: translate(-50%, -50%);
     image-rendering: pixelated;
 }
+
+/* Desktops */
+@media (min-width: 1280px) {
+    /* Recipe Styles */
+    .recipe-item {
+        width: 32px;
+    }
+
+    .recipe-area {
+        width: 234px;
+    }
+
+    /* Crafting Styles */
+    .crafting-slot {
+        width: 32px;
+    }
+
+    .crafting-ingredients {
+        gap: 3px;
+    }
+
+    .crafting-ing-container {
+        padding-top: 8px;
+        padding-left: 6px;
+    }
+
+    .crafting-result {
+        width: 32px;
+    }
+
+    /* Furnace Styles */
+    .furnace-slot-container {
+        gap: 36px;
+
+        left: 53px;
+        top: 7px;
+    }
+}
