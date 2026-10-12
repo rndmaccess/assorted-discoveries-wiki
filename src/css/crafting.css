@@ -149,6 +149,38 @@
     image-rendering: pixelated;
 }
 
+/* Stonecutter */
+.stonecutter-button {
+    position: absolute;
+    left: 184px;
+    top: 90px;
+    z-index: 2;
+
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+}
+
+.stonecutter-slot-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 172px;
+
+    z-index: 2;
+    left: 66px;
+    top: 106px;
+}
+
+.stonecutter-count {
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+    left: 356px;
+    top: 152px;
+}
+
 /* Desktops */
 @media (min-width: 1280px) {
     /* Recipe Styles */
@@ -184,5 +216,27 @@
 
         left: 53px;
         top: 7px;
+    }
+
+    /* Stonecutter */
+    .stonecutter-button {
+        left: 93px;
+        top: 46px;
+    }
+
+    .stonecutter-slot-container {
+        gap: 86px;
+
+        left: 33px;
+        top: 53px;
+    }
+
+    .stonecutter-count {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        z-index: 3;
+        left: 178px;
+        top: 77px;
     }
 }
