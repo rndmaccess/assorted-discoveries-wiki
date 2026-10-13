@@ -27,15 +27,19 @@ function cycle_recipe(items, cycleItems, state) {
  * @param items {map[element[]]} List of item names to cycle through.
  */
 export function createRecipeCycle(items) {
-    const craftingId = document.getElementById('crafting-anim');
+    const craftingAreas = document.getElementsByClassName('crafting-anim');
 
-    if (!craftingId) {
-        console.error("Could not find the crafting-anim id on any element!");
+    if (!craftingAreas) {
+        console.error("Could not find the crafting-anim class on any element!");
         return;
     }
 
-    let state = { step: 0 };
-    const cycleItems = Array.from(craftingId.getElementsByClassName('cycle-item'));
+    const activeInstances = Array.from(craftingAreas).map((area) => {
+        return {
+            state: { step: 0 },
+            cycleItems: Array.from(area.getElementsByClassName('cycle-item'))
+        };
+    });
     const timeout = 2000;
 
     setInterval(() => {
@@ -45,11 +49,13 @@ export function createRecipeCycle(items) {
             return; // Don't cycle recipe animations if the user prefers reduced motion
         }
 
-        try {
-            cycle_recipe(items, cycleItems, state);
-        } catch (error) {
-            console.log("An error occurred when cycling the recipe: ", error);
-        }
+        activeInstances.forEach(({ cycleItems, state}) => {
+            try {
+                cycle_recipe(items, cycleItems, state);
+            } catch (error) {
+                console.log("An error occurred when cycling the recipe: ", error);
+            }
+        })
     }, timeout);
 }
 
