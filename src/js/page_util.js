@@ -18,11 +18,9 @@ function cycle_recipe(items, cycleItems, state) {
 /**
  * Cycles item types within a crafting GUI.
  *
- * HTML Classes:
- * .cycle-item: Required on any element that should change per cycle.
- * .crafting-area: Sets dimensions and text-wrap.
- * .front / .back / .slot: Layout and positioning for grid items.
- * .crafting-item / .result-item: Sizing for specific icons.
+ * HTML Requirement Classes:
+ * - .crafting-anim: Required on the parent element to define the animation bounds.
+ * - .cycle-item: Required on any element that should change per cycle.
  *
  * @param items {map[element[]]} List of item names to cycle through.
  */
