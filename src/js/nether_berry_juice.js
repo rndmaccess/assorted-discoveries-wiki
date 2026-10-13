@@ -8,13 +8,13 @@ const optionList = {
     "cindersnap": [
         {
             "src": cindersnapBerryJuice,
-            "alt": "Cindersnap Berry Juice"
+            "alt": "Cindersnap berry juice, an orange juice tied with a red thread."
         }
     ],
     "frostbite": [
         {
             "src": frostbiteBerryJuice,
-            "alt": "Frostbite Berry Juice"
+            "alt": "Frostbite berry juice, a purple juice tied with a blue thread."
         }
     ]
 }

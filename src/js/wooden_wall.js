@@ -89,7 +89,7 @@ const optionList = {
     "oak": [
         {
             "src": oakWall,
-            "alt": "Oak Wall"
+            "alt": "Oak wall"
         },
         {
             "src": strippedOakWall,
@@ -99,7 +99,7 @@ const optionList = {
     "spruce": [
         {
             "src": spruceWall,
-            "alt": "Spruce Wall"
+            "alt": "Spruce wall"
         },
         {
             "src": strippedSpruceWall,
@@ -109,7 +109,7 @@ const optionList = {
     "birch": [
         {
             "src": birchWall,
-            "alt": "Birch Wall"
+            "alt": "Birch wall"
         },
         {
             "src": strippedBirchWall,
@@ -119,7 +119,7 @@ const optionList = {
     "jungle": [
         {
             "src": jungleWall,
-            "alt": "Jungle Wall"
+            "alt": "Jungle wall"
         },
         {
             "src": strippedJungleWall,
@@ -129,7 +129,7 @@ const optionList = {
     "acacia": [
         {
             "src": acaciaWall,
-            "alt": "Acacia Wall"
+            "alt": "Acacia wall"
         },
         {
             "src": strippedAcaciaWall,
@@ -139,7 +139,7 @@ const optionList = {
     "dark_oak": [
         {
             "src": darkOakWall,
-            "alt": "Dark Oak Wall"
+            "alt": "Dark oak wall"
         },
         {
             "src": strippedDarkOakWall,
@@ -149,7 +149,7 @@ const optionList = {
     "mangrove": [
         {
             "src": mangroveWall,
-            "alt": "Mangrove Wall"
+            "alt": "Mangrove wall"
         },
         {
             "src": strippedMangroveWall,
@@ -159,7 +159,7 @@ const optionList = {
     "cherry": [
         {
             "src": cherryWall,
-            "alt": "Cherry Wall"
+            "alt": "Cherry wall"
         },
         {
             "src": strippedCherryWall,
@@ -169,7 +169,7 @@ const optionList = {
     "pale_oak": [
         {
             "src": paleOakWall,
-            "alt": "Pale Oak Wall"
+            "alt": "Pale oak wall"
         },
         {
             "src": strippedPaleOakWall,
@@ -179,7 +179,7 @@ const optionList = {
     "bamboo": [
         {
             "src": bambooWall,
-            "alt": "Bamboo Wall"
+            "alt": "Bamboo wall"
         },
         {
             "src": strippedBambooWall,
@@ -189,7 +189,7 @@ const optionList = {
     "poplar": [
         {
             "src": poplarWall,
-            "alt": "Poplar Wall"
+            "alt": "Poplar wall"
         },
         {
             "src": strippedPoplarWall,
@@ -199,7 +199,7 @@ const optionList = {
     "crimson": [
         {
             "src": crimsonWall,
-            "alt": "Crimson Wall"
+            "alt": "Crimson wall"
         },
         {
             "src": strippedCrimsonWall,
@@ -209,7 +209,7 @@ const optionList = {
     "warped": [
         {
             "src": warpedWall,
-            "alt": "Warped Wall"
+            "alt": "Warped wall"
         },
         {
             "src": strippedWarpedWall,

@@ -38,73 +38,73 @@ const optionList = {
     "oak": [
         {
             "src": oakRopeLadder,
-            "alt": "Oak Rope Ladder"
+            "alt": "Oak rope ladder"
         }
     ],
     "spruce": [
         {
             "src": spruceRopeLadder,
-            "alt": "Spruce Rope Ladder"
+            "alt": "Spruce rope ladder"
         }
     ],
     "birch": [
         {
             "src": birchRopeLadder,
-            "alt": "Birch Rope Ladder"
+            "alt": "Birch rope ladder"
         }
     ],
     "jungle": [
         {
             "src": jungleRopeLadder,
-            "alt": "Jungle Rope Ladder"
+            "alt": "Jungle rope ladder"
         }
     ],
     "acacia": [
         {
             "src": acaciaRopeLadder,
-            "alt": "Acacia Rope Ladder"
+            "alt": "Acacia rope ladder"
         }
     ],
     "dark_oak": [
         {
             "src": darkOakRopeLadder,
-            "alt": "Dark Oak Rope Ladder"
+            "alt": "Dark oak rope ladder"
         }
     ],
     "mangrove": [
         {
             "src": mangroveRopeLadder,
-            "alt": "Mangrove Rope Ladder"
+            "alt": "Mangrove rope ladder"
         }
     ],
     "cherry": [
         {
             "src": cherryRopeLadder,
-            "alt": "Cherry Rope Ladder"
+            "alt": "Cherry rope ladder"
         }
     ],
     "pale_oak": [
         {
             "src": paleOakRopeLadder,
-            "alt": "Pale Oak Rope Ladder"
+            "alt": "Pale oak rope ladder"
         }
     ],
     "bamboo": [
         {
             "src": bambooRopeLadder,
-            "alt": "Bamboo Rope Ladder"
+            "alt": "Bamboo rope ladder"
         }
     ],
     "warped": [
         {
             "src": warpedRopeLadder,
-            "alt": "Warped Rope Ladder"
+            "alt": "Warped rope ladder"
         }
     ],
     "crimson": [
         {
             "src": crimsonRopeLadder,
-            "alt": "Crimson Rope Ladder"
+            "alt": "Crimson rope ladder"
         }
     ]
 }

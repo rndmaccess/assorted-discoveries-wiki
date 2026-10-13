@@ -8,13 +8,13 @@ const optionList = {
     "red": [
         {
             "src": redMooshroomPlushie,
-            "alt": "A red mooshroom plushie sitting with its legs sprawled out!"
+            "alt": "A red mooshroom plushie sitting."
         }
     ],
     "brown": [
         {
             "src": brownMooshroomPlushie,
-            "alt": "A brown mooshroom plushie sitting with its legs sprawled out!"
+            "alt": "A brown mooshroom plushie sitting."
         }
     ]
 }

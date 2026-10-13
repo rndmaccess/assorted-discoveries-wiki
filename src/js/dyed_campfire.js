@@ -85,7 +85,7 @@ const optionList = {
         },
         {
             "src": whiteCampfireAnim,
-            "alt": "White Campfire",
+            "alt": "White campfire",
         }
     ],
     "light_gray": [
@@ -94,7 +94,7 @@ const optionList = {
         },
         {
             "src": lightGrayCampfireAnim,
-            "alt": "Light Gray Campfire",
+            "alt": "Light gray campfire",
         }
     ],
     "gray": [
@@ -103,7 +103,7 @@ const optionList = {
         },
         {
             "src": grayCampfireAnim,
-            "alt": "Gray Campfire",
+            "alt": "Gray campfire",
         }
     ],
     "black": [
@@ -112,7 +112,7 @@ const optionList = {
         },
         {
             "src": blackCampfireAnim,
-            "alt": "Black Campfire",
+            "alt": "Black campfire",
         }
     ],
     "brown": [
@@ -121,7 +121,7 @@ const optionList = {
         },
         {
             "src": brownCampfireAnim,
-            "alt": "Brown Campfire",
+            "alt": "Brown campfire",
         }
     ],
     "red": [
@@ -130,7 +130,7 @@ const optionList = {
         },
         {
             "src": redCampfireAnim,
-            "alt": "Red Campfire",
+            "alt": "Red campfire",
         }
     ],
     "orange": [
@@ -139,7 +139,7 @@ const optionList = {
         },
         {
             "src": orangeCampfireAnim,
-            "alt": "Orange Campfire",
+            "alt": "Orange campfire",
         }
     ],
     "yellow": [
@@ -148,7 +148,7 @@ const optionList = {
         },
         {
             "src": yellowCampfireAnim,
-            "alt": "Yellow Campfire",
+            "alt": "Yellow campfire",
         }
     ],
     "lime": [
@@ -157,7 +157,7 @@ const optionList = {
         },
         {
             "src": limeCampfireAnim,
-            "alt": "Lime Campfire",
+            "alt": "Lime campfire",
         }
     ],
     "green": [
@@ -166,7 +166,7 @@ const optionList = {
         },
         {
             "src": greenCampfireAnim,
-            "alt": "Green Campfire",
+            "alt": "Green campfire",
         }
     ],
     "cyan": [
@@ -175,7 +175,7 @@ const optionList = {
         },
         {
             "src": cyanCampfireAnim,
-            "alt": "Cyan Campfire",
+            "alt": "Cyan campfire",
         }
     ],
     "light_blue": [
@@ -184,7 +184,7 @@ const optionList = {
         },
         {
             "src": lightBlueCampfireAnim,
-            "alt": "Light Blue Campfire",
+            "alt": "Light blue campfire",
         }
     ],
     "blue": [
@@ -193,7 +193,7 @@ const optionList = {
         },
         {
             "src": blueCampfireAnim,
-            "alt": "Blue Campfire",
+            "alt": "Blue campfire",
         }
     ],
     "purple": [
@@ -202,7 +202,7 @@ const optionList = {
         },
         {
             "src": purpleCampfireAnim,
-            "alt": "Purple Campfire",
+            "alt": "Purple campfire",
         }
     ],
     "magenta": [
@@ -211,7 +211,7 @@ const optionList = {
         },
         {
             "src": magentaCampfireAnim,
-            "alt": "Magenta Campfire",
+            "alt": "Magenta campfire",
         }
     ],
     "pink": [
@@ -220,7 +220,7 @@ const optionList = {
         },
         {
             "src": pinkCampfireAnim,
-            "alt": "Pink Campfire",
+            "alt": "Pink campfire",
         }
     ],
     "unlit": [
@@ -229,7 +229,7 @@ const optionList = {
         },
         {
             "src": unlitCampfire,
-            "alt": "Unlit Dyed Campfire",
+            "alt": "Unlit dyed campfire",
         }
     ],
 }

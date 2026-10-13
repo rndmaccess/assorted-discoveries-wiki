@@ -8,13 +8,13 @@ const optionList = {
     "warped": [
         {
             "src": warpedForageMix,
-            "alt": "Warped Forage Mix"
+            "alt": "Warped Forage Mix. A nether food with orange berries and red foliage."
         }
     ],
     "crimson": [
         {
             "src": crimsonForageMix,
-            "alt": "Crimson Forage Mix"
+            "alt": "Crimson Forage Mix. A nether food with purple berries and cyan foliage."
         }
     ]
 }

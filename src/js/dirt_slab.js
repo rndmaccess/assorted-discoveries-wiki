@@ -21,19 +21,19 @@ const optionList = {
     "dirt": [
         {
             "src": dirtSlab,
-            "alt": "Dirt Slab"
+            "alt": "Dirt slab"
         }
     ],
     "coarse": [
         {
             "src": coarseDirtSlab,
-            "alt": "Coarse Dirt Slab"
+            "alt": "Coarse dirt slab"
         }
     ],
     "rooted": [
         {
             "src": rootedDirtSlab,
-            "alt": "Rooted Dirt Slab"
+            "alt": "Rooted dirt slab"
         }
     ]
 }

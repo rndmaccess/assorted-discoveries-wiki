@@ -47,79 +47,79 @@ const optionList = {
     "oak": [
         {
             "src": oakPlanterBox,
-            "alt": "Oak Planter Box"
+            "alt": "Oak planter box filled with farmland."
         }
     ],
     "spruce": [
         {
             "src": sprucePlanterBox,
-            "alt": "Spruce Planter Box"
+            "alt": "Spruce planter box filled with farmland."
         }
     ],
     "birch": [
         {
             "src": birchPlanterBox,
-            "alt": "Birch Planter Box"
+            "alt": "Birch planter box filled with farmland."
         }
     ],
     "jungle": [
         {
             "src": junglePlanterBox,
-            "alt": "Jungle Planter Box"
+            "alt": "Jungle planter box filled with farmland."
         }
     ],
     "acacia": [
         {
             "src": acaciaPlanterBox,
-            "alt": "Acacia Planter Box"
+            "alt": "Acacia planter box filled with farmland."
         }
     ],
     "dark_oak": [
         {
             "src": darkOakPlanterBox,
-            "alt": "Dark Oak Planter Box"
+            "alt": "Dark oak planter box filled with farmland."
         }
     ],
     "mangrove": [
         {
             "src": mangrovePlanterBox,
-            "alt": "Mangrove Planter Box"
+            "alt": "Mangrove planter box filled with farmland."
         }
     ],
     "cherry": [
         {
             "src": cherryPlanterBox,
-            "alt": "Cherry Planter Box"
+            "alt": "Cherry planter box filled with farmland."
         }
     ],
     "pale_oak": [
         {
             "src": paleOakPlanterBox,
-            "alt": "Pale Oak Planter Box"
+            "alt": "Pale oak planter box filled with farmland."
         }
     ],
     "bamboo": [
         {
             "src": bambooPlanterBox,
-            "alt": "Bamboo Planter Box"
+            "alt": "Bamboo planter box filled with farmland."
         }
     ],
     "poplar": [
         {
             "src": poplarPlanterBox,
-            "alt": "Poplar Planter Box"
+            "alt": "Poplar planter box filled with farmland."
         }
     ],
     "warped": [
         {
             "src": warpedPlanterBox,
-            "alt": "Warned Planter Box"
+            "alt": "Warped planter box filled with soul soil."
         }
     ],
     "crimson": [
         {
             "src": crimsonPlanterBox,
-            "alt": "Crimson Planter Box"
+            "alt": "Crimson planter box filled with soul soil."
         }
     ]
 }

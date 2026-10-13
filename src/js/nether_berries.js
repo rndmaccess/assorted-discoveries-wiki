@@ -14,29 +14,29 @@ const optionList = {
     "cindersnap": [
         {
             "src": cindersnapBerries,
-            "alt": "Orange berries with red stems."
+            "alt": "Cindersnap Berries, orange berries with red stems."
         },
         {
             "src": cindersnapBerryBush,
-            "alt": "A red bush with orange berries."
+            "alt": "Cindersnap Berry Bush, a red bush with orange berries."
         },
         {
             "src": cindersnapBerryCrate,
-            "alt": "A purple crate filled with orange berries and red leaves."
+            "alt": "Cindersnap Berry Crate, a purple crate filled with orange berries and red leaves."
         }
     ],
     "frostbite": [
         {
             "src": frostbiteBerries,
-            "alt": "Purple berries with cyan stems."
+            "alt": "Frostbite Berries. Purple berries with cyan stems."
         },
         {
             "src": frostbiteBerryBush,
-            "alt": "A cyan bush with purple berries."
+            "alt": "Frostbite Berry Bush. A cyan bush with purple berries."
         },
         {
             "src": frostbiteBerryCrate,
-            "alt": "A purple crate filled with purple berries and cyan leaves."
+            "alt": "Frostbite Berry Crate. A purple crate filled with purple berries and cyan leaves."
         }
     ]
 }
