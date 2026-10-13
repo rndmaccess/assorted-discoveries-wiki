@@ -25,7 +25,7 @@ function cycle_recipe(items, cycleItems, state) {
  * @param items {map[element[]]} List of item names to cycle through.
  */
 export function createRecipeCycle(items) {
-    const craftingAreas = document.getElementsByClassName('crafting-anim');
+    const craftingAreas = document.querySelectorAll('.crafting-anim');
 
     if (!craftingAreas) {
         console.error("Could not find the crafting-anim class on any element!");
@@ -35,7 +35,7 @@ export function createRecipeCycle(items) {
     const activeInstances = Array.from(craftingAreas).map((area) => {
         return {
             state: { step: 0 },
-            cycleItems: Array.from(area.getElementsByClassName('cycle-item'))
+            cycleItems: area.querySelectorAll('.cycle-item')
         };
     });
     const timeout = 2000;
@@ -91,7 +91,7 @@ export function createButtonPanel(event, optionList) {
         return;
     }
 
-    const swappableImages = imagePanel.getElementsByClassName('swappable-img');
+    const swappableImages = imagePanel.querySelectorAll('.swappable-img');
 
     for (let i = 0; i < swappableImages.length; i++) {
         const headerImage = swappableImages[i];
