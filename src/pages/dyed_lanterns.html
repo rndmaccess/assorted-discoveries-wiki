@@ -76,34 +76,37 @@
             </div>
 
             <div class="sidebar">
-                <h1 class="main-title">Dyed Lanterns</h1>
-                <div id="image-changer-panel">
-                    <div class="button-container">
-                        <button class="menu-btn selected" data-type="white">White</button>
-                        <button class="menu-btn" data-type="light_gray">Light Gray</button>
-                        <button class="menu-btn" data-type="gray">Gray</button>
-                        <button class="menu-btn" data-type="black">Black</button>
-                        <button class="menu-btn" data-type="brown">Brown</button>
-                        <button class="menu-btn" data-type="red">Red</button>
-                        <button class="menu-btn" data-type="orange">Orange</button>
-                        <button class="menu-btn" data-type="yellow">Yellow</button>
-                        <button class="menu-btn" data-type="lime">Lime</button>
-                        <button class="menu-btn" data-type="green">Green</button>
-                        <button class="menu-btn" data-type="cyan">Cyan</button>
-                        <button class="menu-btn" data-type="light_blue">Light Blue</button>
-                        <button class="menu-btn" data-type="blue">Blue</button>
-                        <button class="menu-btn" data-type="purple">Purple</button>
-                        <button class="menu-btn" data-type="gray">Gray</button>
-                        <button class="menu-btn" data-type="magenta">Magenta</button>
-                        <button class="menu-btn" data-type="pink">Pink</button>
+                <div class="gallery-container">
+                    <h1 class="main-title">Dyed Lanterns</h1>
+                    <div id="image-changer-panel">
+                        <div class="button-container">
+                            <button class="menu-btn selected" data-type="white">White</button>
+                            <button class="menu-btn" data-type="light_gray">Light Gray</button>
+                            <button class="menu-btn" data-type="gray">Gray</button>
+                            <button class="menu-btn" data-type="black">Black</button>
+                            <button class="menu-btn" data-type="brown">Brown</button>
+                            <button class="menu-btn" data-type="red">Red</button>
+                            <button class="menu-btn" data-type="orange">Orange</button>
+                            <button class="menu-btn" data-type="yellow">Yellow</button>
+                            <button class="menu-btn" data-type="lime">Lime</button>
+                            <button class="menu-btn" data-type="green">Green</button>
+                            <button class="menu-btn" data-type="cyan">Cyan</button>
+                            <button class="menu-btn" data-type="light_blue">Light Blue</button>
+                            <button class="menu-btn" data-type="blue">Blue</button>
+                            <button class="menu-btn" data-type="purple">Purple</button>
+                            <button class="menu-btn" data-type="gray">Gray</button>
+                            <button class="menu-btn" data-type="magenta">Magenta</button>
+                            <button class="menu-btn" data-type="pink">Pink</button>
+                        </div>
+                        <figure class="gallery-container">
+                            <picture>
+                                <!-- If the user wants reduced motion, show the static fallback -->
+                                <source class="swappable-img" srcset="../block_img/white_lantern_static.webp" media="(prefers-reduced-motion: reduce)">
+                                <!-- Otherwise, serve the beautiful animated version -->
+                                <img class="sidebar-img swappable-img" src="../block_img/white_lantern_anim.webp" alt="White lantern">
+                            </picture>
+                        </figure>
                     </div>
-
-                    <picture>
-                        <!-- If the user wants reduced motion, show the static fallback -->
-                        <source class="swappable-img" srcset="../block_img/white_lantern_static.webp" media="(prefers-reduced-motion: reduce)">
-                        <!-- Otherwise, serve the beautiful animated version -->
-                        <img class="main-img swappable-img" src="../block_img/white_lantern_anim.webp" alt="White lantern">
-                    </picture>
                 </div>
 
                 <table>
