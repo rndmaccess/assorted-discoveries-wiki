@@ -105,7 +105,7 @@ a:hover {
 }
 
 .search-content-container {
-    max-width: 60%;
+    max-width: 90%;
     margin: 2.5rem auto;
     padding: 2.5rem;
 
@@ -249,13 +249,6 @@ a:hover {
 .note-text {
     font-weight: bold;
     color: #ff79c6;
-}
-
-.hero {
-    border-radius: 1rem;
-    border: 2px solid #202020;
-    background-color: #303030;
-    margin: 1rem;
 }
 
 .video-container {
@@ -448,9 +441,7 @@ table {
     }
 
     .search-content-container {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        max-width: 60%;
     }
 
     .container {
@@ -494,7 +485,6 @@ table {
         max-height: calc(100vh - 4rem);
         top: 2rem;
         align-self: flex-start;
-        overflow-y: auto;
 
         /* Ensures that the navbar's width stays readable on big screens! */
         max-width: 350px;
