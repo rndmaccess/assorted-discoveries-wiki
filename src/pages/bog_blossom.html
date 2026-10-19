@@ -9,64 +9,74 @@
     <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
 </head>
 <body>
-    <main class="main-container container">
-        <div class="top-content-wrapper">
-            <div class="content-left">
-                <h2>About</h2>
-                <p>
-                    The <b>bog blossom</b> is a decorative block that emits yellow particles!
-                </p>
-                <h2>Natural generation</h2>
-                <p>
-                    Bog blossoms can be found in both vanilla swamps and modded swamps on land.
-                    Without other mods installed this is limited to
-                    <a href="https://minecraft.wiki/w/Swamp">swamps<span aria-hidden="true">↗</span></a>
-                    and <a href="https://minecraft.wiki/w/Mangrove_Swamp">mangrove swamps<span aria-hidden="true">↗</span></a>.
-                </p>
-                <h2>Obtaining</h2>
-                <p>
-                    Bog blossoms can be obtained from <b>swamps</b> or by using
-                    <a href="https://minecraft.wiki/w/Bonemeal">bone meal<span aria-hidden="true">↗</span></a> on a bog blossom.
-                    When bone meal is used on a bog blossom, another bog blossom generates on a valid surface up
-                    to 3 blocks away in any direction.
-                </p>
-                <h2>Breaking</h2>
-                <p>
-                    Bog blossoms can be broken with any item or by hand.
-                </p>
-                <h2>Placing</h2>
-                <p>
-                    Bog blossoms can be placed on any supporting solid block.
-                </p>
-                <h2>Technical</h2>
-                <details class="collapsed-container">
-                    <summary class="collapsed">Show Configuration</summary>
-
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="top-content-wrapper">
+                <div class="content-left">
+                    <h2>About</h2>
                     <p>
-                        Toggles the world generation and availability of bog blossoms.
+                        The <b>bog blossom</b> is a decorative block that emits yellow particles!
                     </p>
-                    <ul>
-                        <li>In-Game Screen Name: Enable Bog Blossoms</li>
-                        <li>
-                            Config File Key: <code>enable_bog_blossoms</code>
-                            <ul>
-                                <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
-                                <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </details>
-            </div>
+                    <h2>Natural generation</h2>
+                    <p>
+                        Bog blossoms can be found in both vanilla swamps and modded swamps on land.
+                        Without other mods installed this is limited to
+                        <a href="https://minecraft.wiki/w/Swamp">swamps<span aria-hidden="true">↗</span></a>
+                        and <a href="https://minecraft.wiki/w/Mangrove_Swamp">mangrove swamps<span aria-hidden="true">↗</span></a>.
+                    </p>
+                    <h2>Obtaining</h2>
+                    <p>
+                        Bog blossoms can be obtained from <b>swamps</b> or by using
+                        <a href="https://minecraft.wiki/w/Bonemeal">bone meal<span aria-hidden="true">↗</span></a> on a bog blossom.
+                        When bone meal is used on a bog blossom, another bog blossom generates on a valid surface up
+                        to 3 blocks away in any direction.
+                    </p>
+                    <h2>Breaking</h2>
+                    <p>
+                        Bog blossoms can be broken with any item or by hand.
+                    </p>
+                    <h2>Placing</h2>
+                    <p>
+                        Bog blossoms can be placed on any supporting solid block.
+                    </p>
+                    <h2>Technical</h2>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Show Configuration</summary>
 
-            <div class="sidebar">
-                <h1 class="main-title">Bog Blossom</h1>
+                        <p>
+                            Toggles the world generation and availability of bog blossoms.
+                        </p>
+                        <ul>
+                            <li>In-Game Screen Name: Enable Bog Blossoms</li>
+                            <li>
+                                Config File Key: <code>enable_bog_blossoms</code>
+                                <ul>
+                                    <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
+                                    <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
 
-                <figure class="sidebar-img-container">
-                    <img class="sidebar-img" src="../block_img/bog_blossom.webp"
-                         alt="A flower block with red petals and a yellow center that sits on the ground.">
-                </figure>
-                <table>
-                    <tbody>
+                <div class="sidebar">
+                    <h1 class="main-title">Bog Blossom</h1>
+
+                    <figure class="sidebar-img-container">
+                        <img class="sidebar-img" src="../block_img/bog_blossom.webp"
+                             alt="A flower block with red petals and a yellow center that sits on the ground.">
+                    </figure>
+                    <table>
+                        <tbody>
                         <tr>
                             <td class="img-desc">Renewable</td>
                             <td class="img-desc">Yes (Bonemeal)</td>
@@ -107,25 +117,25 @@
                             <td class="img-desc">Note block instrument</td>
                             <td class="img-desc">Default (Harp)</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
 
-        <h2 class="sub-title">
-            Video Demonstration
-        </h2>
-        <div class="video-container">
-            <div class="video">
-                <iframe width="640" height="360"
-                        src="https://youtube.com/embed/t4KsVeYIpqk"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
+            <h2 class="sub-title">
+                Video Demonstration
+            </h2>
+            <div class="video-container">
+                <div class="video">
+                    <iframe width="640" height="360"
+                            src="https://youtube.com/embed/t4KsVeYIpqk"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+    </div>
     <footer>
         <div class="credits-container container">
             <div>

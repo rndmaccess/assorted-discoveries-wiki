@@ -11,157 +11,167 @@
     <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
 </head>
 <body>
-    <main class="main-container container">
-        <div class="top-content-wrapper">
-            <div class="content-left">
-                <h2>About</h2>
-                <p>
-                    A <b>dyed campfire</b> is a variant of the campfire that comes in all 16
-                    <a href="https://minecraft.wiki/w/Dye">dye<span aria-hidden="true">↗</span></a> colors.
-                </p>
-                <h2>Placing</h2>
-                <p>
-                    Dyed campfires are lit by default when placed.
-                </p>
-                <h2>Breaking</h2>
-                <p>
-                    When broken, a dyed campfire drops
-                </p>
-                <ul>
-                    <li>Nothing if mined by hand.</li>
-                    <li>2 Charcoal if mined with any tool.</li>
-                    <li>
-                        Itself if mined with a tool enchanted with
-                        <a href="https://minecraft.wiki/w/Silk_Touch">Silk Touch<span aria-hidden="true">↗</span></a>.
-                    </li>
-                </ul>
-                <h2>Waterlogged</h2>
-                <p>
-                    Like normal <a href="https://minecraft.wiki/w/Campfire">campfires<span aria-hidden="true">↗</span></a>,
-                    a dyed campfire becomes extinguished when waterlogged,
-                    preventing food from being cooked on it. If re-lit using
-                    <a href="https://minecraft.wiki/w/Flint_and_Steel">flint and steel<span aria-hidden="true">↗</span></a> or a
-                    <a href="https://minecraft.wiki/w/Fire_Charge">fire charge<span aria-hidden="true">↗</span></a>,
-                    the campfire retains its initial dyed color.
-                </p>
-                <h2>Hoppers</h2>
-                <p>
-                    Like a normal <a href="https://minecraft.wiki/w/Campfire">campfire<span aria-hidden="true">↗</span></a>,
-                    a <a href="https://minecraft.wiki/w/Hopper">hopper<span aria-hidden="true">↗</span></a> placed directly
-                    underneath a dyed campfire pulls through any items dropped into it.
-                </p>
-                <h2>Damage</h2>
-                <p>
-                    Dyed campfires will damage players and other mobs, similar to normal campfires.
-                    They do not destroy items.
-                </p>
-                <h2>Cooking</h2>
-                <p>
-                    Cooking food on a dyed campfire works exactly like cooking on a normal
-                    <a href="https://minecraft.wiki/w/Campfire">campfire<span aria-hidden="true">↗</span></a>.
-                </p>
-                <h2>Particles</h2>
-                <p>
-                    Like normal <a href="https://minecraft.wiki/w/Campfire">campfires<span aria-hidden="true">↗</span></a>,
-                    a lit dyed campfire produces smoke particles that float upward approximately
-                    10 blocks before disappearing.
-                    Placing a <a href="https://minecraft.wiki/w/Hay_Bale">hay bale<span aria-hidden="true">↗</span></a> underneath increases
-                    the smoke height to 24 blocks, transforming it into a signal fire.
-                </p>
-                <p>
-                    Dyed Campfires also occasionally emit ember particles, similar to lava.
-                    The particle's color matches the dyed campfire's color.
-                </p>
-                <h2>Bees</h2>
-                <p>
-                    Like a normal <a href="https://minecraft.wiki/w/Campfire">campfire<span aria-hidden="true">↗</span></a>,
-                    a dyed campfire prevents <a href="https://minecraft.wiki/w/Bee">bees<span aria-hidden="true">↗</span></a> from becoming aggravated
-                    when harvesting <a href="https://minecraft.wiki/w/Beehive">beehives<span aria-hidden="true">↗</span></a>
-                    or <a href="https://minecraft.wiki/w/Bee_Nest">bee nests<span aria-hidden="true">↗</span></a>.
-                </p>
-                <h2>Crafting Recipe</h2>
-                <div class="recipe-container recipe-box">
-                    <div class="recipe-area crafting-anim" aria-hidden="true">
-                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
-                        <div class="crafting-ing-container">
-                            <div class="crafting-ingredients">
-                                <div class="crafting-slot"><img class="recipe-item cycle-item" src="../item_img/campfire.png" alt=""></div>
-                                <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="dye" src="../item_img/white_dye.png" alt=""></div>
-                                <div class="crafting-slot"></div>
-
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
-
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
-                            </div>
-                        </div>
-                        <div class="recipe-result-container">
-                            <div><img class="crafting-result cycle-item" data-type="dyed_campfire" src="../item_img/white_campfire.png" alt=""></div>
-                        </div>
-                    </div>
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="top-content-wrapper">
+                <div class="content-left">
+                    <h2>About</h2>
                     <p>
-                        Craft a dyed campfire in a crafting table by placing a campfire and any color of dye in any arrangement.
+                        A <b>dyed campfire</b> is a variant of the campfire that comes in all 16
+                        <a href="https://minecraft.wiki/w/Dye">dye<span aria-hidden="true">↗</span></a> colors.
                     </p>
-                </div>
-
-                <h2>Technical</h2>
-                <details class="collapsed-container">
-                    <summary class="collapsed">Show Configuration</summary>
-
+                    <h2>Placing</h2>
                     <p>
-                        Toggles the availability of all dyed campfires:
+                        Dyed campfires are lit by default when placed.
+                    </p>
+                    <h2>Breaking</h2>
+                    <p>
+                        When broken, a dyed campfire drops
                     </p>
                     <ul>
-                        <li>In-Game Screen Name: Enable Dyed Campfires</li>
+                        <li>Nothing if mined by hand.</li>
+                        <li>2 Charcoal if mined with any tool.</li>
                         <li>
-                            Config File Key: <code>enable_dyed_campfires</code>
-                            <ul>
-                                <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
-                                <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
-                            </ul>
+                            Itself if mined with a tool enchanted with
+                            <a href="https://minecraft.wiki/w/Silk_Touch">Silk Touch<span aria-hidden="true">↗</span></a>.
                         </li>
                     </ul>
-                </details>
-            </div>
+                    <h2>Waterlogged</h2>
+                    <p>
+                        Like normal <a href="https://minecraft.wiki/w/Campfire">campfires<span aria-hidden="true">↗</span></a>,
+                        a dyed campfire becomes extinguished when waterlogged,
+                        preventing food from being cooked on it. If re-lit using
+                        <a href="https://minecraft.wiki/w/Flint_and_Steel">flint and steel<span aria-hidden="true">↗</span></a> or a
+                        <a href="https://minecraft.wiki/w/Fire_Charge">fire charge<span aria-hidden="true">↗</span></a>,
+                        the campfire retains its initial dyed color.
+                    </p>
+                    <h2>Hoppers</h2>
+                    <p>
+                        Like a normal <a href="https://minecraft.wiki/w/Campfire">campfire<span aria-hidden="true">↗</span></a>,
+                        a <a href="https://minecraft.wiki/w/Hopper">hopper<span aria-hidden="true">↗</span></a> placed directly
+                        underneath a dyed campfire pulls through any items dropped into it.
+                    </p>
+                    <h2>Damage</h2>
+                    <p>
+                        Dyed campfires will damage players and other mobs, similar to normal campfires.
+                        They do not destroy items.
+                    </p>
+                    <h2>Cooking</h2>
+                    <p>
+                        Cooking food on a dyed campfire works exactly like cooking on a normal
+                        <a href="https://minecraft.wiki/w/Campfire">campfire<span aria-hidden="true">↗</span></a>.
+                    </p>
+                    <h2>Particles</h2>
+                    <p>
+                        Like normal <a href="https://minecraft.wiki/w/Campfire">campfires<span aria-hidden="true">↗</span></a>,
+                        a lit dyed campfire produces smoke particles that float upward approximately
+                        10 blocks before disappearing.
+                        Placing a <a href="https://minecraft.wiki/w/Hay_Bale">hay bale<span aria-hidden="true">↗</span></a> underneath increases
+                        the smoke height to 24 blocks, transforming it into a signal fire.
+                    </p>
+                    <p>
+                        Dyed Campfires also occasionally emit ember particles, similar to lava.
+                        The particle's color matches the dyed campfire's color.
+                    </p>
+                    <h2>Bees</h2>
+                    <p>
+                        Like a normal <a href="https://minecraft.wiki/w/Campfire">campfire<span aria-hidden="true">↗</span></a>,
+                        a dyed campfire prevents <a href="https://minecraft.wiki/w/Bee">bees<span aria-hidden="true">↗</span></a> from becoming aggravated
+                        when harvesting <a href="https://minecraft.wiki/w/Beehive">beehives<span aria-hidden="true">↗</span></a>
+                        or <a href="https://minecraft.wiki/w/Bee_Nest">bee nests<span aria-hidden="true">↗</span></a>.
+                    </p>
+                    <h2>Crafting Recipe</h2>
+                    <div class="recipe-container recipe-box">
+                        <div class="recipe-area crafting-anim" aria-hidden="true">
+                            <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                            <div class="crafting-ing-container">
+                                <div class="crafting-ingredients">
+                                    <div class="crafting-slot"><img class="recipe-item cycle-item" src="../item_img/campfire.png" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="dye" src="../item_img/white_dye.png" alt=""></div>
+                                    <div class="crafting-slot"></div>
 
-            <div class="sidebar">
-                <h1 class="main-title">Dyed Campfires</h1>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
 
-                <div id="image-changer-panel">
-                    <div class="button-container">
-                        <button class="menu-btn selected" data-type="white">White</button>
-                        <button class="menu-btn" data-type="light_gray">Light Gray</button>
-                        <button class="menu-btn" data-type="gray">Gray</button>
-                        <button class="menu-btn" data-type="black">Black</button>
-                        <button class="menu-btn" data-type="brown">Brown</button>
-                        <button class="menu-btn" data-type="red">Red</button>
-                        <button class="menu-btn" data-type="orange">Orange</button>
-                        <button class="menu-btn" data-type="yellow">Yellow</button>
-                        <button class="menu-btn" data-type="lime">Lime</button>
-                        <button class="menu-btn" data-type="green">Green</button>
-                        <button class="menu-btn" data-type="cyan">Cyan</button>
-                        <button class="menu-btn" data-type="light_blue">Light Blue</button>
-                        <button class="menu-btn" data-type="blue">Blue</button>
-                        <button class="menu-btn" data-type="purple">Purple</button>
-                        <button class="menu-btn" data-type="magenta">Magenta</button>
-                        <button class="menu-btn" data-type="pink">Pink</button>
-                        <button class="menu-btn" data-type="unlit">Unlit</button>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                </div>
+                            </div>
+                            <div class="recipe-result-container">
+                                <div><img class="crafting-result cycle-item" data-type="dyed_campfire" src="../item_img/white_campfire.png" alt=""></div>
+                            </div>
+                        </div>
+                        <p>
+                            Craft a dyed campfire in a crafting table by placing a campfire and any color of dye in any arrangement.
+                        </p>
                     </div>
 
-                    <figure class="gallery-container">
-                        <picture>
-                            <!-- If the user wants reduced motion, show the static fallback -->
-                            <source class="swappable-img" srcset="../block_img/white_campfire_static.webp" media="(prefers-reduced-motion: reduce)">
-                            <!-- Otherwise, serve the beautiful animated version -->
-                            <img class="sidebar-img swappable-img" src="../block_img/white_campfire_anim.webp" alt="White campfire">
-                        </picture>
-                    </figure>
+                    <h2>Technical</h2>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Show Configuration</summary>
+
+                        <p>
+                            Toggles the availability of all dyed campfires:
+                        </p>
+                        <ul>
+                            <li>In-Game Screen Name: Enable Dyed Campfires</li>
+                            <li>
+                                Config File Key: <code>enable_dyed_campfires</code>
+                                <ul>
+                                    <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
+                                    <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
-                <table>
-                    <tbody>
+
+                <div class="sidebar">
+                    <h1 class="main-title">Dyed Campfires</h1>
+
+                    <div id="image-changer-panel">
+                        <div class="button-container">
+                            <button class="menu-btn selected" data-type="white">White</button>
+                            <button class="menu-btn" data-type="light_gray">Light Gray</button>
+                            <button class="menu-btn" data-type="gray">Gray</button>
+                            <button class="menu-btn" data-type="black">Black</button>
+                            <button class="menu-btn" data-type="brown">Brown</button>
+                            <button class="menu-btn" data-type="red">Red</button>
+                            <button class="menu-btn" data-type="orange">Orange</button>
+                            <button class="menu-btn" data-type="yellow">Yellow</button>
+                            <button class="menu-btn" data-type="lime">Lime</button>
+                            <button class="menu-btn" data-type="green">Green</button>
+                            <button class="menu-btn" data-type="cyan">Cyan</button>
+                            <button class="menu-btn" data-type="light_blue">Light Blue</button>
+                            <button class="menu-btn" data-type="blue">Blue</button>
+                            <button class="menu-btn" data-type="purple">Purple</button>
+                            <button class="menu-btn" data-type="magenta">Magenta</button>
+                            <button class="menu-btn" data-type="pink">Pink</button>
+                            <button class="menu-btn" data-type="unlit">Unlit</button>
+                        </div>
+
+                        <figure class="gallery-container">
+                            <picture>
+                                <!-- If the user wants reduced motion, show the static fallback -->
+                                <source class="swappable-img" srcset="../block_img/white_campfire_static.webp" media="(prefers-reduced-motion: reduce)">
+                                <!-- Otherwise, serve the beautiful animated version -->
+                                <img class="sidebar-img swappable-img" src="../block_img/white_campfire_anim.webp" alt="White campfire">
+                            </picture>
+                        </figure>
+                    </div>
+                    <table>
+                        <tbody>
                         <tr>
                             <td class="img-desc">Renewable</td>
                             <td class="img-desc">Yes (Crafting)</td>
@@ -202,12 +212,12 @@
                             <td class="img-desc">Note block instrument</td>
                             <td class="img-desc">Bass</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+    </div>
     <footer>
         <div class="credits-container container">
             <div>

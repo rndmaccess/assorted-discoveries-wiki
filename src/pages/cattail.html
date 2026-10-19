@@ -9,140 +9,150 @@
     <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
 </head>
 <body>
-    <main class="main-container container">
-        <div class="top-content-wrapper">
-            <div class="content-left">
-                <h2>About</h2>
-                <p>
-                    <b>Cattails</b> are two-block-high plants that generate on the banks of rivers and within swamp and mangrove swamp biomes.
-                </p>
-                <h2>Placement</h2>
-                <ul>
-                    <li>
-                        Cattails can be placed:
-                        <ul>
-                            <li>On a block directly adjacent to water.</li>
-                            <li>Inside a single layer of water (as a waterlogged block).</li>
-                        </ul>
-                    </li>
-                    <li>They cannot be placed in water deeper than one block.</li>
-                </ul>
-                <h2>Generation</h2>
-                <p>
-                    Cattails generate naturally in swamps and on the shores of warm rivers,
-                    appearing on blocks bordering water or in shallow water.
-                </p>
-                <p>
-                    For a list of tags used in cattail generation, see the <a href="#tags">tags section</a>.
-                </p>
-                <h2>Usage</h2>
-                <h3>Potting</h3>
-                <p>
-                    Cattails can be placed in flower pots.
-                </p>
-                <h3>Composting</h3>
-                <p>
-                    Placing cattails into a composter has a 50% chance of raising the compost level by one.
-                </p>
-                <h3>Bone Meal</h3>
-                <p>
-                    Using bone meal on either the top or bottom half causes it to drops an additional cattail item.
-                </p>
-                <h2>Technical</h2>
-                <details class="collapsed-container">
-                    <summary class="collapsed">Show Tags</summary>
-                    <p id="tags">
-                        Cattails generate in biomes included in the following tags:
-                    </p>
-                    <ul>
-                        <li>c:is_river - Only if the biome's temperature is greater than or equal to 0.15 (warm enough to rain).</li>
-                        <li>c:is_swamp - Generates in any included swamp biome.</li>
-                    </ul>
-                </details>
-                <details class="collapsed-container">
-                    <summary class="collapsed">Show Configuration</summary>
-
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="top-content-wrapper">
+                <div class="content-left">
+                    <h2>About</h2>
                     <p>
-                        Toggles the world generation and availability of cattails.
+                        <b>Cattails</b> are two-block-high plants that generate on the banks of rivers and within swamp and mangrove swamp biomes.
                     </p>
+                    <h2>Placement</h2>
                     <ul>
-                        <li>In-Game Screen Name: Enable Cattails</li>
                         <li>
-                            Config File Key: <code>enable_cattails</code>
+                            Cattails can be placed:
                             <ul>
-                                <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
-                                <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                <li>On a block directly adjacent to water.</li>
+                                <li>Inside a single layer of water (as a waterlogged block).</li>
                             </ul>
                         </li>
+                        <li>They cannot be placed in water deeper than one block.</li>
                     </ul>
-                </details>
-            </div>
+                    <h2>Generation</h2>
+                    <p>
+                        Cattails generate naturally in swamps and on the shores of warm rivers,
+                        appearing on blocks bordering water or in shallow water.
+                    </p>
+                    <p>
+                        For a list of tags used in cattail generation, see the <a href="#tags">tags section</a>.
+                    </p>
+                    <h2>Usage</h2>
+                    <h3>Potting</h3>
+                    <p>
+                        Cattails can be placed in flower pots.
+                    </p>
+                    <h3>Composting</h3>
+                    <p>
+                        Placing cattails into a composter has a 50% chance of raising the compost level by one.
+                    </p>
+                    <h3>Bone Meal</h3>
+                    <p>
+                        Using bone meal on either the top or bottom half causes it to drops an additional cattail item.
+                    </p>
+                    <h2>Technical</h2>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Show Tags</summary>
+                        <p id="tags">
+                            Cattails generate in biomes included in the following tags:
+                        </p>
+                        <ul>
+                            <li>c:is_river - Only if the biome's temperature is greater than or equal to 0.15 (warm enough to rain).</li>
+                            <li>c:is_swamp - Generates in any included swamp biome.</li>
+                        </ul>
+                    </details>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Show Configuration</summary>
 
-            <div class="sidebar">
-                <div class="gallery-container">
-                    <h1 class="main-title">Cattail</h1>
-
-                    <figure class="sidebar-img-container">
-                        <figcaption class="sub-title">Block</figcaption>
-                        <img class="sidebar-img" src="../block_img/cattail.webp" alt="Two-block-high cattail plant with a green stem and brown seed pods.">
-                    </figure>
-                    <figure class="sidebar-img-container">
-                        <figcaption class="sub-title">Potted</figcaption>
-                        <img class="sidebar-img" src="../block_img/potted_cattail.webp" alt="A small cattail in a flower pot.">
-                    </figure>
+                        <p>
+                            Toggles the world generation and availability of cattails.
+                        </p>
+                        <ul>
+                            <li>In-Game Screen Name: Enable Cattails</li>
+                            <li>
+                                Config File Key: <code>enable_cattails</code>
+                                <ul>
+                                    <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
+                                    <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td class="img-desc">Renewable</td>
-                        <td class="img-desc">Yes (Crafting)</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Stackable</td>
-                        <td class="img-desc">Yes (64)</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Waterloggable</td>
-                        <td class="img-desc">Yes (Bottom half)</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Tool</td>
-                        <td class="img-desc">Any tool</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Blast Resistance</td>
-                        <td class="img-desc">0</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Hardness</td>
-                        <td class="img-desc">0</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Luminous</td>
-                        <td class="img-desc">Yes</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Transparent</td>
-                        <td class="img-desc">No</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Catches fire from lava</td>
-                        <td class="img-desc">No</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Note block instrument</td>
-                        <td class="img-desc">Default (Harp)</td>
-                    </tr>
-                    <tr>
-                        <td class="img-desc">Push reaction</td>
-                        <td class="img-desc">Destroy</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </main>
 
+                <div class="sidebar">
+                    <div class="gallery-container">
+                        <h1 class="main-title">Cattail</h1>
+
+                        <figure class="sidebar-img-container">
+                            <figcaption class="sub-title">Block</figcaption>
+                            <img class="sidebar-img" src="../block_img/cattail.webp" alt="Two-block-high cattail plant with a green stem and brown seed pods.">
+                        </figure>
+                        <figure class="sidebar-img-container">
+                            <figcaption class="sub-title">Potted</figcaption>
+                            <img class="sidebar-img" src="../block_img/potted_cattail.webp" alt="A small cattail in a flower pot.">
+                        </figure>
+                    </div>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="img-desc">Renewable</td>
+                            <td class="img-desc">Yes (Crafting)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Stackable</td>
+                            <td class="img-desc">Yes (64)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Waterloggable</td>
+                            <td class="img-desc">Yes (Bottom half)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Tool</td>
+                            <td class="img-desc">Any tool</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Blast Resistance</td>
+                            <td class="img-desc">0</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Hardness</td>
+                            <td class="img-desc">0</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Luminous</td>
+                            <td class="img-desc">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Transparent</td>
+                            <td class="img-desc">No</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Catches fire from lava</td>
+                            <td class="img-desc">No</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Note block instrument</td>
+                            <td class="img-desc">Default (Harp)</td>
+                        </tr>
+                        <tr>
+                            <td class="img-desc">Push reaction</td>
+                            <td class="img-desc">Destroy</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
     <footer>
         <div class="credits-container container">
             <div>

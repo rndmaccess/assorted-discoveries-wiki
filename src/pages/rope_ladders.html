@@ -11,107 +11,117 @@
     <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
 </head>
 <body>
-    <main class="main-container container">
-        <div class="top-content-wrapper">
-            <div class="content-left">
-                <h2>About</h2>
-                <p>
-                    The <b>rope ladder</b> is a decorative block that can be hung from blocks!
-                </p>
-                <h2>Placing</h2>
-                <p>
-                    Rope ladders can be placed on any solid block.
-                </p>
-                <h2>Extension</h2>
-                <p>
-                    To extend any rope ladder simply <a href="https://minecraft.wiki/w/Place">place<span aria-hidden="true">↗</span></a>
-                    the rope ladder while targeting another rope ladder of the same type.
-                </p>
-                <p>
-                    Rope ladders can only be extended up to 16 blocks away from a support block.
-                    Once this limit is reached, there must be another supporting block placed behind the last ladder.
-                </p>
-                <h2>Breaking</h2>
-                <p>
-                    Rope ladders can be broken with any item or by hand, but the <a href="https://minecraft.wiki/w/Axe">axe<span aria-hidden="true">↗</span></a> is the fastest!
-                    Any rope ladders that are unsupported will break when the supporting block is removed.
-                </p>
-                <h2>Crafting Recipe</h2>
-                <div class="recipe-container recipe-box">
-                    <div class="recipe-area crafting-anim" aria-hidden="true">
-                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
-                        <div class="crafting-ing-container">
-                            <div class="crafting-ingredients">
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="top-content-wrapper">
+                <div class="content-left">
+                    <h2>About</h2>
+                    <p>
+                        The <b>rope ladder</b> is a decorative block that can be hung from blocks!
+                    </p>
+                    <h2>Placing</h2>
+                    <p>
+                        Rope ladders can be placed on any solid block.
+                    </p>
+                    <h2>Extension</h2>
+                    <p>
+                        To extend any rope ladder simply <a href="https://minecraft.wiki/w/Place">place<span aria-hidden="true">↗</span></a>
+                        the rope ladder while targeting another rope ladder of the same type.
+                    </p>
+                    <p>
+                        Rope ladders can only be extended up to 16 blocks away from a support block.
+                        Once this limit is reached, there must be another supporting block placed behind the last ladder.
+                    </p>
+                    <h2>Breaking</h2>
+                    <p>
+                        Rope ladders can be broken with any item or by hand, but the <a href="https://minecraft.wiki/w/Axe">axe<span aria-hidden="true">↗</span></a> is the fastest!
+                        Any rope ladders that are unsupported will break when the supporting block is removed.
+                    </p>
+                    <h2>Crafting Recipe</h2>
+                    <div class="recipe-container recipe-box">
+                        <div class="recipe-area crafting-anim" aria-hidden="true">
+                            <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                            <div class="crafting-ing-container">
+                                <div class="crafting-ingredients">
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
 
-                                <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="planks" src="../item_block_img/oak_planks_item.webp" alt=""></div>
-                                <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="planks" src="../item_block_img/oak_planks_item.webp" alt=""></div>
-                                <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="planks" src="../item_block_img/oak_planks_item.webp" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="planks" src="../item_block_img/oak_planks_item.webp" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="planks" src="../item_block_img/oak_planks_item.webp" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item cycle-item" data-type="planks" src="../item_block_img/oak_planks_item.webp" alt=""></div>
 
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/string.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="recipe-result-container">
+                                <div><img class="crafting-result cycle-item" data-type="rope_ladder" src="../item_img/oak_rope_ladder.png" alt=""></div>
+                                <div class="crafting-result-count">3</div>
                             </div>
                         </div>
-                        <div class="recipe-result-container">
-                            <div><img class="crafting-result cycle-item" data-type="rope_ladder" src="../item_img/oak_rope_ladder.png" alt=""></div>
-                            <div class="crafting-result-count">3</div>
+                        <p>
+                            Craft three rope ladders in a crafting table by placing string
+                            in the corners and any planks in the middle row.
+                        </p>
+                    </div>
+
+                    <h2>Technical</h2>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Show Configuration</summary>
+
+                        <p>
+                            Toggles the availability of rope ladders.
+                        </p>
+                        <ul>
+                            <li>In-Game Screen Name: Enable Rope Ladders</li>
+                            <li>
+                                Config File Key: <code>enable_rope_ladders</code>
+                                <ul>
+                                    <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
+                                    <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="sidebar">
+                    <h1 class="main-title">Rope Ladders</h1>
+                    <div id="image-changer-panel">
+                        <div class="button-container">
+                            <button class="menu-btn selected" data-type="oak">Oak</button>
+                            <button class="menu-btn" data-type="spruce">Spruce</button>
+                            <button class="menu-btn" data-type="birch">Birch</button>
+                            <button class="menu-btn" data-type="jungle">Jungle</button>
+                            <button class="menu-btn" data-type="acacia">Acacia</button>
+                            <button class="menu-btn" data-type="dark_oak">Dark Oak</button>
+                            <button class="menu-btn" data-type="mangrove">Mangrove</button>
+                            <button class="menu-btn" data-type="cherry">Cherry</button>
+                            <button class="menu-btn" data-type="pale_oak">Pale Oak</button>
+                            <button class="menu-btn" data-type="bamboo">Bamboo</button>
+                            <button class="menu-btn" data-type="crimson">Crimson</button>
+                            <button class="menu-btn" data-type="warped">Warped</button>
                         </div>
-                    </div>
-                    <p>
-                        Craft three rope ladders in a crafting table by placing string
-                        in the corners and any planks in the middle row.
-                    </p>
-                </div>
 
-                <h2>Technical</h2>
-                <details class="collapsed-container">
-                    <summary class="collapsed">Show Configuration</summary>
-
-                    <p>
-                        Toggles the availability of rope ladders.
-                    </p>
-                    <ul>
-                        <li>In-Game Screen Name: Enable Rope Ladders</li>
-                        <li>
-                            Config File Key: <code>enable_rope_ladders</code>
-                            <ul>
-                                <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
-                                <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </details>
-            </div>
-
-            <div class="sidebar">
-                <h1 class="main-title">Rope Ladders</h1>
-                <div id="image-changer-panel">
-                    <div class="button-container">
-                        <button class="menu-btn selected" data-type="oak">Oak</button>
-                        <button class="menu-btn" data-type="spruce">Spruce</button>
-                        <button class="menu-btn" data-type="birch">Birch</button>
-                        <button class="menu-btn" data-type="jungle">Jungle</button>
-                        <button class="menu-btn" data-type="acacia">Acacia</button>
-                        <button class="menu-btn" data-type="dark_oak">Dark Oak</button>
-                        <button class="menu-btn" data-type="mangrove">Mangrove</button>
-                        <button class="menu-btn" data-type="cherry">Cherry</button>
-                        <button class="menu-btn" data-type="pale_oak">Pale Oak</button>
-                        <button class="menu-btn" data-type="bamboo">Bamboo</button>
-                        <button class="menu-btn" data-type="crimson">Crimson</button>
-                        <button class="menu-btn" data-type="warped">Warped</button>
+                        <figure class="sidebar-img-container">
+                            <img class="sidebar-img swappable-img" src="../item_img/oak_rope_ladder.png"
+                                 alt="Oak rope ladder">
+                        </figure>
                     </div>
 
-                    <figure class="sidebar-img-container">
-                        <img class="sidebar-img swappable-img" src="../item_img/oak_rope_ladder.png"
-                             alt="Oak rope ladder">
-                    </figure>
-                </div>
-
-                <table>
-                    <tbody>
+                    <table>
+                        <tbody>
                         <tr>
                             <td class="img-desc">Renewable</td>
                             <td class="img-desc">Yes (Crafting)</td>
@@ -148,12 +158,12 @@
                             <td class="img-desc">Note block instrument</td>
                             <td class="img-desc">Default (Harp)</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+    </div>
     <footer>
         <div class="credits-container container">
             <div>

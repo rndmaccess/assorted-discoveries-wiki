@@ -13,36 +13,35 @@
     <link rel="icon" href="./favicon.png" type="image/png" sizes="64x64">
 </head>
 <body id="app">
-    <div class="main-container container">
-        <div class="title-container">
-            <h1 class="main-title">Welcome to the Assorted Discoveries Wiki</h1>
-            <p class="issues-title">
-                Please report issues at: <a href="https://github.com/rndmaccess/assorted-discoveries-wiki/issues">Assorted Discoveries Issues</a>
-            </p>
+    <div class="container main-container">
+        <header class="navbar">
+            <a href="./index.html" aria-label="Home">
+                <img src="./favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./pages/decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./pages/farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="title-container">
+                <h1 class="main-title">Welcome to the Assorted Discoveries Wiki</h1>
+                <p class="issues-title">
+                    Please report issues at: <a href="https://github.com/rndmaccess/assorted-discoveries-wiki/issues">Assorted Discoveries Issues</a>
+                </p>
 
-            <div class="active-dev">
-                🚧 <strong class="active-dev-title">Wiki Under Development:</strong> This wiki is currently under active development. Many pages are missing or incomplete. Thank you for your patience as we continue to document all features!
+                <div class="active-dev">
+                    🚧 <strong class="active-dev-title">Wiki Under Development:</strong> This wiki is currently under active development. Many pages are missing or incomplete. Thank you for your patience as we continue to document all features!
+                </div>
             </div>
-        </div>
 
-        <div class="search-container">
-            <label for="search"></label>
-            <input type="text" id="search" name="search" placeholder="Type the name of a block or item and press enter...">
-        </div>
+            <div class="search-container">
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="Type the name of a block or item and press enter...">
+            </div>
 
-        <h2 class="sub-title">Search By Category</h2>
-        <div class="boxed-inline-display">
-            <a href="./pages/decorative_blocks.html" class="inline-render boxed-render">
-                <img src="./block_img/enderman_plushie.webp" alt="">
-                <p>Decorative Blocks</p>
-            </a>
-            <a href="./pages/farming_and_food.html" class="inline-render boxed-render">
-                <img class="sidebar-img swappable-img" src="./block_img/witchs_cradle.webp" alt="">
-                <p>Farming And Food</p>
-            </a>
-        </div>
-
-        <img class="hero" src="brand_img/main_hero.webp" alt="A vibrant digital scene featuring colored campfires in the top left and a row of plushies (zombie, skeleton, enderman, and blaze) in the top right. The bottom corners display multi-colored lanterns on the left and rope ladders crafted from different wood types on the right.">
+            <img class="hero" src="brand_img/main_hero.webp" alt="A vibrant digital scene featuring colored campfires in the top left and a row of plushies (zombie, skeleton, enderman, and blaze) in the top right. The bottom corners display multi-colored lanterns on the left and rope ladders crafted from different wood types on the right.">
+        </main>
     </div>
 </body>
 <footer>

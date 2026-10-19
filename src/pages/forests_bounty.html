@@ -10,77 +10,87 @@
     <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
 </head>
 <body>
-    <main class="main-container container">
-        <div class="top-content-wrapper">
-            <div class="content-left">
-                <h2>About</h2>
-                <p>
-                    <b>Forest's Bounty</b> is an early game food item that can be crafted from
-                    <a href="https://minecraft.wiki/w/Sweet_Berries">sweet berries<span aria-hidden="true">↗</span></a>
-                    and <a href="spruce_cone.html">spruce cones</a>.
-                </p>
-                <h2>Usage</h2>
-                <p>
-                    To eat forest's bounty, press and hold use while it is selected in the hotbar.
-                    Forest's bounty is an unstackable food item. When consumed, it restores 7 hunger points (3.5 drumsticks)
-                    and 8.4 saturation making it a highly effective early-game food source.
-                </p>
-                <h2>Crafting Recipes</h2>
-                <div class="recipe-container recipe-box">
-                    <div class="recipe-area" aria-hidden="true">
-                        <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
-                        <div class="crafting-ing-container">
-                            <div class="crafting-ingredients">
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/bowl.png" alt=""></div>
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/sweet_berries.png" alt=""></div>
-                                <div class="crafting-slot"><img class="recipe-item" src="../item_img/spruce_cone.png" alt=""></div>
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="top-content-wrapper">
+                <div class="content-left">
+                    <h2>About</h2>
+                    <p>
+                        <b>Forest's Bounty</b> is an early game food item that can be crafted from
+                        <a href="https://minecraft.wiki/w/Sweet_Berries">sweet berries<span aria-hidden="true">↗</span></a>
+                        and <a href="spruce_cone.html">spruce cones</a>.
+                    </p>
+                    <h2>Usage</h2>
+                    <p>
+                        To eat forest's bounty, press and hold use while it is selected in the hotbar.
+                        Forest's bounty is an unstackable food item. When consumed, it restores 7 hunger points (3.5 drumsticks)
+                        and 8.4 saturation making it a highly effective early-game food source.
+                    </p>
+                    <h2>Crafting Recipes</h2>
+                    <div class="recipe-container recipe-box">
+                        <div class="recipe-area" aria-hidden="true">
+                            <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                            <div class="crafting-ing-container">
+                                <div class="crafting-ingredients">
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/bowl.png" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/sweet_berries.png" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/spruce_cone.png" alt=""></div>
 
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
 
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
-                                <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"></div>
+                                </div>
+                            </div>
+                            <div class="recipe-result-container">
+                                <div><img class="crafting-result" src="../item_img/forests_bounty.png" alt=""></div>
                             </div>
                         </div>
-                        <div class="recipe-result-container">
-                            <div><img class="crafting-result" src="../item_img/forests_bounty.png" alt=""></div>
-                        </div>
+                        <p>
+                            Craft forest's bounty in a crafting table by placing a bowl, sweet berries, and a spruce cone in any arrangement.
+                        </p>
                     </div>
-                    <p>
-                        Craft forest's bounty in a crafting table by placing a bowl, sweet berries, and a spruce cone in any arrangement.
-                    </p>
+
+                    <h2>Technical</h2>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Show Configuration</summary>
+
+                        <p>
+                            Toggles the availability of forest's bounty, spruce cones, and spruce cone crates:
+                        </p>
+                        <ul>
+                            <li>In-Game Screen Name: Enable Forest's Bounty</li>
+                            <li>
+                                Config File Key: <code>enable_forests_bounty</code>
+                                <ul>
+                                    <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
+                                    <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
 
-                <h2>Technical</h2>
-                <details class="collapsed-container">
-                    <summary class="collapsed">Show Configuration</summary>
+                <div class="sidebar">
+                    <h1 class="main-title">Forest's Bounty</h1>
 
-                    <p>
-                        Toggles the availability of forest's bounty, spruce cones, and spruce cone crates:
-                    </p>
-                    <ul>
-                        <li>In-Game Screen Name: Enable Forest's Bounty</li>
-                        <li>
-                            Config File Key: <code>enable_forests_bounty</code>
-                            <ul>
-                                <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
-                                <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </details>
-            </div>
-
-            <div class="sidebar">
-                <h1 class="main-title">Forest's Bounty</h1>
-
-                <figure class="sidebar-img-container">
-                    <img class="sidebar-img" src="../item_img/forests_bounty.png" alt="A bowl full of sweet berries and spruce cones.">
-                </figure>
-                <table>
-                    <tbody>
+                    <figure class="sidebar-img-container">
+                        <img class="sidebar-img" src="../item_img/forests_bounty.png" alt="A bowl full of sweet berries and spruce cones.">
+                    </figure>
+                    <table>
+                        <tbody>
                         <tr>
                             <td class="img-desc">Consumption Time</td>
                             <td class="img-desc">32 game ticks (1.6 seconds)</td>
@@ -105,12 +115,12 @@
                             <td class="img-desc">Always consumable</td>
                             <td class="img-desc">No</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+    </div>
     <footer>
         <div class="credits-container container">
             <div>
