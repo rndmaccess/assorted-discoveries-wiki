@@ -101,7 +101,7 @@ a:hover {
 
 .selected {
     border-bottom-color: #6151b3;
-    font-weight: bold;
+    transition: text-shadow 0.15s ease;
 }
 
 .container {
