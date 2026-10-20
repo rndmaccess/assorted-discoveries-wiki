@@ -62,7 +62,6 @@ a:hover {
 .sub-title {
     display: flex;
     justify-content: center;
-    border-radius: 1rem;
     margin: 0.5rem auto;
     padding: 0.5rem;
 
@@ -135,7 +134,7 @@ a:hover {
 }
 
 .main-container {
-    border-radius: 0.5rem;
+    border-radius: 4px;
 }
 
 .credits-container {
@@ -149,7 +148,7 @@ a:hover {
     flex-direction: column-reverse;
     align-items: center; /* Center image on mobile */
 
-    gap: 2.5rem;
+    gap: 1rem;
     flex-shrink: 0;
 }
 
@@ -285,7 +284,7 @@ table {
 }
 
 .extra-gap {
-    padding-top:1em;
+    padding-top: 1rem;
 }
 
 .collapsed-container {
