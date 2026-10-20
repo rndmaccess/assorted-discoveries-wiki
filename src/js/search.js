@@ -30,6 +30,7 @@ import bloodKelp from '../item_img/blood_kelp.png';
 import driedBloodKelp from '../item_img/dried_blood_kelp.png';
 import cattailItem from '../item_img/cattail_item.png';
 import smokyQuartz from '../item_img/smoky_quartz.png';
+import smokyQuartzBlock from '../block_img/smoky_quartz_block.webp';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
@@ -318,12 +319,21 @@ const documents = [
     },
     {
         id: 32,
-        title: 'smoky quartz',
-        keywords: '',
+        title: 'nether smoky quartz',
+        keywords: 'ore',
         description: 'Discover nether smoky quartz, a mineral mined from an ore generating in nether biomes. ' +
             'Learn how to obtain it and its various properties!',
         link: './smoky_quartz.html',
         img: smokyQuartz,
+    },
+    {
+        id: 33,
+        title: 'smoky quartz blocks',
+        keywords: 'nether brick smooth pillar',
+        description: 'Discover smoky quartz blocks. ' +
+            'Learn how to craft smoky quartz blocks, bricks, chiseled, pillars, smooth, and their variants.',
+        link: './smoky_quartz_blocks.html',
+        img: smokyQuartzBlock,
     }
 ];
 
