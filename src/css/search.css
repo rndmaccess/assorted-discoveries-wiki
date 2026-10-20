@@ -56,6 +56,16 @@
     }
 }
 
+.search-container {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 1280px) {
+    .search-container {
+        margin-bottom: 8rem;
+    }
+}
+
 #search {
     background-color: #303030;
     color: #F5F5F5;
