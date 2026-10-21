@@ -404,10 +404,13 @@ table {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .nav-item {
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
     box-sizing: border-box;
 }
