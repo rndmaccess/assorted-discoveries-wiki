@@ -40,9 +40,24 @@
     font-size: 1.5rem;
 }
 
+#search {
+    background-color: #303030;
+    color: #F5F5F5;
+    border-color: #F5F5F5;
+    width: 50%;
+
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
 /* Hide it by default for non-JS environments */
 .search-container {
     display: none;
+}
+
+.search-container {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 /* Show it natively only if scripting (JS) is active */
@@ -52,26 +67,5 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
     }
-}
-
-.search-container {
-    margin-bottom: 3rem;
-}
-
-@media (min-width: 1280px) {
-    .search-container {
-        margin-bottom: 8rem;
-    }
-}
-
-#search {
-    background-color: #303030;
-    color: #F5F5F5;
-    border-color: #F5F5F5;
-    width: 50%;
-
-    border-radius: 1rem;
-    padding: 0.5rem;
 }
