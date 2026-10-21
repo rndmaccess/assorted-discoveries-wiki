@@ -192,8 +192,17 @@ a:hover {
     width: 100%;
 }
 
-.sidebar td {
+.sidebar table tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar table td {
+    display: block;
+    /* 150px base; grows to fill space or shrinks and wraps when needed */
+    flex: 1 1 150px;
     padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .sidebar tbody tr:nth-child(even) {
