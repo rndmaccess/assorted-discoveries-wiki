@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/crafting.css">
+    <meta charset="UTF-8">
+    <title>Blueberries - Assorted Discoveries Wiki</title>
+    <meta name="description" content="Forage the overworld for blueberries!
+    Learn where to find these bushes in forests, how to harvest them, and use them.">
+    <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
+</head>
+<body>
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="top-content-wrapper">
+                <div class="content-left">
+                    <h2>About</h2>
+                    <p>
+                        <b>Blueberries</b> are food items obtained from blueberry bushes and are used to plant new bushes.
+                    </p>
+                    <p>
+                        <b>Blueberry bushes</b> are quick-growing plants that grow blueberries.
+                        These bushes can be harvested to obtain more blueberries.
+                        Players and most mobs are slowed down while moving through these berry bushes.
+                        Unlike sweet berry bushes, blueberry bushes do not damage players or mobs.
+                    </p>
+                    <h2>Obtaining</h2>
+                    <h3>Natural Generation</h3>
+                    <p>
+                        Blueberry bushes can be found in forest biomes.
+                    </p>
+                    <h3>Breaking</h3>
+                    <p>
+                        Blueberry bushes can be mined instantly with any tool or by hand.
+                        A mature blueberry bush yields 2–3 berries.
+                        On its third growth stage, the bush yields 1–2 berries.
+                        Each level of <a href="https://minecraft.wiki/w/Fortune">Fortune<span aria-hidden="true">↗</span></a>
+                        can increase the amount of drops by <b>1</b>.
+                    </p>
+                    <h3>Harvesting</h3>
+                    <p>
+                        Blueberries can be collected from a blueberry bush by pressing the <b>use</b> control on it,
+                        yielding 1–2 blueberries in its third growth stage, and 2–3 blueberries in its final growth stage.
+                        After dropping the blueberries on the ground, the blueberry bush reverts to its second growth stage.
+                    </p>
+                    <h2>Usage</h2>
+                    <h3>Growth</h3>
+                    <p>
+                        Like sweet berry bushes, these bushes can be grown and multiplied using bone meal.
+                    </p>
+                    <h3>Placement</h3>
+                    <p>
+                        Blueberries can be planted any blocks that sweet berry bushes can be planted on.
+                        Any blocks added to the <code>minecraft:supports_vegetation</code> tag are also supported.
+                    </p>
+                    <h3>Food</h3>
+                    <p>
+                        To eat blueberries, press and hold use while it is selected in the hotbar.
+                        Eating one restores 2 hunger (1 drumstick) and 0.4 saturation.
+                    </p>
+                    <h3>Crafting</h3>
+                    <div class="recipe-container recipe-box">
+                        <div class="recipe-area" aria-hidden="true">
+                            <img class="recipe-back" src="../gui_img/crafting_table.webp" alt="">
+                            <div class="crafting-ing-container">
+                                <div class="crafting-ingredients">
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/blueberries.png" alt=""></div>
+                                    <div class="crafting-slot"></div>
+
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/blueberries.png" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/glass_bottle.png" alt=""></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/blueberries.png" alt=""></div>
+
+                                    <div class="crafting-slot"></div>
+                                    <div class="crafting-slot"><img class="recipe-item" src="../item_img/blueberries.png" alt=""></div>
+                                    <div class="crafting-slot"></div>
+                                </div>
+                            </div>
+                            <div class="recipe-result-container">
+                                <div><img class="crafting-result" src="../item_img/blueberry_juice.png" alt=""></div>
+                            </div>
+                        </div>
+                        <p>
+                            Craft <a href="./berry_juices.html">blueberry juice</a> in a crafting table by placing
+                            blueberries in a plus shape around a central glass bottle.
+                        </p>
+                    </div>
+
+                    <h2>Technical</h2>
+                    <details class="collapsed-container">
+                        <summary class="collapsed">Configuration</summary>
+                        <p>
+                            Toggles the world generation and availability
+                            of blueberries, blueberry bushes, blueberry juice, and blueberry pies.
+                        </p>
+                        <ul>
+                            <li>In-Game Screen Name: Enable Blueberries</li>
+                            <li>
+                                Config File Key: <code>enable_blueberries</code>
+                                <ul>
+                                    <li><code>true</code> / <code>Yes</code>: Enabled (Default)</li>
+                                    <li><code>false</code> / <code>No</code>: Disabled and hidden</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="sidebar">
+                    <h1 class="main-title">Blueberries</h1>
+                    <div id="image-changer-panel">
+                        <figure class="sidebar-img-container">
+                            <figcaption class="sub-title">Berry</figcaption>
+                            <img class="sidebar-img swappable-img" src="../item_img/blueberries.png"
+                                 alt="Blueberries with light green stems.">
+                        </figure>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="img-desc">Consumption Time</td>
+                                <td class="img-desc">32 game ticks (1.6 seconds)</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Renewable</td>
+                                <td class="img-desc">Yes (Berry Bushes)</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Stackable</td>
+                                <td class="img-desc">Yes (64)</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Hunger</td>
+                                <td class="img-desc">2 drumsticks</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Saturation</td>
+                                <td class="img-desc">0.8</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Always Consumable</td>
+                                <td class="img-desc">No</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <figure class="sidebar-img-container">
+                            <figcaption class="sub-title">Bush</figcaption>
+                            <img class="sidebar-img swappable-img" src="../block_img/blueberry_bush.webp"
+                                 alt="A light green bush with blueberries.">
+                        </figure>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="img-desc">Tool</td>
+                                <td class="img-desc">Any tool</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Biome</td>
+                                <td class="img-desc">Forests</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Blast Resistance</td>
+                                <td class="img-desc">0</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Hardness</td>
+                                <td class="img-desc">0</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Luminous</td>
+                                <td class="img-desc">No</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Transparent</td>
+                                <td class="img-desc">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Catches fire from lava</td>
+                                <td class="img-desc">No</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Can be grown with bone meal</td>
+                                <td class="img-desc">Yes</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <figure class="sidebar-img-container">
+                            <figcaption class="sub-title">Crate</figcaption>
+                            <img class="sidebar-img swappable-img" src="../block_img/blueberry_crate.webp"
+                                 alt="A light brown wooden crate filled with blueberries and light green leaves.">
+                        </figure>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="img-desc">Renewable</td>
+                                <td class="img-desc">Yes (Crafting)</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Stackable</td>
+                                <td class="img-desc">Yes (64)</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Blast resistance</td>
+                                <td class="img-desc">3</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Hardness</td>
+                                <td class="img-desc">2</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Luminous</td>
+                                <td class="img-desc">No</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Flammable</td>
+                                <td class="img-desc">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Catches fire from lava</td>
+                                <td class="img-desc">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Note block instrument</td>
+                                <td class="img-desc">Bass</td>
+                            </tr>
+                            <tr>
+                                <td class="img-desc">Sulfur cube archetype</td>
+                                <td class="img-desc">Fast Flat</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="credits-container container">
+            <div>
+                Disclaimer: NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
+                Minecraft and official game assets are trademarks and property of Mojang Studios / Microsoft Corporation.
+                All custom mod assets, code, and content are the intellectual property of rndm_access.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

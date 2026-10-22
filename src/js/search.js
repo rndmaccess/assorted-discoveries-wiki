@@ -31,6 +31,8 @@ import driedBloodKelp from '../item_img/dried_blood_kelp.png';
 import cattailItem from '../item_img/cattail_item.png';
 import smokyQuartz from '../item_img/smoky_quartz.png';
 import smokyQuartzBlock from '../block_img/smoky_quartz_block.webp';
+import blueberries from '../item_img/blueberries.png';
+import blueberryJuice from '../item_img/blueberry_juice.png';
 
 let miniSearch = new MiniSearch({
     fields: ['title', 'keywords'],
@@ -334,6 +336,24 @@ const documents = [
             'Learn how to craft smoky quartz blocks, bricks, chiseled, pillars, smooth, and their variants.',
         link: './smoky_quartz_blocks.html',
         img: smokyQuartzBlock,
+    },
+    {
+        id: 34,
+        title: 'blueberries',
+        keywords: '',
+        description: 'Forage the overworld for blueberries! Learn where to find ' +
+            'these bushes in forests, how to harvest them, and use them.',
+        link: './blueberries.html',
+        img: blueberries,
+    },
+    {
+        id: 35,
+        title: 'berry juices',
+        keywords: 'sweet blueberries',
+        description: 'Quench your thirst! Learn how to craft blueberry and sweet berry juices. ' +
+            'View full food properties and crafting guides.',
+        link: './berry_juices.html',
+        img: blueberryJuice,
     }
 ];
 
