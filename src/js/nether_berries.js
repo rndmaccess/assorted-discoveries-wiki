@@ -7,8 +7,11 @@ import frostbiteBerryBush from "../block_img/frostbite_berry_bush.webp";
 import cindersnapBerryCrate from "../block_img/cindersnap_berry_crate.webp";
 import frostbiteBerryCrate from "../block_img/frostbite_berry_crate.webp";
 
+import cindersnapBerryCrateItem from "../item_block_img/cindersnap_berry_crate_item.webp";
+import frostbiteBerryCrateItem from "../item_block_img/frostbite_berry_crate_item.webp";
+
 // No module declaration needed; esbuild-loader handles imports.
-import { createButtonPanel } from "./page_util";
+import {createButtonPanel, createRecipeCycle} from "./page_util";
 
 const optionList = {
     "cindersnap": [
@@ -41,7 +44,14 @@ const optionList = {
     ]
 }
 
+const craftingLists = {
+    "crate": [cindersnapBerryCrateItem, frostbiteBerryCrateItem],
+    "berries": [cindersnapBerries, frostbiteBerries],
+}
+
 const imagePanel = document.getElementById('image-changer-panel');
+
+createRecipeCycle(craftingLists);
 
 if (imagePanel) {
     imagePanel.addEventListener('click', (event) => {
