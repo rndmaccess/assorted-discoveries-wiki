@@ -10,30 +10,38 @@
     <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
 </head>
 <body id="app">
-    <main class="main-container search-content-container">
-        <div class="title-container">
-            <h1 class="main-title">Welcome to the Assorted Discoveries Wiki</h1>
-            <p class="issues-title">
-                Please report issues at: <a href="https://github.com/rndmaccess/assorted-discoveries-fabric/issues">Assorted Discoveries Issues</a>
-            </p>
-        </div>
-
-        <div class="search-container">
-            <label for="search"></label>
-            <input type="text" id="search" name="search" placeholder="Type the name of a block or item and press enter...">
-        </div>
-
-        <ul class="search-results" id="search-results"></ul>
-    </main>
-
-    <footer>
-        <div class="credits-container search-content-container">
-            <div>
-                Disclaimer: NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
-                Minecraft and official game assets are trademarks and property of Mojang Studios / Microsoft Corporation.
-                All custom mod assets, code, and content are the intellectual property of rndm_access.
+    <div class="main-container container">
+        <header class="navbar">
+            <a href="../index.html" aria-label="Home">
+                <img src="../favicon.png" alt="Home" width="64" height="64">
+            </a>
+            <nav class="navbar-container">
+                <a href="./decorative_blocks.html" class="nav-item">Decorative Blocks</a>
+                <a href="./farming_and_food.html" class="nav-item">Farming & Food</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="title-container">
+                <h1 class="main-title">Welcome to the Assorted Discoveries Wiki</h1>
+                <p class="issues-title">
+                    Please report issues at: <a href="https://github.com/rndmaccess/assorted-discoveries-fabric/issues">Assorted Discoveries Issues</a>
+                </p>
             </div>
-        </div>
+
+            <div class="search-container">
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="Type the name of a block or item and press enter...">
+            </div>
+
+            <ul class="search-results" id="search-results"></ul>
+        </main>
+    </div>
+    <footer class="credits-container container">
+        <p>
+            Disclaimer: NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
+            Minecraft and official game assets are trademarks and property of Mojang Studios / Microsoft Corporation.
+            All custom mod assets, code, and content are the intellectual property of rndm_access.
+        </p>
     </footer>
 </body>
 </html>

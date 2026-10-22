@@ -103,18 +103,6 @@ a:hover {
     text-shadow: 0.03em 0 0 currentColor, -0.03em 0 0 currentColor;
 }
 
-.search-content-container {
-    display: flex;
-    max-width: 90%;
-    margin: 1rem auto;
-    padding: 2.5rem;
-    background-color: #404040;
-    color: #F5F5F5;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-}
-
 .container {
     display: flex;
     max-width: 90%;
@@ -386,11 +374,10 @@ table {
     flex-direction: row;
     width: 100%;
     background-color: #363636;
-    padding: 1rem;
     border: 2px solid #303030;
     align-items: center;
     box-sizing: border-box;
-    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .navbar-container {
@@ -448,10 +435,6 @@ table {
 
     .menu-btn {
         font-size: 0.95rem;
-    }
-
-    .search-content-container {
-        max-width: 80%;
     }
 
     .container {
