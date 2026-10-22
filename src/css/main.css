@@ -418,13 +418,6 @@ table {
     }
 }
 
-/* Small tablets */
-@media (min-width: 768px) {
-    .sidebar {
-        width: 90%;
-    }
-}
-
 /* Desktops */
 @media (min-width: 1280px) {
     html, body {
