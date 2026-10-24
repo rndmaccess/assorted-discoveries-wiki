@@ -40,6 +40,19 @@ import poplarLog from "../item_block_img/poplar_log_item.webp";
 import crimsonStem from "../item_block_img/crimson_stem_item.webp";
 import warpedStem from "../item_block_img/warped_stem_item.webp";
 
+import oakWood from "../item_block_img/oak_wood_item.webp";
+import spruceWood from "../item_block_img/spruce_wood_item.webp";
+import birchWood from "../item_block_img/birch_wood_item.webp";
+import jungleWood from "../item_block_img/jungle_wood_item.webp";
+import acaciaWood from "../item_block_img/acacia_wood_item.webp";
+import darkOakWood from "../item_block_img/dark_oak_wood_item.webp";
+import mangroveWood from "../item_block_img/mangrove_wood_item.webp";
+import cherryWood from "../item_block_img/cherry_wood_item.webp";
+import paleOakWood from "../item_block_img/pale_oak_wood_item.webp";
+import poplarWood from "../item_block_img/poplar_wood_item.webp";
+import crimsonHyphae from "../item_block_img/crimson_hyphae_item.webp";
+import warpedHyphae from "../item_block_img/warped_hyphae_item.webp";
+
 import strippedOakLog from "../item_block_img/stripped_oak_log_item.webp";
 import strippedSpruceLog from "../item_block_img/stripped_spruce_log_item.webp";
 import strippedBirchLog from "../item_block_img/stripped_birch_log_item.webp";
@@ -53,6 +66,19 @@ import strippedBambooBlockItem from "../item_block_img/stripped_bamboo_block_ite
 import strippedPoplarLog from "../item_block_img/stripped_poplar_log_item.webp";
 import strippedCrimsonStem from "../item_block_img/stripped_crimson_stem_item.webp";
 import strippedWarpedStem from "../item_block_img/stripped_warped_stem_item.webp";
+
+import strippedOakWood from "../item_block_img/stripped_oak_wood_item.webp";
+import strippedSpruceWood from "../item_block_img/stripped_spruce_wood_item.webp";
+import strippedBirchWood from "../item_block_img/stripped_birch_wood_item.webp";
+import strippedJungleWood from "../item_block_img/stripped_jungle_wood_item.webp";
+import strippedAcaciaWood from "../item_block_img/stripped_acacia_wood_item.webp";
+import strippedDarkOakWood from "../item_block_img/stripped_dark_oak_wood_item.webp";
+import strippedMangroveWood from "../item_block_img/stripped_mangrove_wood_item.webp";
+import strippedCherryWood from "../item_block_img/stripped_cherry_wood_item.webp";
+import strippedPaleOakWood from "../item_block_img/stripped_pale_oak_wood_item.webp";
+import strippedPoplarWood from "../item_block_img/stripped_poplar_wood_item.webp";
+import strippedCrimsonHyphae from "../item_block_img/stripped_crimson_hyphae_item.webp";
+import strippedWarpedHyphae from "../item_block_img/stripped_warped_hyphae_item.webp";
 
 import oakWallItem from "../item_block_img/oak_wall_item.webp";
 import spruceWallItem from "../item_block_img/spruce_wall_item.webp";
@@ -219,12 +245,19 @@ const optionList = {
 }
 
 const craftingLists = {
-    "unstripped": [oakLog, spruceLog, birchLog, jungleLog, acaciaLog, darkOakLog, mangroveLog, cherryLog,
+    "unstripped_log": [oakLog, spruceLog, birchLog, jungleLog, acaciaLog, darkOakLog, mangroveLog, cherryLog,
         paleOakLog, bambooBlockItem, poplarLog, crimsonStem, warpedStem
     ],
-    "stripped": [strippedOakLog, strippedSpruceLog, strippedBirchLog, strippedJungleLog, strippedAcaciaLog,
+    "unstripped_wood": [oakWood, spruceWood, birchWood, jungleWood, acaciaWood, darkOakWood, mangroveWood, cherryWood,
+        paleOakWood, bambooBlockItem, poplarWood, crimsonHyphae, warpedHyphae
+    ],
+    "stripped_log": [strippedOakLog, strippedSpruceLog, strippedBirchLog, strippedJungleLog, strippedAcaciaLog,
         strippedDarkOakLog, strippedMangroveLog, strippedCherryLog, strippedPaleOakLog, strippedBambooBlockItem,
         strippedPoplarLog, strippedCrimsonStem, strippedWarpedStem
+    ],
+    "stripped_wood": [strippedOakWood, strippedSpruceWood, strippedBirchWood, strippedJungleWood, strippedAcaciaWood,
+        strippedDarkOakWood, strippedMangroveWood, strippedCherryWood, strippedPaleOakWood, strippedBambooBlockItem,
+        strippedPoplarWood, strippedCrimsonHyphae, strippedWarpedHyphae
     ],
     "unstripped_wall": [oakWallItem, spruceWallItem, birchWallItem, jungleWallItem, acaciaWallItem, darkOakWallItem,
         mangroveWallItem, cherryWallItem, paleOakWallItem, bambooWallItem, poplarWallItem,
