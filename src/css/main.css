@@ -405,6 +405,20 @@ table {
     margin-bottom: 1rem;
 }
 
+dl {
+    margin-bottom: 1.5rem;
+}
+
+dt {
+    font-weight: 600; /* Semi-bold */
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1.5rem; /* Controls the indentation size */
+    margin-bottom: 0.5rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
