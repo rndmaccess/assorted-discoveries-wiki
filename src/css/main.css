@@ -4,7 +4,6 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #F5F5F5;
     min-height: 100vh;
-    font-size: 1.125rem;
 }
 
 /* Styled links */
@@ -420,10 +419,6 @@ table {
 
 /* Desktops */
 @media (min-width: 1280px) {
-    html, body {
-        font-size: 1rem;
-    }
-
     #go-to-top-btn {
         font-size: inherit;
     }
