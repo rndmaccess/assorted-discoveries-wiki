@@ -34,6 +34,9 @@
     position: relative;
     box-sizing: border-box;
 
+    /* This fills in the background so there aren't strange lines around the border. */
+    background-color: #C6C6C6;
+
     /* Makes a rectangular grid to position the items in the crafting area! */
     aspect-ratio: 1 / 0.5;
     width: 468px;
