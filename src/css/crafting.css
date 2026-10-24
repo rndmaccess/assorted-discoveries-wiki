@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    padding: 1rem 1rem 0;
+    padding: 1rem;
     flex-shrink: 0;
 
     box-sizing: border-box;
@@ -32,6 +32,7 @@
     display: block;
     /* Elements in the document rely on the crafting area to position items on the website! */
     position: relative;
+    box-sizing: border-box;
 
     /* Makes a rectangular grid to position the items in the crafting area! */
     aspect-ratio: 1 / 0.5;
