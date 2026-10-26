@@ -26,6 +26,7 @@ function cycle_recipe(items, cycleItems, state) {
             if (item.textContent !== count) {
                 console.log("Count matches: Skipping");
             }
+            console.log("Changing count");
             item.textContent = count;
         }
     }
