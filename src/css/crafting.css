@@ -18,8 +18,10 @@
 .recipe-container p {
     letter-spacing: 0.02rem;
     line-height: 1.5;
+    text-wrap: balance;
+
     margin: 0;
-    padding: 0.5rem 1rem 1.5rem 0;
+    padding: 0 0 1.5rem 0;
 }
 
 .recipe-box {
@@ -40,6 +42,9 @@
     /* Makes a rectangular grid to position the items in the crafting area! */
     aspect-ratio: 1 / 0.5;
     width: 468px;
+
+    /* Adds a small gap under the recipe. */
+    margin-bottom: 1rem;
 }
 
 .recipe-back {
@@ -51,7 +56,9 @@
     object-fit: contain;
 
     border: 4px solid #C6C6C6;
-    outline: 4px solid #F9FAFB;
+    /* Use box-shadow here instead of outline to keep outline for accessibility. */
+    box-shadow: 0 0 0 4px #ffffff;
+
     image-rendering: pixelated;
     box-sizing: border-box;
 }
