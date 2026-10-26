@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../js/bauxite.js" defer></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/crafting.css">
     <meta charset="UTF-8">
@@ -197,88 +198,34 @@
                     </details>
 
                     <h3>Stonecutting</h3>
-                    <details open class="collapsed-container">
-                        <summary class="collapsed">Recipes</summary>
-
-                        <div class="recipe-container">
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_slab_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_slab_item.webp" alt="">
-                                </div>
-                                <div class="stonecutter-count">2</div>
+                    <div class="recipe-container recipe-box">
+                        <div class="recipe-area crafting-anim" aria-hidden="true">
+                            <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
+                            <img class="stonecutter-button recipe-item cycle-item" data-type="bauxite_result" src="../item_block_img/bauxite_slab_item.webp" alt="">
+                            <div class="stonecutter-slot-container">
+                                <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
+                                <img class="recipe-item cycle-item" data-type="bauxite_result" src="../item_block_img/bauxite_slab_item.webp" alt="">
                             </div>
-                            <p>
-                                Craft two bauxite slabs by placing a bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_stairs_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_stairs_item.webp" alt="">
-                                </div>
-                            </div>
-                            <p>
-                                Craft bauxite stairs by placing bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_wall_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_wall_item.webp" alt="">
-                                </div>
-                            </div>
-                            <p>
-                                Craft bauxite walls by placing a bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
-                                </div>
-                                <div class="stonecutter-count">2</div>
-                            </div>
-                            <p>
-                                Craft two <a href="./bauxite_bricks.html">bauxite brick slabs</a> by
-                                placing a bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_brick_stairs_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_brick_stairs_item.webp" alt="">
-                                </div>
-                            </div>
-                            <p>
-                                Craft <a href="./bauxite_bricks.html">bauxite brick stairs</a> by
-                                placing bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_brick_wall_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_brick_wall_item.webp" alt="">
-                                </div>
-                            </div>
-                            <p>
-                                Craft <a href="./bauxite_bricks.html">bauxite brick walls</a> by
-                                placing a bauxite in a stonecutter.
-                            </p>
+                            <div class="stonecutter-count cycle-item" data-type="bauxite_result">2</div>
                         </div>
-                    </details>
+                        <ul>
+                            <li><strong>Ingredient</strong>: Smoky quartz block</li>
+                            <li><strong>Results</strong>:
+                                <ul>
+                                    <li aria-label="Bauxite slab times two">
+                                        Bauxite slab (x2)
+                                    </li>
+                                    <li aria-label="Bauxite brick slab times two">
+                                        Bauxite brick slab (x2)
+                                    </li>
+                                    <li>Bauxite stairs</li>
+                                    <li>Bauxite brick stairs</li>
+                                    <li>Bauxite wall</li>
+                                    <li>Bauxite brick wall</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
                     <h2>Technical</h2>
                     <details class="collapsed-container">
