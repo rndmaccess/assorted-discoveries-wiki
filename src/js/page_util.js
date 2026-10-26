@@ -10,20 +10,19 @@ function cycle_recipe(items, cycleItems, state) {
 
         const newSrc = variants[state.step % variants.length];
 
-        // Don't change the item if the two items are the same.
-        if (hasSrc(item) && item.src === newSrc) continue;
-
         if (isObject(newSrc)) {
             const src = newSrc["src"];
             const count = newSrc["count"];
 
             if (hasSrc(item)) {
+                if (item.src === src) continue;
                 item.src = src;
             } else if (isCount(item) && item.textContent !== count) {
                 item.textContent = count;
             }
         } else {
             if (hasSrc(item)) {
+                if (item.src === newSrc) continue;
                 item.src = newSrc;
             } else if (isCount(item) && item.textContent !== "") {
                 item.textContent = "";
