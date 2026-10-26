@@ -6,13 +6,19 @@ function cycle_recipe(items, cycleItems, state) {
         const variants = items[type];
 
         // Guard against missing types or empty variant arrays
-        if (!variants || !variants.length) continue;
+        if (!variants || !variants.length) {
+            console.log("Missing");
+            continue;
+        }
 
         const rawProps = variants[state.step % variants.length];
         const itemProps = typeof rawProps === "object" ? rawProps : { "src": rawProps, "count": "" };
 
+        console.log("Passed step 1");
+
         const newSrc = itemProps["src"];
         if (newSrc !== undefined && hasSrc(item)) {
+            console.log("Passed step 2");
             if (item.src === newSrc) {
                 console.log("Src matches: Skipping");
             }
@@ -21,6 +27,7 @@ function cycle_recipe(items, cycleItems, state) {
 
         const count = itemProps["count"];
         if (count !== undefined && isCount(item)) {
+            console.log("Passed step 3");
             if (item.textContent !== count) {
                 console.log("Count matches: Skipping");
             }
