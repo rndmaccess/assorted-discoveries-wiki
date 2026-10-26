@@ -18,43 +18,27 @@ import smoothSmokyQuartzWall from '../item_block_img/smooth_smoky_quartz_wall_it
 import { createRecipeCycle } from "./page_util";
 
 const craftingLists = {
-    "smoky_quartz_block": [
-        { smokyQuartzBlock },
-        { smokyQuartzBricks },
-        { smoothSmokyQuartz }
-    ],
-    "smoky_quartz_slab": [
-        { smokyQuartzSlab },
-        { smokyQuartzBrickSlab },
-        { smoothSmokyQuartzSlab }
-    ],
-    "smoky_quartz_stairs": [
-        { smokyQuartzStairs },
-        { smokyQuartzBrickStairs },
-        { smoothSmokyQuartzStairs }
-    ],
-    "smoky_quartz_wall": [
-        { smokyQuartzWall },
-        { smokyQuartzBrickWall },
-        { smoothSmokyQuartzWall }
-    ],
+    "smoky_quartz_block": [ smokyQuartzBlock, smokyQuartzBricks, smoothSmokyQuartz ],
+    "smoky_quartz_slab": [ smokyQuartzSlab, smokyQuartzBrickSlab, smoothSmokyQuartzSlab ],
+    "smoky_quartz_stairs": [ smokyQuartzStairs, smokyQuartzBrickStairs, smoothSmokyQuartzStairs ],
+    "smoky_quartz_wall": [ smokyQuartzWall, smokyQuartzBrickWall, smoothSmokyQuartzWall ],
     "smoky_quartz_block_result": [
         { "src": smokyQuartzBrickSlab, "count": "2" },
         { "src": smokyQuartzSlab, "count": "2" },
-        { "src": smokyQuartzBrickStairs, "count": "" },
-        { "src": smokyQuartzStairs, "count": "" },
-        { "src": smokyQuartzBrickWall, "count": "" },
-        { "src": smokyQuartzWall, "count": "" }
+        smokyQuartzBrickStairs,
+        smokyQuartzStairs,
+        smokyQuartzBrickWall,
+        smokyQuartzWall
     ],
     "smoky_quartz_bricks_result": [
         { "src": smokyQuartzBrickSlab, "count": "2" },
-        { "src": smokyQuartzBrickStairs, "count": "" },
-        { "src": smokyQuartzBrickWall, "count": "" }
+        smokyQuartzBrickStairs,
+        smokyQuartzBrickWall
     ],
     "smooth_smoky_quartz_result": [
         { "src": smoothSmokyQuartzSlab, "count": "2" },
-        { "src": smoothSmokyQuartzStairs, "count": "" },
-        { "src": smoothSmokyQuartzWall, "count": "" }
+        smoothSmokyQuartzStairs,
+        smoothSmokyQuartzWall
     ]
 }
 
