@@ -25,7 +25,7 @@ function cycle_recipe(items, cycleItems, state) {
         }
 
         const count = itemProps["count"];
-        console.log("New count is: ", newSrc);
+        console.log("New count is: ", count);
         if (count !== undefined && isCount(item)) {
             console.log("Passed step 3");
             if (item.textContent !== count) {

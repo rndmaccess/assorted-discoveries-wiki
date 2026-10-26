@@ -55,7 +55,7 @@ const craftingLists = {
         { "src": smoothSmokyQuartzSlab, "count": "2" },
         { "src": smoothSmokyQuartzStairs, "count": "" },
         { "src": smoothSmokyQuartzWall, "count": "" }
-    ],
+    ]
 }
 
 createRecipeCycle(craftingLists);
