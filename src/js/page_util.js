@@ -15,9 +15,7 @@ function cycle_recipe(items, cycleItems, state) {
         const itemProps = typeof rawProps === "object" ? rawProps : { "src": rawProps, "count": "" };
 
         const newSrc = itemProps["src"];
-        console.log("New src is: ", newSrc);
         if (newSrc !== undefined && hasSrc(item)) {
-            console.log("Passed step 2");
             if (item.src === newSrc) {
                 console.log("Src matches: Skipping");
             }
@@ -25,9 +23,7 @@ function cycle_recipe(items, cycleItems, state) {
         }
 
         const count = itemProps["count"];
-        console.log("New count is: ", count);
-        if (count !== undefined && isCount(item)) {
-            console.log("Passed step 3");
+        if (count !== undefined && item.matches('.result-count')) {
             if (item.textContent !== count) {
                 console.log("Count matches: Skipping");
             }
@@ -41,10 +37,6 @@ function hasSrc(item) {
         return item.hasAttribute('src');
     }
     return false;
-}
-
-function isCount(item) {
-    return item.classList.contains('result-count');
 }
 
 /**
