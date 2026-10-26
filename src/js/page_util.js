@@ -17,14 +17,18 @@ function cycle_recipe(items, cycleItems, state) {
             if (hasSrc(item)) {
                 if (item.src === src) continue;
                 item.src = src;
-            } else if (isCount(item) && item.textContent !== count) {
+            }
+
+            if (isCount(item) && item.textContent !== count) {
                 item.textContent = count;
             }
         } else {
             if (hasSrc(item)) {
                 if (item.src === newSrc) continue;
                 item.src = newSrc;
-            } else if (isCount(item) && item.textContent !== "") {
+            }
+
+            if (isCount(item) && item.textContent !== "") {
                 item.textContent = "";
             }
         }
