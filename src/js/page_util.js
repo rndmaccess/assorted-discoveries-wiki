@@ -8,36 +8,23 @@ function cycle_recipe(items, cycleItems, state) {
         // Guard against missing types or empty variant arrays
         if (!variants || !variants.length) continue;
 
-        const newSrc = variants[state.step % variants.length];
+        const rawProps = variants[state.step % variants.length];
+        const itemProps = typeof rawProps === "object" ? rawProps : { "src": rawProps, "count": "" };
 
-        if (isObject(newSrc)) {
-            const src = newSrc["src"];
-            const count = newSrc["count"];
-
-            console.log("Its an object");
-
-            if (hasSrc(item)) {
-                if (item.src === src) {
-                    console.log("The src matches");
-                }
-                item.src = src;
+        const newSrc = itemProps["src"];
+        if (newSrc !== undefined && hasSrc(item)) {
+            if (item.src === newSrc) {
+                console.log("Src matches: Skipping");
             }
+            item.src = newSrc;
+        }
 
-            if (isCount(item)) {
-                if (item.textContent !== count) {
-                    console.log("The count matches");
-                }
-                item.textContent = count;
+        const count = itemProps["count"];
+        if (count !== undefined && isCount(item)) {
+            if (item.textContent !== count) {
+                console.log("Count matches: Skipping");
             }
-        } else {
-            if (hasSrc(item)) {
-                if (item.src === newSrc) continue;
-                item.src = newSrc;
-            }
-
-            if (isCount(item) && item.textContent !== "") {
-                item.textContent = "";
-            }
+            item.textContent = count;
         }
     }
 }
@@ -51,10 +38,6 @@ function hasSrc(item) {
 
 function isCount(item) {
     return item.classList.contains('result-count');
-}
-
-function isObject(item) {
-    return item !== null && typeof item === "object" && !Array.isArray(item);
 }
 
 /**

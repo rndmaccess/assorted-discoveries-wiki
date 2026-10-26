@@ -18,63 +18,43 @@ import smoothSmokyQuartzWall from '../item_block_img/smooth_smoky_quartz_wall_it
 import { createRecipeCycle } from "./page_util";
 
 const craftingLists = {
-    "smoky_quartz_block": [smokyQuartzBlock, smokyQuartzBricks, smoothSmokyQuartz],
-    "smoky_quartz_slab": [smokyQuartzSlab, smokyQuartzBrickSlab, smoothSmokyQuartzSlab],
-    "smoky_quartz_stairs": [smokyQuartzStairs, smokyQuartzBrickStairs, smoothSmokyQuartzStairs],
-    "smoky_quartz_wall": [smokyQuartzWall, smokyQuartzBrickWall, smoothSmokyQuartzWall],
+    "smoky_quartz_block": [
+        { smokyQuartzBlock },
+        { smokyQuartzBricks },
+        { smoothSmokyQuartz }
+    ],
+    "smoky_quartz_slab": [
+        { smokyQuartzSlab },
+        { smokyQuartzBrickSlab },
+        { smoothSmokyQuartzSlab }
+    ],
+    "smoky_quartz_stairs": [
+        { smokyQuartzStairs },
+        { smokyQuartzBrickStairs },
+        { smoothSmokyQuartzStairs }
+    ],
+    "smoky_quartz_wall": [
+        { smokyQuartzWall },
+        { smokyQuartzBrickWall },
+        { smoothSmokyQuartzWall }
+    ],
     "smoky_quartz_block_result": [
-        {
-            "alt": smokyQuartzBrickSlab,
-            "count": "2"
-        },
-        {
-            "alt": smokyQuartzSlab,
-            "count": "2"
-        },
-        {
-            "alt": smokyQuartzBrickStairs,
-            "count": ""
-        },
-        {
-            "alt": smokyQuartzStairs,
-            "count": ""
-        },
-        {
-            "alt": smokyQuartzBrickWall,
-            "count": ""
-        },
-        {
-            "alt": smokyQuartzWall,
-            "count": ""
-        }
+        { "src": smokyQuartzBrickSlab, "count": "2" },
+        { "src": smokyQuartzSlab, "count": "2" },
+        { "src": smokyQuartzBrickStairs, "count": "" },
+        { "src": smokyQuartzStairs, "count": "" },
+        { "src": smokyQuartzBrickWall, "count": "" },
+        { "src": smokyQuartzWall, "count": "" }
     ],
     "smoky_quartz_bricks_result": [
-        {
-            "alt": smokyQuartzBrickSlab,
-            "count": "2"
-        },
-        {
-            "alt": smokyQuartzBrickStairs,
-            "count": ""
-        },
-        {
-            "alt": smokyQuartzBrickWall,
-            "count": ""
-        }
+        { "src": smokyQuartzBrickSlab, "count": "2" },
+        { "src": smokyQuartzBrickStairs, "count": "" },
+        { "src": smokyQuartzBrickWall, "count": "" }
     ],
     "smooth_smoky_quartz_result": [
-        {
-            "alt": smoothSmokyQuartzSlab,
-            "count": "2"
-        },
-        {
-            "alt": smoothSmokyQuartzStairs,
-            "count": ""
-        },
-        {
-            "alt": smoothSmokyQuartzWall,
-            "count": ""
-        }
+        { "src": smoothSmokyQuartzSlab, "count": "2" },
+        { "src": smoothSmokyQuartzStairs, "count": "" },
+        { "src": smoothSmokyQuartzWall, "count": "" }
     ],
 }
 
