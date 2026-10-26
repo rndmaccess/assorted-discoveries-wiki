@@ -14,12 +14,19 @@ function cycle_recipe(items, cycleItems, state) {
             const src = newSrc["src"];
             const count = newSrc["count"];
 
+            console.log("Its an object");
+
             if (hasSrc(item)) {
-                if (item.src === src) continue;
+                if (item.src === src) {
+                    console.log("The src matches");
+                }
                 item.src = src;
             }
 
-            if (isCount(item) && item.textContent !== count) {
+            if (isCount(item)) {
+                if (item.textContent !== count) {
+                    console.log("The count matches");
+                }
                 item.textContent = count;
             }
         } else {
