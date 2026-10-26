@@ -10,6 +10,8 @@ function cycle_recipe(items, cycleItems, state) {
 
         const newSrc = variants[state.step % variants.length];
 
+        console.log(newSrc);
+
         if (isObject(newSrc)) {
             const src = newSrc["src"];
             const count = newSrc["count"];
