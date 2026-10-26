@@ -9,10 +9,42 @@ function cycle_recipe(items, cycleItems, state) {
         if (!variants || !variants.length) continue;
 
         const newSrc = variants[state.step % variants.length];
-        if (item.src !== newSrc) {
-            item.src = newSrc;
+
+        // Don't change the item if the two items are the same.
+        if (hasSrc(item) && item.src === newSrc) continue;
+
+        if (isObject(newSrc)) {
+            const src = newSrc["src"];
+            const count = newSrc["count"];
+
+            if (hasSrc(item)) {
+                item.src = src;
+            } else if (isCount(item) && item.textContent !== count) {
+                item.textContent = count;
+            }
+        } else {
+            if (hasSrc(item)) {
+                item.src = newSrc;
+            } else if (isCount(item) && item.textContent !== "") {
+                item.textContent = "";
+            }
         }
     }
+}
+
+function hasSrc(item) {
+    if (item && item.nodeType === 1) {
+        return item.hasAttribute('src');
+    }
+    return false;
+}
+
+function isCount(item) {
+    return item.classList.contains('result-count');
+}
+
+function isObject(item) {
+    return item !== null && typeof item === "object" && !Array.isArray(item);
 }
 
 /**

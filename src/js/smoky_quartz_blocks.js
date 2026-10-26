@@ -22,6 +22,60 @@ const craftingLists = {
     "smoky_quartz_slab": [smokyQuartzSlab, smokyQuartzBrickSlab, smoothSmokyQuartzSlab],
     "smoky_quartz_stairs": [smokyQuartzStairs, smokyQuartzBrickStairs, smoothSmokyQuartzStairs],
     "smoky_quartz_wall": [smokyQuartzWall, smokyQuartzBrickWall, smoothSmokyQuartzWall],
+    "smoky_quartz_block_result": [
+        {
+            "alt": smokyQuartzBrickSlab,
+            "count": "2"
+        },
+        {
+            "alt": smokyQuartzSlab,
+            "count": "2"
+        },
+        {
+            "alt": smokyQuartzBrickStairs,
+            "count": ""
+        },
+        {
+            "alt": smokyQuartzStairs,
+            "count": ""
+        },
+        {
+            "alt": smokyQuartzBrickWall,
+            "count": ""
+        },
+        {
+            "alt": smokyQuartzWall,
+            "count": ""
+        }
+    ],
+    "smoky_quartz_bricks_result": [
+        {
+            "alt": smokyQuartzBrickSlab,
+            "count": "2"
+        },
+        {
+            "alt": smokyQuartzBrickStairs,
+            "count": ""
+        },
+        {
+            "alt": smokyQuartzBrickWall,
+            "count": ""
+        }
+    ],
+    "smooth_smoky_quartz_result": [
+        {
+            "alt": smoothSmokyQuartzSlab,
+            "count": "2"
+        },
+        {
+            "alt": smoothSmokyQuartzStairs,
+            "count": ""
+        },
+        {
+            "alt": smoothSmokyQuartzWall,
+            "count": ""
+        }
+    ],
 }
 
 createRecipeCycle(craftingLists);

@@ -24,6 +24,10 @@
     padding: 0 0 1.5rem 0;
 }
 
+.recipe-container ul {
+    padding-bottom: 1rem;
+}
+
 .recipe-box {
     box-sizing: border-box;
     background-color: #363636;
