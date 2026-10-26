@@ -13,20 +13,13 @@ function cycle_recipe(items, cycleItems, state) {
 
         const newSrc = itemProps["src"];
         if (newSrc !== undefined && hasSrc(item)) {
-            if (item.src === newSrc) {
-                console.log("Src matches: Skipping");
-            }
+            if (item.src === newSrc) continue;
             item.src = newSrc;
-        } else {
-            console.log("Not src");
         }
 
         const count = itemProps["count"];
-        if (count !== undefined && item.matches('.result-count')) {
-            if (item.textContent !== count) {
-                console.log("Count matches: Skipping");
-            }
-            console.log("Changing count");
+        if (count !== undefined && !hasSrc(item)) {
+            if (item.textContent === count) continue;
             item.textContent = count;
         }
     }
