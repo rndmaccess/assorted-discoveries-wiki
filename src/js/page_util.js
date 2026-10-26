@@ -14,9 +14,8 @@ function cycle_recipe(items, cycleItems, state) {
         const rawProps = variants[state.step % variants.length];
         const itemProps = typeof rawProps === "object" ? rawProps : { "src": rawProps, "count": "" };
 
-        console.log("Passed step 1");
-
         const newSrc = itemProps["src"];
+        console.log("New src is: ", newSrc);
         if (newSrc !== undefined && hasSrc(item)) {
             console.log("Passed step 2");
             if (item.src === newSrc) {
@@ -26,6 +25,7 @@ function cycle_recipe(items, cycleItems, state) {
         }
 
         const count = itemProps["count"];
+        console.log("New count is: ", newSrc);
         if (count !== undefined && isCount(item)) {
             console.log("Passed step 3");
             if (item.textContent !== count) {
