@@ -337,6 +337,11 @@ table {
     image-rendering: pixelated;
 }
 
+.inline-render {
+    margin: 0;
+    padding: 1rem;
+}
+
 .boxed-inline-display .inline-render {
     display: flex;
     flex-direction: column;
@@ -365,7 +370,7 @@ table {
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 }
 
-.inline-render p, .inline-render a {
+.inline-render p, .inline-render figcaption, .inline-render a {
     text-align: center;
 }
 
