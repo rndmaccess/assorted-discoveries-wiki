@@ -374,6 +374,10 @@ table {
     text-align: center;
 }
 
+.inline-render figcaption {
+    padding-top: 0.5rem;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
