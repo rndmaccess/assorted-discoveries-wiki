@@ -21,7 +21,22 @@ const craftingLists = {
     "bauxite_bricks": [bauxiteBricks, mossyBauxiteBricks, crackedBauxiteBricks],
     "bauxite_brick_slab": [bauxiteBrickSlab, mossyBauxiteBrickSlab, crackedBauxiteBrickSlab],
     "bauxite_brick_stairs": [bauxiteBrickStairs, mossyBauxiteBrickStairs, crackedBauxiteBrickStairs],
-    "bauxite_brick_wall": [bauxiteBrickWall, mossyBauxiteBrickWall, crackedBauxiteBrickWall]
+    "bauxite_brick_wall": [bauxiteBrickWall, mossyBauxiteBrickWall, crackedBauxiteBrickWall],
+    "bauxite_brick_result": [
+        { "src": bauxiteBrickSlab, "count": "2" },
+        { "src": bauxiteBrickStairs, "count": "" },
+        { "src": bauxiteBrickWall, "count": "" }
+    ],
+    "mossy_bauxite_brick_result": [
+        { "src": mossyBauxiteBrickSlab, "count": "2" },
+        { "src": mossyBauxiteBrickStairs, "count": "" },
+        { "src": mossyBauxiteBrickWall, "count": "" },
+    ],
+    "cracked_bauxite_brick_result": [
+        { "src": crackedBauxiteBrickSlab, "count": "2" },
+        { "src": crackedBauxiteBrickStairs, "count": "" },
+        { "src": crackedBauxiteBrickWall, "count": "" },
+    ]
 }
 
 createRecipeCycle(craftingLists);

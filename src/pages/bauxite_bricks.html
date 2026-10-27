@@ -227,79 +227,100 @@
                         <summary class="collapsed">Recipes</summary>
 
                         <div class="recipe-container">
-                            <div class="recipe-area" aria-hidden="true">
+                            <div class="recipe-area crafting-anim" aria-hidden="true">
                                 <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
+                                <img class="stonecutter-button recipe-item cycle-item" data-type="bauxite_brick_result"
+                                     src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
                                 <div class="stonecutter-slot-container">
                                     <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
+                                    <img class="recipe-item cycle-item" data-type="bauxite_brick_result"
+                                         src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
                                 </div>
-                                <div class="stonecutter-count">2</div>
+                                <div class="stonecutter-count cycle-item" data-type="bauxite_brick_result">2</div>
                             </div>
-                            <p>
-                                Craft two bauxite brick slabs by placing a bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_brick_stairs_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_brick_stairs_item.webp" alt="">
-                                </div>
-                            </div>
-                            <p>
-                                Craft bauxite brick stairs by placing bauxite in a stonecutter.
-                            </p>
-
-                            <div class="recipe-area" aria-hidden="true">
-                                <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item" src="../item_block_img/bauxite_brick_wall_item.webp" alt="">
-                                <div class="stonecutter-slot-container">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_item.webp" alt="">
-                                    <img class="recipe-item" src="../item_block_img/bauxite_brick_wall_item.webp" alt="">
-                                </div>
-                            </div>
-                            <p>
-                                Craft bauxite brick walls by placing a bauxite in a stonecutter.
-                            </p>
+                            <ul>
+                                <li><strong>Ingredient</strong>: Bauxite</li>
+                                <li><strong>Results</strong>:
+                                    <ul>
+                                        <li aria-label="Bauxite brick slab times two">
+                                            Bauxite brick slab (x2)
+                                        </li>
+                                        <li>Bauxite brick stairs</li>
+                                        <li>Bauxite brick wall</li>
+                                    </ul>
+                                </li>
+                            </ul>
 
                             <div class="recipe-area crafting-anim" aria-hidden="true">
                                 <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item cycle-item" data-type="bauxite_brick_slab" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
+                                <img class="stonecutter-button recipe-item cycle-item" data-type="bauxite_brick_result" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
                                 <div class="stonecutter-slot-container">
-                                    <img class="recipe-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt="">
-                                    <img class="recipe-item cycle-item" data-type="bauxite_brick_slab" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
+                                    <img class="recipe-item" src="../item_block_img/bauxite_bricks_item.webp" alt="">
+                                    <img class="recipe-item cycle-item" data-type="bauxite_brick_result" src="../item_block_img/bauxite_brick_slab_item.webp" alt="">
                                 </div>
-                                <div class="stonecutter-count">2</div>
+                                <div class="stonecutter-count cycle-item" data-type="bauxite_brick_result">2</div>
                             </div>
-                            <p>
-                                Craft bauxite brick, mossy bauxite brick, or cracked bauxite brick slabs by placing a matching bauxite brick block in a stonecutter.
-                            </p>
+                            <ul>
+                                <li><strong>Ingredient</strong>: Bauxite bricks</li>
+                                <li><strong>Results</strong>:
+                                    <ul>
+                                        <li aria-label="Bauxite brick slab times two">
+                                            Bauxite brick slab (x2)
+                                        </li>
+                                        <li>Bauxite brick stairs</li>
+                                        <li>Bauxite brick wall</li>
+                                    </ul>
+                                </li>
+                            </ul>
 
                             <div class="recipe-area crafting-anim" aria-hidden="true">
                                 <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item cycle-item" data-type="bauxite_brick_stairs" src="../item_block_img/bauxite_brick_stairs_item.webp" alt="">
+                                <img class="stonecutter-button recipe-item cycle-item" data-type="mossy_bauxite_brick_result"
+                                     src="../item_block_img/mossy_bauxite_brick_slab_item.webp" alt="">
                                 <div class="stonecutter-slot-container">
-                                    <img class="recipe-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt="">
-                                    <img class="recipe-item cycle-item" data-type="bauxite_brick_stairs" src="../item_block_img/bauxite_brick_stairs_item.webp" alt="">
+                                    <img class="recipe-item" src="../item_block_img/mossy_bauxite_bricks_item.webp" alt="">
+                                    <img class="recipe-item cycle-item" data-type="mossy_bauxite_brick_result"
+                                         src="../item_block_img/mossy_bauxite_brick_slab_item.webp" alt="">
                                 </div>
+                                <div class="stonecutter-count cycle-item" data-type="mossy_bauxite_brick_result">2</div>
                             </div>
-                            <p>
-                                Craft bauxite brick, mossy bauxite brick, or cracked bauxite brick stairs by placing a matching bauxite brick block in a stonecutter.
-                            </p>
+                            <ul>
+                                <li><strong>Ingredient</strong>: Mossy bauxite bricks</li>
+                                <li><strong>Results</strong>:
+                                    <ul>
+                                        <li aria-label="Mossy bauxite brick slab times two">
+                                            Mossy bauxite brick slab (x2)
+                                        </li>
+                                        <li>Mossy bauxite brick stairs</li>
+                                        <li>Mossy bauxite brick wall</li>
+                                    </ul>
+                                </li>
+                            </ul>
 
                             <div class="recipe-area crafting-anim" aria-hidden="true">
                                 <img class="recipe-back" src="../gui_img/stonecutter.webp" alt="">
-                                <img class="stonecutter-button recipe-item cycle-item" data-type="bauxite_brick_wall" src="../item_block_img/bauxite_brick_wall_item.webp" alt="">
+                                <img class="stonecutter-button recipe-item cycle-item" data-type="cracked_bauxite_brick_result"
+                                     src="../item_block_img/cracked_bauxite_brick_slab_item.webp" alt="">
                                 <div class="stonecutter-slot-container">
-                                    <img class="recipe-item cycle-item" data-type="bauxite_bricks" src="../item_block_img/bauxite_bricks_item.webp" alt="">
-                                    <img class="recipe-item cycle-item" data-type="bauxite_brick_wall" src="../item_block_img/bauxite_brick_wall_item.webp" alt="">
+                                    <img class="recipe-item cycle-item"
+                                         src="../item_block_img/cracked_bauxite_bricks_item.webp" alt="">
+                                    <img class="recipe-item cycle-item" data-type="cracked_bauxite_brick_result"
+                                         src="../item_block_img/cracked_bauxite_brick_slab_item.webp" alt="">
                                 </div>
+                                <div class="stonecutter-count cycle-item" data-type="cracked_bauxite_brick_result">2</div>
                             </div>
-                            <p>
-                                Craft bauxite brick, mossy bauxite brick, or cracked bauxite brick walls by placing a matching bauxite brick block in a stonecutter.
-                            </p>
+                            <ul>
+                                <li><strong>Ingredient</strong>: Cracked bauxite bricks</li>
+                                <li><strong>Results</strong>:
+                                    <ul>
+                                        <li aria-label="Cracked bauxite brick slab times two">
+                                            Cracked bauxite brick slab (x2)
+                                        </li>
+                                        <li>Cracked bauxite brick stairs</li>
+                                        <li>Cracked bauxite brick wall</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </details>
 
